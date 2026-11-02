@@ -1,0 +1,77 @@
+# Plot Twist Traffic – idea list (next episodes)
+
+Q19 (next): The carousel horses break loose on the roundabout (announced at the end of Q18)
+Q20: A hot-air balloon lands on the motorway (v3: runway + plane)
+Q21: PARKING between a sleeping dragon and its giant egg
+Q22: A rollercoaster at the level crossing (snail skipped: Q9 was already a snail)
+Q23 (announced): Popcorn fog on the motorway
+Skipped for now: A pirate ship is blocking the tunnel
+
+NO teaching needed (user 23 Oct): wrong AND right way should both just be absurd; no rule lessons required. Mystery/reveal hooks welcome (e.g. blinding light -> reveal something unexpected after passing).
+Viral pattern (user feedback 23 Oct): everyday rule situation everyone knows (zipper merge, traffic light, roundabout, overtaking, wrong-way driver)
++ ONE absurd element at huge scale or a character with personality (grandma, traffic light with legs, fish therapist). Don't copy, find new situations.
+
+Backlog (random order):
+Q23 (announced at the end of Q22): Something blinding comes towards you at night (reveal after passing: a lighthouse on wheels, driven by a seagull)
+- A goose keeps honking behind you in a tiny car
+- PARKING: between two sumo wrestlers
+- The car in front brakes for no reason (a cat is driving, chasing a laser dot)
+- A ninja lives in your blind spot
+- Popcorn fog on the motorway
+- Your warning triangle refuses to be put up
+- Grandma comes from the right on a steamroller
+- The motorway on-ramp is a ski jump
+- A sleeping policeman is lying across the road
+- The speed camera is a fashion photographer
+- A traffic jam caused by a red-carpet premiere
+- The tunnel is a whale's mouth
+- The ambulance siren is an opera singer
+- Black ice and a figure-skating polar bear
+
+
+Done (Oct 25): Q23 grandma bike light (rebuilt from lighthouse), Q24 warning triangle, Q25 goose in tiny car (coffee on roof), Q26 sumo parking. Q26 announces next: motorway on-ramp is a ski jump.
+
+## New list (Oct 27, user: go through it in this order)
+- Q29: The road is a giant treadmill (reveal at the end: a giant hamster powers it)
+- A traffic jam made of dominoes
+- The roundabout is a giant spinning top
+- A pirate ship at the toll booth
+- Your GPS falls in love with another GPS
+- A dinosaur at the drive-through
+- The car wash is a giant octopus
+- A volcano erupts popcorn on the road
+- The parking garage is a giant vending machine
+- The road ahead rolls up like a carpet
+- A snowman wants to hitchhike
+- A giant baby is playing with the cars
+(skipped: whale tunnel, cat driver, opera siren)
+
+## Next episodes – user-approved order (Oct 27); cat episode and opera singer skipped
+1. Q29: The road is a giant treadmill (mystery: a giant hamster is powering it)
+2. A traffic jam made of dominoes
+3. The roundabout is a giant spinning top
+4. A pirate ship at the toll booth
+5. Your GPS falls in love with another GPS
+6. A dinosaur at the drive-through
+7. The car wash is a giant octopus
+8. A volcano erupts popcorn on the road
+9. The parking garage is a giant vending machine
+10. The road ahead rolls up like a carpet
+11. A snowman wants to hitchhike
+12. A giant baby is playing with the cars
+
+## NEW DIRECTION (Oct 30, user): realistic everyday driving situation, first 2 s look like a normal driving-tip video; ONE element replaced by something crazy.
+Wrong/right ways must be totally fantastical; escalation (explosion / car flattened / car flies) only when it makes sense in the story.
+Skipped: Q30 dominoes, Q31 spinning top (too unrealistic / weak). Proposed list (random order, never two of the same category in a row):
+1. Merging on the motorway – a field of racehorses on the on-ramp
+2. Parallel parking between two sleeping bears
+3. Petrol station – a circus fire-breather is refuelling next to you
+4. Right before left – a giant tortoise comes from the right
+5. Lane change / blind spot – a knight on horseback with a lance
+6. Parking – the kerb is a sleeping crocodile
+7. Roadworks – the STOP/GO man is a parrot
+8. Hill start – a lorry full of watermelons behind you
+9. Zebra crossing – a duck with endless ducklings
+10. Emergency lane – the siren is an ice-cream van (emergency: ice cream melting)
+11. Car wash – an octopus instead of brushes
+12. Deer-crossing sign – reindeer with a sleigh (December)

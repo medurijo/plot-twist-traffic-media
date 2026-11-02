@@ -1,0 +1,11 @@
+prefix=/home/claude/fahrschule/vendor/espeak-install
+exec_prefix=/home/claude/fahrschule/vendor/espeak-install
+libdir=/home/claude/fahrschule/vendor/espeak-install/lib
+includedir=/home/claude/fahrschule/vendor/espeak-install/include
+
+Name: espeak-ng
+Description: espeak-ng is a multi-lingual software speech synthesizer
+Version: 1.53.0
+Requires:
+Libs: -L${libdir} -lespeak-ng
+Cflags: -I${includedir}

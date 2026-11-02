@@ -1,0 +1,186 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 33,
+  "next": [
+   "A KNIGHT ON HORSEBACK",
+   "IN YOUR BLIND SPOT"
+  ]
+ },
+ "segments": [
+  {
+   "id": "hook1",
+   "text": "An unmarked crossroads. No signs, no traffic lights. So the rule is: give way to the right.",
+   "gap": 0.4
+  },
+  {
+   "id": "hook2",
+   "text": "But today, the one coming from the right is a giant tortoise. Top speed: one metre per minute. What do you do?",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong1",
+   "text": "Most drivers think: it's so slow, I'll just go first.",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong2",
+   "text": "Big mistake. The tortoise saw that. Blue light on. It's a police tortoise. And now, it's chasing you.",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong3",
+   "text": "Slowly. Days. Months. Years. Your car rusts. A tree grows through it. Until finally, it catches you. Ticket!",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong4",
+   "text": "Exam failed.",
+   "gap": 1.15
+  },
+  {
+   "id": "right1",
+   "text": "Here's how you do it properly.",
+   "gap": 0.3
+  },
+  {
+   "id": "right2",
+   "text": "Stop, and give way. Rules are rules, even for tortoises.",
+   "gap": 0.4
+  },
+  {
+   "id": "right3",
+   "text": "But at this speed, you'd wait till Christmas. So grab a fishing rod, and dangle a strawberry.",
+   "gap": 0.4
+  },
+  {
+   "id": "right4",
+   "text": "Now it's a turbo tortoise. Zoom! Across in three seconds.",
+   "gap": 0.4
+  },
+  {
+   "id": "right5",
+   "text": "It gets the strawberry. You get the road. Drive on.",
+   "gap": 0.6
+  },
+  {
+   "id": "right6",
+   "text": "Right of way: respected.",
+   "gap": 0.6
+  },
+  {
+   "id": "right7",
+   "text": "Exam passed.",
+   "gap": 1.3
+  },
+  {
+   "id": "outro",
+   "text": "Next exam question: a knight on horseback, in your blind spot. Follow, so you don't miss it.",
+   "gap": 1.2
+  }
+ ],
+ "cues": [
+  [
+   "hook2",
+   "tortoise",
+   "boing",
+   0.15
+  ],
+  [
+   "wrong1",
+   "go",
+   "rev",
+   0.35
+  ],
+  [
+   "wrong2",
+   "Blue",
+   "alarm",
+   0.12
+  ],
+  [
+   "wrong3",
+   "Days",
+   "whoosh",
+   0.2
+  ],
+  [
+   "wrong3",
+   "Months",
+   "whoosh",
+   0.2
+  ],
+  [
+   "wrong3",
+   "Years",
+   "whoosh",
+   0.25
+  ],
+  [
+   "wrong3",
+   "rusts",
+   "crack",
+   0.2
+  ],
+  [
+   "wrong3",
+   "tree",
+   "pop",
+   0.3
+  ],
+  [
+   "wrong3",
+   "Ticket",
+   "ding",
+   0.35
+  ],
+  [
+   "right2",
+   "Stop",
+   "thud",
+   0.15
+  ],
+  [
+   "right3",
+   "dangle",
+   "plink",
+   0.25
+  ],
+  [
+   "right4",
+   "Zoom",
+   "jet",
+   0.18
+  ],
+  [
+   "right5",
+   "strawberry",
+   "slurp",
+   0.3
+  ],
+  [
+   "right6",
+   "respected",
+   "chime",
+   0.3
+  ]
+ ],
+ "beds": [
+  [
+   "engine",
+   0.0,
+   2.5,
+   0.04
+  ],
+  [
+   "ticker",
+   [
+    "wrong3"
+   ],
+   [
+    "wrong3"
+   ],
+   0.15
+  ]
+ ]
+}

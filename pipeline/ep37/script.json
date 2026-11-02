@@ -1,0 +1,40 @@
+{
+ "voice": "bm_george",
+ "meta": {"q": 32, "next": ["A GIANT TORTOISE", "COMES FROM THE RIGHT"]},
+ "segments": [
+  {"id": "hook1", "text": "Filling up at the petrol station. Engine off, open the flap, and grab the nozzle.", "gap": 0.4},
+  {"id": "hook2", "text": "But at the pump next to you, a circus fire-breather is filling up. And he has the hiccups. What do you do?", "gap": 0.9},
+  {"id": "wrong1", "text": "Most drivers try to help, and shout: Boo!", "gap": 0.4},
+  {"id": "wrong2", "text": "Big mistake. He jumps, and hiccups the biggest flame of his life. Straight into your tank.", "gap": 0.4},
+  {"id": "wrong3", "text": "Three, two, one, lift-off! Your car is now a rocket. Over the town, and into the circus tent. Ta-da! You're the new human cannonball.", "gap": 0.9},
+  {"id": "wrong4", "text": "Exam failed.", "gap": 1.15},
+  {"id": "right1", "text": "Here's how you do it properly.", "gap": 0.3},
+  {"id": "right2", "text": "First, close your tank. Click.", "gap": 0.4},
+  {"id": "right3", "text": "Then pass him a glass of water. The circus cure: a handstand on the pump, and drink it upside down.", "gap": 0.4},
+  {"id": "right4", "text": "Hic. Just a tiny puff. Hiccups gone.", "gap": 0.4},
+  {"id": "right5", "text": "To say thanks, he breathes a heart of fire, and toasts a marshmallow on your antenna.", "gap": 0.6},
+  {"id": "right6", "text": "Tank: full. Snack: toasted.", "gap": 0.6},
+  {"id": "right7", "text": "Exam passed.", "gap": 1.3},
+  {"id": "outro", "text": "Next exam question: a giant tortoise comes from the right. Follow, so you don't miss it.", "gap": 1.2}
+ ],
+ "cues": [
+  ["hook2", "hiccups", "pop", 0.3, 0.5],
+  ["hook2", "hiccups", "burner", 0.12, 0.5],
+  ["wrong1", "Boo", "boing", 0.25],
+  ["wrong2", "jumps", "tilt", 0.2],
+  ["wrong2", "biggest", "burner", 0.35],
+  ["wrong2", "tank", "boom", 0.25, 0.1],
+  ["wrong3", "lift", "jet", 0.28],
+  ["wrong3", "tent", "thud", 0.3, 0.2],
+  ["wrong3", "Ta", "drumroll", 0.0],
+  ["wrong3", "Ta", "crowd", 0.2, 0.2],
+  ["right2", "Click", "plink", 0.3],
+  ["right3", "glass", "whoosh", 0.2],
+  ["right3", "upside", "slurp", 0.3],
+  ["right4", "Hic", "pop", 0.3],
+  ["right5", "heart", "burner", 0.2],
+  ["right5", "toasts", "sizzle", 0.15],
+  ["right6", "toasted", "chime", 0.3]
+ ],
+ "beds": [["engine", 0.0, 1.6, 0.04]]
+}

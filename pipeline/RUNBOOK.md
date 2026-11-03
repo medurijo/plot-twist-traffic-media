@@ -57,6 +57,12 @@ episodes – copy the structure of the closest one.
   sunDir/colour. Choose a lighting mood that fits the story (golden afternoon, sunset, blue hour…).
   Bloom is OFF on purpose (it breaks the transparent sky). Renders take ~2x longer (~90 min/episode),
   so queue both episodes early. Check stills: shadows must not hide faces/gags.
+  **User (3 Nov): "nachher ist besser, aber achte darauf, dass dadurch nicht wichtige Details untergehen."**
+  In EVERY stills round explicitly check: faces/eyes, props of the gag (ticket, strawberry, nozzle…),
+  HUD-relevant objects and the hero car are clearly lit and readable – not swallowed by house/tortoise
+  shadows, AO darkening or the vignette. Fixes: raise fill (`gfxopt.hemi` 0.7–0.9), rotate `sunDir` so
+  the key subject faces the sun, lower `vignette`, add a small local PointLight on the subject, or
+  move the camera. Readability beats mood.
 - SFX must NEVER cover the narrator. Camera smooth and wide, subject always readable; no
   flicker, no objects blocking shots (check pillars/hedges/houses in stills).
 

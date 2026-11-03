@@ -75,3 +75,5 @@ Skipped: Q30 dominoes, Q31 spinning top (too unrealistic / weak). Proposed list 
 10. Emergency lane – the siren is an ice-cream van (emergency: ice cream melting)
 11. Car wash – an octopus instead of brushes
 12. Deer-crossing sign – reindeer with a sleigh (December)
+
+## STYLE SWITCH (3 Nov 2026, user): from Q34 back to the old opening style (no driving-tip intro, straight to the twist like Q29 treadmill). Keep this new ideas list.

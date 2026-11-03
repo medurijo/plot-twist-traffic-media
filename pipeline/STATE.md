@@ -3,6 +3,7 @@
 Last published Q: **33** (Q32 posts 2026-11-03 15:30, Q33 posts 2026-11-03 18:00)
 Next episode folder: ep39 = Q34
 Announced in last outro (must be next video): **A knight on horseback in your blind spot** (lane change / blind spot)
+STYLE: from Q34 back to the OLD opening style (no driving-tip/rule intro), see RUNBOOK §2. Opening references: ep32, ep31.
 Then from IDEAS.md new-direction list: crocodile kerb (parking), parrot STOP/GO man (roadworks), watermelon lorry (hill start), ducklings (zebra crossing), ice-cream van (emergency lane), octopus car wash, reindeer sleigh (December).
 
 Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day's two videos.

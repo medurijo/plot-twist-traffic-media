@@ -29,8 +29,19 @@ episodes – copy the structure of the closest one.
 ## 2. Creative direction (user feedback, binding)
 - Format: 9:16 1080×1920, ~60–70 s, Kokoro voice **bm_george**, English.
 - Structure: hook → WRONG way → rewind → RIGHT WAY → "Exam passed" → outro announcing next episode.
-- Realistic, everyday driving situation (petrol station, crossroads, parking, merging…) with
-  ONE element replaced by something crazy. First ~2 s must look like a normal driving-tip video.
+- **STYLE SWITCH (user, 3 Nov 2026): from Q34 on, back to the OLD opening style** (like Q29
+  treadmill ep32, Q28 fashion photographer ep31, Q30 dominoes ep33 and everything before).
+  The opening must NOT look like a driving-school lesson / driving-tip video: no "DRIVING TIP: …"
+  pill, no junction/rule diagram cards, no explaining the rule in hook1. Instead: one short,
+  punchy everyday line, then straight into the twist. Examples:
+  ep32 hook1 "You're driving to work. Foot on the gas. But somehow, you're not moving." /
+  hook2 "The road is a giant treadmill. What do you do?"; ep31 "There's a speed camera ahead.
+  But this one is a little different." / "It's a fashion photographer. What do you do?".
+  Mystery/reveal hooks welcome. HUD pills only for the gag (like ep32: "ROAD: GIANT TREADMILL").
+- Keep using the NEW ideas list (everyday situations with ONE crazy element: knight in blind
+  spot, crocodile kerb, parrot STOP/GO man, …) – only the presentation goes back to old style.
+  Q32 (ep37) / Q33 (ep38) are references for creativity of the wrong/right ways, NOT for the opening;
+  use pipeline/ep32 + pipeline/ep31 openings as the opening reference.
 - Wrong AND right way: very fantastical and creative, with escalation that makes sense in the
   story (rocket car into the circus tent; police tortoise chasing you for 7 years while a tree
   grows through your car). The right way is also absurd and charming (handstand on the pump to

@@ -30,7 +30,7 @@ export const tRew0 = S('wrong4').end + 0.05, tRew1 = S('right1').start;
 export const REW_TARGET = META.rewindTo != null ? META.rewindTo : Math.max(0.5, S('wrong1').start - 0.8);
 
 // ---------------- renderer ----------------
-export const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+export const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true, alpha: new URLSearchParams(location.search).has('gfx') || !!META.gfx });
 renderer.setPixelRatio(1); renderer.setSize(W, H);
 renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.1;
@@ -49,7 +49,92 @@ Object.assign(sun.shadow.camera, { left: -85, right: 85, top: 85, bottom: -85, n
 sun.shadow.bias = -0.0005; sun.shadow.normalBias = 0.05;
 scene.add(sun); scene.add(sun.target);
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-{ const pm = new THREE.PMREMGenerator(renderer); scene.environment = pm.fromScene(new RoomEnvironment(), 0.04).texture; }
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { GTAOPass } from 'three/addons/postprocessing/GTAOPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+// GFX mode: outdoor sky environment, finer shadows, ambient occlusion, bloom, colour grading + vignette
+export const GFX = new URLSearchParams(location.search).has('gfx') || !!META.gfx;
+export const GFXOPT = Object.assign({ ao: true, bloom: 0, bloomThr: 0.96, bloomRad: 0.25, vignette: 0.26, sat: 1.14, contrast: 1.13, warm: 0, aoHalf: true, hemi: 0.55, sunBoost: 1.45, skyDome: false, sky2d: true, sunDir: [110, 60, 80], sunCol: '#ffd9a8', envInt: 0.7 }, META.gfxopt || {}, JSON.parse(new URLSearchParams(location.search).get('gfxopt') || '{}'));
+if (!GFX || GFXOPT.roomEnv) { const pm = new THREE.PMREMGenerator(renderer); scene.environment = pm.fromScene(new RoomEnvironment(), 0.04).texture; }
+if (GFX) {
+  // gradient sky dome as image-based light: blue zenith, warm bright horizon, green-brown ground bounce
+  const envScene = new THREE.Scene();
+  const g = new THREE.SphereGeometry(100, 48, 24); const col = []; const pos = g.attributes.position;
+  const zen = new THREE.Color('#5d9be8'), hor = new THREE.Color('#fff1d6'), gnd = new THREE.Color('#6b7a45'), c = new THREE.Color();
+  for (let i = 0; i < pos.count; i++) { const y = pos.getY(i) / 100;
+    if (y >= 0) c.copy(hor).lerp(zen, Math.pow(y, 0.6)); else c.copy(hor).lerp(gnd, Math.min(1, -y * 4));
+    col.push(c.r, c.g, c.b); }
+  g.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
+  envScene.add(new THREE.Mesh(g, new THREE.MeshBasicMaterial({ vertexColors: true, side: THREE.BackSide })));
+  const sunDisc = new THREE.Mesh(new THREE.SphereGeometry(9, 16, 8), new THREE.MeshBasicMaterial({ color: new THREE.Color(6, 5.4, 4.4) }));
+  sunDisc.position.set(55, 60, 40); envScene.add(sunDisc);
+  if (!GFXOPT.roomEnv) { const pm = new THREE.PMREMGenerator(renderer); scene.environment = pm.fromScene(envScene, 0.02).texture; }
+  sun.shadow.mapSize.set(4096, 4096); hemi.intensity *= GFXOPT.hemi; sun.intensity *= GFXOPT.sunBoost; sun.color.set(GFXOPT.sunCol); hemi.color.set('#e4efff'); hemi.groundColor.set('#6e6a3c');
+}
+export let composer = null, aoPass = null;
+if (GFX) {
+  const rt = new THREE.WebGLRenderTarget(W, H, { type: THREE.HalfFloatType, samples: 4 });
+  composer = new EffectComposer(renderer, rt); composer.setPixelRatio(1); composer.setSize(W, H);
+  composer.addPass(new RenderPass(scene, camera));
+  if (GFXOPT.ao) { aoPass = new GTAOPass(scene, camera, W, H);
+    aoPass.updateGtaoMaterial({ radius: 1.4, distanceExponent: 1.5, thickness: 2.0, scale: 1.15, samples: 12 });
+    aoPass.updatePdMaterial({ lumaPhi: 10, depthPhi: 2, normalPhi: 3, radius: 6, rings: 2, samples: 12 });
+    aoPass.blendIntensity = 0.9;
+    if (GFXOPT.aoHalf) { const ss = aoPass.setSize.bind(aoPass); aoPass.setSize = (w, h) => ss(Math.round(w / 2), Math.round(h / 2));
+      aoPass.updateGtaoMaterial({ samples: 8 }); aoPass.updatePdMaterial({ samples: 8 }); }
+    composer.addPass(aoPass); }
+  if (GFXOPT.bloom > 0) composer.addPass(new UnrealBloomPass(new THREE.Vector2(W / 2, H / 2), GFXOPT.bloom, GFXOPT.bloomRad, GFXOPT.bloomThr));
+  composer.addPass(new OutputPass());
+}
+// gradient sky dome tinted from the current scene.background colour (keeps per-episode day/night changes)
+let skyDome = null;
+if (GFX && GFXOPT.skyDome) {
+  skyDome = new THREE.Mesh(new THREE.SphereGeometry(2400, 32, 16), new THREE.ShaderMaterial({
+    side: THREE.BackSide, depthWrite: false, fog: false,
+    uniforms: { base: { value: new THREE.Color() } },
+    vertexShader: 'varying vec3 vp; void main(){ vp = normalize(position); gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }',
+    fragmentShader: `uniform vec3 base; varying vec3 vp;
+      void main(){ float h = clamp(vp.y, -0.1, 1.0);
+        vec3 zen = base * vec3(0.55, 0.72, 1.0) * 0.92;
+        vec3 hor = mix(base, vec3(1.0, 0.93, 0.82), 0.45);
+        vec3 c = mix(hor, zen, pow(max(h, 0.0), 0.55));
+        gl_FragColor = vec4(c, 1.0);
+        #include <colorspace_fragment>
+      }` }));
+  skyDome.renderOrder = -1; skyDome.frustumCulled = false; scene.add(skyDome);
+}
+const _hv = new THREE.Vector3(), _fw = new THREE.Vector3();
+function gfxSky(bg) {
+  // 2D gradient sky behind the (transparent) 3D render: not tone-mapped, so it stays clean and saturated
+  camera.getWorldDirection(_fw); _fw.y = 0; if (_fw.lengthSq() < 1e-6) _fw.set(0, 0, -1); _fw.normalize();
+  _hv.copy(camera.position).addScaledVector(_fw, 2000).project(camera);
+  const hy = clamp((1 - _hv.y) / 2, -0.5, 1.5) * H;
+  const b = bg.clone(); const hsl = {}; b.getHSL(hsl, THREE.SRGBColorSpace);
+  const zen = new THREE.Color().setHSL(hsl.h, Math.min(1, hsl.s * 1.05), hsl.l * 0.78, THREE.SRGBColorSpace);
+  const mid = new THREE.Color().setHSL(hsl.h, hsl.s, Math.min(0.95, hsl.l * 1.0), THREE.SRGBColorSpace);
+  const hor = new THREE.Color().setHSL(hsl.h, hsl.s * 0.55, Math.min(0.97, hsl.l * 1.08 + 0.04), THREE.SRGBColorSpace).lerp(new THREE.Color('#ffe7c4'), 0.28);
+  const g = ctx.createLinearGradient(0, hy - H * 0.9, 0, hy + 10);
+  g.addColorStop(0, '#' + zen.getHexString(THREE.SRGBColorSpace)); g.addColorStop(0.55, '#' + mid.getHexString(THREE.SRGBColorSpace));
+  g.addColorStop(1, '#' + hor.getHexString(THREE.SRGBColorSpace));
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+}
+function gfxPre() {
+  if (GFXOPT.sky2d) { const bg = scene.background; if (!bg || !bg.isColor) return null; scene.background = null; renderer.setClearColor(0x000000, 0); return bg; }
+  if (!skyDome) return null;
+  const bg = scene.background; if (!bg || !bg.isColor) { skyDome.visible = false; return null; }
+  skyDome.visible = true; skyDome.material.uniforms.base.value.copy(bg); skyDome.position.copy(camera.position);
+  scene.background = null; return bg;
+}
+export function gfxVignette() {
+  if (!GFX || GFXOPT.vignette <= 0) return;
+  const gr = ctx.createRadialGradient(W / 2, H * 0.48, H * 0.28, W / 2, H * 0.5, H * 0.72);
+  gr.addColorStop(0, 'rgba(0,0,0,0)'); gr.addColorStop(1, `rgba(10,5,0,${GFXOPT.vignette})`);
+  ctx.save(); ctx.fillStyle = gr; ctx.fillRect(0, 0, W, H);
+  if (GFXOPT.warm > 0) { ctx.globalCompositeOperation = 'soft-light'; ctx.fillStyle = `rgba(255,170,90,${GFXOPT.warm * 2})`; ctx.fillRect(0, 0, W, H); }
+  ctx.restore();
+}
 
 // ---------------- textures & materials ----------------
 export function canvasTex(w, h, draw, rep) {
@@ -283,7 +368,7 @@ export function makeCam(keys, poseFn) {
 export function applyCam(c, t, shake = 0) {
   camera.position.copy(c.p).add(new THREE.Vector3(Math.sin(t * 0.37) * 0.6 + shake * Math.sin(t * 61), Math.sin(t * 0.29) * 0.4 + shake * Math.sin(t * 47 + 1), shake * Math.sin(t * 53 + 2)));
   camera.lookAt(c.l);
-  sun.position.copy(c.l).add(new THREE.Vector3(70, 140, 45)); sun.target.position.copy(c.l); sun.target.updateMatrixWorld();
+  sun.position.copy(c.l).add(GFX ? new THREE.Vector3(...GFXOPT.sunDir) : new THREE.Vector3(70, 140, 45)); sun.target.position.copy(c.l); sun.target.updateMatrixWorld();
 }
 
 // ---------------- HUD ----------------
@@ -438,12 +523,16 @@ export function start(update, hud) {
     let tw = t;
     if (rewinding) { const u = (t - tRew0) / (tRew1 - tRew0); tw = lerp(tRew0 - 0.05, REW_TARGET, u < 0.5 ? 2 * u * u : 1 - Math.pow(-2 * u + 2, 2) / 2); }
     update(tw);
-    renderer.render(scene, camera);
+    const _bg = GFX ? gfxPre() : null;
+    if (composer) composer.render(); else renderer.render(scene, camera);
+    if (_bg) scene.background = _bg;
     ctx.save();
     const rw = (t > tRew0 && t < tRew1) ? win(t, tRew0, tRew1, 0.15) : 0;
-    ctx.filter = rw > 0 ? `grayscale(${0.7 * rw}) contrast(${1 + 0.25 * rw}) saturate(${1 - 0.5 * rw})` : 'saturate(1.12) contrast(1.04)';
+    ctx.filter = rw > 0 ? `grayscale(${0.7 * rw}) contrast(${1 + 0.25 * rw}) saturate(${1 - 0.5 * rw})` : (GFX ? `saturate(${GFXOPT.sat}) contrast(${GFXOPT.contrast})` : 'saturate(1.12) contrast(1.04)');
+    if (_bg && GFXOPT.sky2d) gfxSky(_bg);
     ctx.drawImage(renderer.domElement, 0, 0);
     ctx.restore();
+    gfxVignette();
     if (!clean) { rewindFx(t);
     if (!rewinding) hud(t);
     standardHud(t);

@@ -49,6 +49,14 @@ episodes – copy the structure of the closest one.
 - User praised Q32 fire-breather and Q33 tortoise as the quality bar. Q31 bears was "not
   creative enough" – avoid plain/predictable solutions.
 - Characters with personality, payoff gags, a clear funny final image.
+- **GRAPHICS (3 Nov 2026, user wants beautiful light & ambience):** every new episode sets
+  `"gfx": true` in script.json `meta` (enables GFX mode in common.js: 2D gradient sky that keeps the
+  per-scene background colour, low warm golden sun with long shadows, half-res GTAO ambient occlusion,
+  colour grading + vignette). Tune per scene with `meta.gfxopt` (e.g. `{"sunDir":[110,60,80],
+  "sunCol":"#ffd9a8","contrast":1.13,"vignette":0.26}`); night/indoor scenes can pick a different
+  sunDir/colour. Choose a lighting mood that fits the story (golden afternoon, sunset, blue hour…).
+  Bloom is OFF on purpose (it breaks the transparent sky). Renders take ~2x longer (~90 min/episode),
+  so queue both episodes early. Check stills: shadows must not hide faces/gags.
 - SFX must NEVER cover the narrator. Camera smooth and wide, subject always readable; no
   flicker, no objects blocking shots (check pillars/hedges/houses in stills).
 

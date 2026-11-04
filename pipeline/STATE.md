@@ -1,15 +1,17 @@
 # Plot Twist Traffic – state
 
-Last published Q: **33** (Q32 posts 2026-11-03 15:30, Q33 posts 2026-11-03 18:00)
-Next episode folder: ep39 = Q34
-Announced in last outro (must be next video): **A knight on horseback in your blind spot** (lane change / blind spot)
+Last published Q: **35** (Q34 posts 2026-11-04 15:30, Q35 posts 2026-11-04 18:00)
+Next episode folder: ep41 = Q36
+Announced in last outro (must be next video): **The roadworks STOP/GO man is a parrot** (roadworks)
 STYLE: from Q34 back to the OLD opening style (no driving-tip/rule intro), see RUNBOOK §2. Opening references: ep32, ep31.
-Then from IDEAS.md new-direction list: crocodile kerb (parking), parrot STOP/GO man (roadworks), watermelon lorry (hill start), ducklings (zebra crossing), ice-cream van (emergency lane), octopus car wash, reindeer sleigh (December).
+Then from IDEAS.md new-direction list: watermelon lorry (hill start), ducklings (zebra crossing), ice-cream van (emergency lane), octopus car wash, reindeer sleigh (December).
 
 Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day's two videos.
 
 ## Performance notes
-- (fill in from Metricool analytics each run)
+- 2026-11-03 (TikTok views, last ~14 days): best ~5k = Q29 treadmill, Q28 fashion photographer, Q26 sumo parking, Q21 dragon parking (all mystery/twist openings, characters with personality; parking + big characters work).
+  Weak ~1.1k: Q30 racehorses, Q31 bears (driving-tip style intro), Q25 goose, Q23 night glare. -> old twist-style opening confirmed; parking episodes with a big creature do well.
+- YouTube Shorts flat ~1.0-1.7k for all; best: goose (1.7k), moose (1.7k), dragon (1.5k). Avg view ~13-28 s.
 
 ## History (folder | Q | hook)
 - ep2 | Q2 | There's just one problem. The other lane is full of tanks. And they're all looking at you. What do y
@@ -49,3 +51,5 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - ep36 | Q31 | Perfect gap. Just one problem: in front and behind, there's a sleeping bear. What do you do?
 - ep37 | Q32 | But at the pump next to you, a circus fire-breather is filling up. And he has the hiccups. What do y
 - ep38 | Q33 | But today, the one coming from the right is a giant tortoise. Top speed: one metre per minute. What 
+- ep39 | Q34 | In your blind spot rides a knight in shining armour. With a very long lance. What do you do?
+- ep40 | Q35 | But the kerb just yawned. It's a sleeping crocodile. What do you do?

@@ -110,3 +110,10 @@ episodes – copy the structure of the closest one.
 ## 5. If something goes wrong
 - Only one episode finished in time → schedule it, report the other.
 - Never post a broken video (black frames, missing audio, wrong length). Check with ffprobe + sheet.
+
+## 6. Lessons (Nov 3 run)
+- `WT(seg, word)` matches by prefix: "you" hits "your" first -> use `WT(seg, 'you', 1)`.
+- TTS word timings can be badly off after a comma (ep40 right3); check `audio/timings.json` vs the wav envelope and fix by hand, then rerun timeline2 + mix.
+- 9:16 frame is narrow (horizontal half-FOV ~11.6°): put the camera roughly in line with subject pairs (behind/above), not beside them.
+- Static props near camera paths (oncoming cars, parked cars at the gap ends) block shots – leave room for the camera.
+- mix_ep.py now has `fanfare`, `clang`, `chomp`, `burp` cues and a `gallop` bed.

@@ -335,6 +335,32 @@ def sneak_bed(d):
         t_ += 0.2; k += 1
     return out
 LIB["alarm"] = alarm_sfx; LIB["splat"] = splat_sfx
+def fanfare_sfx():
+    o = np.zeros(int(1.9*SR)); seq = [(523.3, 0.0, 0.14), (523.3, 0.16, 0.14), (523.3, 0.32, 0.14), (659.3, 0.5, 0.3), (523.3, 0.85, 0.16), (659.3, 1.03, 0.16), (784.0, 1.22, 0.62)]
+    for f, t0, d in seq:
+        x = tt(d); ph = 2*np.pi*f*x*(1 + 0.004*np.sin(2*np.pi*6*x)); s_ = sum((0.6/k) * np.sin(k*ph) for k in range(1, 7)); s_ = lp(s_, 4200) * env(d, 0.012, 0.08)
+        j = int(t0*SR); n = min(len(s_), len(o)-j); o[j:j+n] += s_[:n]
+    return o * 0.75
+def clang_sfx():
+    d = 0.9; x = tt(d); s_ = sum(np.sin(2*np.pi*f*x) * np.exp(-x*k) for f, k in [(523, 5), (1187, 6), (1903, 8), (2711, 10)]) / 3
+    return (s_ + bp(rng.standard_normal(len(x)), 2000, 8000) * np.exp(-x*40) * 0.6) * 0.8
+def chomp_sfx():
+    o = np.zeros(int(0.45*SR)); c1 = bp(rng.standard_normal(int(0.08*SR)), 300, 3000) * env(0.08, 0.002, 0.05) * 1.3; o[:len(c1)] += c1
+    th = thud()[: int(0.3*SR)] * 0.7; j = int(0.05*SR); n = min(len(th), len(o)-j); o[j:j+n] += th[:n]; return o
+def burp_sfx(d=0.8):
+    x = tt(d); f = 95 + 25*np.sin(2*np.pi*3*x); ph = 2*np.pi*np.cumsum(f)/SR
+    return lp(np.sign(np.sin(ph)) * 0.5 + bp(rng.standard_normal(len(x)), 80, 600) * 0.6, 900) * env(d, 0.03, 0.25) * 1.2
+LIB["fanfare"] = fanfare_sfx; LIB["clang"] = clang_sfx; LIB["chomp"] = chomp_sfx; LIB["burp"] = burp_sfx
+def gallop_bed(d):
+    out = np.zeros(int(d * SR)); t_ = 0.0
+    while t_ < d - 0.3:
+        for k, off in enumerate([0.0, 0.09, 0.17]):
+            th = thud()[: int(0.12*SR)] * 0.45; c = clack_one() * 0.7; i = int((t_ + off) * SR)
+            for sg in (th, c):
+                n = min(len(sg), len(out) - i)
+                if n > 0: out[i:i+n] += sg[:n] * (0.7 + 0.3 * rng.random())
+        t_ += 0.42
+    return out
 SC = json.load(open(os.path.join(EP, "script.json")))
 for cue in SC.get("cues", []):
     seg, word, name, g = cue[:4]; off = cue[4] if len(cue) > 4 else 0
@@ -344,7 +370,7 @@ for bed in SC.get("beds", []):
     ta = TL["segs"][a_[0]]["start"] if isinstance(a_, list) else a_; tb = TL["segs"][b_[0]]["end"] if isinstance(b_, list) else b_
     d = max(0.5, tb - ta)
     if kind == "ticker": ticker(ta, tb, g); continue
-    sig = {"lava": lambda d: lp(rng.standard_normal(int(d*SR)), 180) * 2.5, "ufo": ufo_hum, "purr": purr, "engine": lambda d: engine(d, 45, 55, 400), "march": march_bed, "clack": clack_bed, "sneak": sneak_bed, "wind": lambda d: lp(rng.standard_normal(int(d*SR)), 600) * 0.8}[kind](d)
+    sig = {"lava": lambda d: lp(rng.standard_normal(int(d*SR)), 180) * 2.5, "ufo": ufo_hum, "purr": purr, "engine": lambda d: engine(d, 45, 55, 400), "march": march_bed, "clack": clack_bed, "sneak": sneak_bed, "gallop": gallop_bed, "wind": lambda d: lp(rng.standard_normal(int(d*SR)), 600) * 0.8}[kind](d)
     add(sfx, ta, sig * np.minimum(1, tt(d)/0.5)[:len(sig)] * np.minimum(1, (d - tt(d))/0.5)[:len(sig)], g)
 for blp in SC.get("bloops", []):  # [start, end, rate, gain]
     t_ = blp[0]

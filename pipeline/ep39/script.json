@@ -1,0 +1,46 @@
+{
+ "voice": "bm_george",
+ "meta": {"q": 34, "next": ["THE KERB IS A", "SLEEPING CROCODILE"], "gfx": true,
+  "gfxopt": {"sunDir": [-90, 70, 60], "sunCol": "#ffd9a8", "hemi": 0.8, "vignette": 0.22}},
+ "segments": [
+  {"id": "hook1", "text": "You're stuck behind a slow lorry. Time to overtake. Mirror: empty. But what's that sound?", "gap": 0.4},
+  {"id": "hook2", "text": "In your blind spot rides a knight in shining armour. With a very long lance. What do you do?", "gap": 0.9},
+  {"id": "wrong1", "text": "Most drivers just swerve over, without looking.", "gap": 0.4},
+  {"id": "wrong2", "text": "Big mistake. To a knight, cutting in is an insult. Visor down. Lance forward. It's a joust!", "gap": 0.4},
+  {"id": "wrong3", "text": "One poke, and your car is on his lance, like a kebab. He gallops off to his castle, and hangs it on the wall. Trophy number twelve.", "gap": 0.9},
+  {"id": "wrong4", "text": "Exam failed.", "gap": 1.15},
+  {"id": "right1", "text": "Here's how you do it properly.", "gap": 0.3},
+  {"id": "right2", "text": "Mirror. Then a quick look over your shoulder. And there he is.", "gap": 0.4},
+  {"id": "right3", "text": "So don't cut in. Switch on your indicator. To a knight, that's a royal signal.", "gap": 0.4},
+  {"id": "right4", "text": "Fanfare! He lifts his visor, bows, and lets you in.", "gap": 0.4},
+  {"id": "right5", "text": "Now you overtake the lorry, with your very own royal escort.", "gap": 0.6},
+  {"id": "right6", "text": "Blind spot: checked.", "gap": 0.6},
+  {"id": "right7", "text": "Exam passed.", "gap": 1.3},
+  {"id": "outro", "text": "Next exam question: the kerb is a sleeping crocodile. Follow, so you don't miss it.", "gap": 1.2}
+ ],
+ "cues": [
+  ["hook1", "sound", "clack", 0.5, 0.35],
+  ["hook2", "knight", "neigh", 0.25, 0.1],
+  ["wrong1", "swerve", "whoosh", 0.3],
+  ["wrong2", "insult", "neigh", 0.25],
+  ["wrong2", "Visor", "clang", 0.3, 0.15],
+  ["wrong2", "joust", "fanfare", 0.15],
+  ["wrong3", "poke", "crack", 0.3],
+  ["wrong3", "kebab", "boing", 0.15],
+  ["wrong3", "hangs", "thud", 0.3, 0.2],
+  ["wrong3", "Trophy", "ding", 0.3],
+  ["right2", "shoulder", "whoosh", 0.15],
+  ["right2", "there", "pop", 0.2],
+  ["right3", "indicator", "blinkfx", 0.3],
+  ["right3", "royal", "chime", 0.2],
+  ["right4", "Fanfare", "fanfare", 0.22],
+  ["right4", "visor", "clang", 0.15],
+  ["right5", "escort", "neigh", 0.15],
+  ["right6", "checked", "chime", 0.3]
+ ],
+ "beds": [
+  ["engine", 0.0, 3.5, 0.04],
+  ["gallop", ["hook2"], ["wrong3"], 0.10],
+  ["gallop", ["right2"], ["right6"], 0.08]
+ ]
+}

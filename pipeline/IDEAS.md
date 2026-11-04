@@ -77,3 +77,6 @@ Skipped: Q30 dominoes, Q31 spinning top (too unrealistic / weak). Proposed list 
 12. Deer-crossing sign – reindeer with a sleigh (December)
 
 ## STYLE SWITCH (3 Nov 2026, user): from Q34 back to the old opening style (no driving-tip intro, straight to the twist like Q29 treadmill). Keep this new ideas list.
+
+Done (Nov 4): Q34 knight in blind spot (ep39), Q35 crocodile kerb (ep40). Q35 announces next: roadworks STOP/GO man is a parrot.
+Remaining order: 7 parrot STOP/GO (announced), 8 watermelon lorry hill start, 9 ducklings zebra crossing, 10 ice-cream van emergency lane, 11 octopus car wash, 12 reindeer sleigh (December).

@@ -1,0 +1,51 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 36,
+  "next": ["THE LORRY BEHIND YOU", "IS FULL OF WATERMELONS"],
+  "gfx": true,
+  "gfxopt": {"sunDir": [90, 75, 70], "sunCol": "#ffd9a8", "hemi": 0.85, "vignette": 0.2}
+ },
+ "segments": [
+  {"id": "hook1", "text": "Roadworks ahead. One lane. Someone with a sign tells you when to go.", "gap": 0.4},
+  {"id": "hook2", "text": "But today, that someone is a parrot. What do you do?", "gap": 0.9},
+  {"id": "wrong1", "text": "Most drivers get impatient, and honk at the parrot.", "gap": 0.4},
+  {"id": "wrong2", "text": "Big mistake. Parrots copy everything. Honk! Honk! And then, the whole family flies in. Honking.", "gap": 0.4},
+  {"id": "wrong3", "text": "They think your shiny car is a giant egg. So they carry it up, into their nest, on top of the crane. Now you have to sit on it. For three weeks.", "gap": 0.9},
+  {"id": "wrong4", "text": "Exam failed.", "gap": 1.15},
+  {"id": "right1", "text": "Here's how you do it properly.", "gap": 0.3},
+  {"id": "right2", "text": "Don't honk. Wind down the window, and offer him a cracker.", "gap": 0.4},
+  {"id": "right3", "text": "Now he's your best friend. So teach him one tiny word: please.", "gap": 0.4},
+  {"id": "right4", "text": "He spins his sign to GO. And the giant digger on the other side? It gets a very stern STOP.", "gap": 0.4},
+  {"id": "right5", "text": "Drive through slowly. He even waves you off with his wing.", "gap": 0.6},
+  {"id": "right6", "text": "Parrot: promoted to site manager.", "gap": 0.6},
+  {"id": "right7", "text": "Exam passed.", "gap": 1.3},
+  {"id": "outro", "text": "Next exam question: the lorry behind you is full of watermelons. Follow, so you don't miss it.", "gap": 1.2}
+ ],
+ "cues": [
+  ["hook1", "sign", "clack", 0.3, 0.2],
+  ["hook2", "parrot", "chirp", 0.35, 0.3],
+  ["wrong1", "honk", "honk", 0.35],
+  ["wrong2", "copy", "chirp", 0.3],
+  ["wrong2", "Honk", "honk", 0.35],
+  ["wrong2", "Honk", "honk3", 0.3, 0.6],
+  ["wrong2", "family", "whoosh", 0.25],
+  ["wrong2", "Honking", "honk3", 0.3],
+  ["wrong3", "egg", "boing", 0.2],
+  ["wrong3", "carry", "whoosh", 0.25],
+  ["wrong3", "crane", "thud", 0.3],
+  ["wrong3", "sit", "squeak", 0.25],
+  ["right2", "window", "servo", 0.15],
+  ["right2", "cracker", "crack", 0.25, 0.3],
+  ["right3", "friend", "chirp", 0.3],
+  ["right3", "please", "chime", 0.25, 0.3],
+  ["right4", "spins", "whoosh", 0.2],
+  ["right4", "STOP", "thud", 0.3],
+  ["right5", "wing", "chirp", 0.25],
+  ["right6", "manager", "fanfare", 0.2]
+ ],
+ "beds": [
+  ["engine", 0.0, 3.5, 0.035],
+  ["engine", ["right5"], ["right5"], 0.04]
+ ]
+}

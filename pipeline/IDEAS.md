@@ -83,3 +83,18 @@ Remaining order: 7 parrot STOP/GO (announced), 8 watermelon lorry hill start, 9 
 
 Done (Nov 6): Q36 parrot STOP/GO man (ep41), Q37 watermelon lorry hill start (ep42). Q37 announces next: duck with endless ducklings (zebra crossing).
 Remaining order: 9 ducklings zebra crossing (announced), 10 ice-cream van emergency lane, 11 octopus car wash, 12 reindeer sleigh (December).
+
+Done (Nov 7): Q38 duck with endless ducklings – it's a circle, Mum is lost, lend her your sat-nav (ep43); Q39 ice-cream van in the emergency lane – milkshake flood / thank-you cone party hats (ep44). Q39 announces next: the car wash is a giant octopus.
+Remaining order: 11 octopus car wash (announced), 12 reindeer sleigh (December), then the new list below.
+
+## New list (Nov 6, same style: everyday situation + ONE crazy element, big character; never two of the same category in a row)
+1. Car wash – the brushes are a giant octopus (announced)
+2. Deer-crossing sign – reindeer with a sleigh (December)
+3. Parking garage – the barrier arm is a giraffe's neck
+4. Roundabout – a sheep flock with a sheepdog who directs traffic
+5. Tunnel – a sleeping dragon snoring fire at the exit
+6. Level crossing – the train is a long caterpillar
+7. Drive-through – the window is a T-rex's mouth
+8. Overtaking a tractor – the farmer is a giant hen sitting on the trailer of eggs
+9. Petrol station – the pump nozzle is an elephant's trunk
+10. School zone – the lollipop lady is a snowman (winter)

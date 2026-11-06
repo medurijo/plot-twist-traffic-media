@@ -1,0 +1,53 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 39,
+  "next": ["THE CAR WASH IS", "A GIANT OCTOPUS"],
+  "gfx": true,
+  "gfxopt": {"sunDir": [-60, 85, -40], "sunCol": "#ffd2a0", "hemi": 0.9, "vignette": 0.2}
+ },
+ "segments": [
+  {"id": "hook1", "text": "Traffic jam on the motorway. Then you hear a siren.", "gap": 0.4},
+  {"id": "hook2", "text": "But it's not an ambulance. It's an ice-cream van. And its emergency? It's all melting. What do you do?", "gap": 0.9},
+  {"id": "wrong1", "text": "Most drivers don't move over. They just wave, and order a cone.", "gap": 0.4},
+  {"id": "wrong2", "text": "Big mistake. The van gets stuck. The sun gets hotter. And the freezer gives up.", "gap": 0.4},
+  {"id": "wrong3", "text": "Boom! A giant wave of melted ice cream floods the motorway. Now you're stuck in a milkshake. With sprinkles.", "gap": 0.9},
+  {"id": "wrong4", "text": "Exam failed.", "gap": 1.15},
+  {"id": "right1", "text": "Here's how you do it properly.", "gap": 0.3},
+  {"id": "right2", "text": "Make an emergency lane. Left lane goes left. Right lane goes right.", "gap": 0.4},
+  {"id": "right3", "text": "The van zooms through. And to say thank you, it fires a cone at every car.", "gap": 0.4},
+  {"id": "right4", "text": "Strawberry. Chocolate. Pistachio. Every car gets a party hat.", "gap": 0.4},
+  {"id": "right5", "text": "Even the lorry gets one. Extra large.", "gap": 0.5},
+  {"id": "right6", "text": "Emergency over. Nothing melted.", "gap": 0.6},
+  {"id": "right7", "text": "Exam passed.", "gap": 1.3},
+  {"id": "outro", "text": "Next exam question: the car wash is a giant octopus. Follow, so you don't miss it.", "gap": 1.2}
+ ],
+ "cues": [
+  ["hook1", "siren", "jingle", 0.14, 0.3],
+  ["hook2", "ice", "jingle", 0.12, 0.6],
+  ["hook2", "melting", "sizzle", 0.12],
+  ["wrong1", "wave", "chirp", 0.12],
+  ["wrong2", "stuck", "crack", 0.25],
+  ["wrong2", "hotter", "sizzle", 0.15],
+  ["wrong2", "gives", "buzz", 0.15],
+  ["wrong3", "Boom", "boom", 0.45, 0.0],
+  ["wrong3", "wave", "splash", 0.35],
+  ["wrong3", "floods", "waves", 0.18],
+  ["wrong3", "milkshake", "slurp", 0.3],
+  ["wrong3", "sprinkles", "plink", 0.2],
+  ["right2", "Left", "whoosh", 0.18, 0.3],
+  ["right2", "Right", "whoosh", 0.18, 0.3],
+  ["right3", "zooms", "jingle", 0.15],
+  ["right3", "fires", "pop", 0.3, 0.2],
+  ["right4", "Strawberry", "pop", 0.25],
+  ["right4", "Chocolate", "pop", 0.25],
+  ["right4", "Pistachio", "pop", 0.25],
+  ["right4", "party", "chime", 0.2],
+  ["right5", "lorry", "whoosh", 0.2],
+  ["right5", "Extra", "boing", 0.25],
+  ["right6", "melted", "fanfare", 0.18]
+ ],
+ "beds": [
+  ["engine", 0.0, 9.0, 0.03]
+ ]
+}

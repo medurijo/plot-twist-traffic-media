@@ -350,6 +350,16 @@ def chomp_sfx():
 def burp_sfx(d=0.8):
     x = tt(d); f = 95 + 25*np.sin(2*np.pi*3*x); ph = 2*np.pi*np.cumsum(f)/SR
     return lp(np.sign(np.sin(ph)) * 0.5 + bp(rng.standard_normal(len(x)), 80, 600) * 0.6, 900) * env(d, 0.03, 0.25) * 1.2
+
+def jingle_sfx(d=2.6):
+    # ice-cream van tune: bright music-box notes with a little siren-like wobble
+    notes = [72, 76, 79, 76, 72, 74, 77, 74, 72, 79, 84, 79]; nd = d / len(notes); out = np.zeros(int(d * SR))
+    for k, n in enumerate(notes):
+        f = 440 * 2 ** ((n - 69) / 12); x = tt(nd * 1.6); fw = f * (1 + 0.012 * np.sin(2*np.pi*6*x))
+        ph = np.cumsum(fw) / SR; sg = (np.sin(2*np.pi*ph) + 0.3*np.sin(4*np.pi*ph) + 0.15*np.sin(6*np.pi*ph)) * env(nd * 1.6, 0.004, 0.18)
+        i = int(k * nd * SR); m = min(len(sg), len(out) - i); out[i:i+m] += sg[:m]
+    return out * 0.7
+LIB["jingle"] = jingle_sfx
 LIB["fanfare"] = fanfare_sfx; LIB["clang"] = clang_sfx; LIB["chomp"] = chomp_sfx; LIB["burp"] = burp_sfx
 def gallop_bed(d):
     out = np.zeros(int(d * SR)); t_ = 0.0

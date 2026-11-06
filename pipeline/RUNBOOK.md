@@ -124,3 +124,10 @@ episodes – copy the structure of the closest one.
 - Slopes: build the world in a tilted `hill` group (ep42) and convert camera keys with `hill.localToWorld`; vertical props go in an `upright()` sub-group.
 - Emissive traffic-light lamps: pure colours, intensity 1.0, `toneMapped:false` – higher values clip to orange/white.
 - Two renders + stills on 2 CPUs: ~10–12 min per pair of 5 s parts; waitrun.sh stops after ~115 min, relaunch it if jobs remain.
+
+## 8. Lessons (Nov 6 run, ep43/ep44)
+- World state that is a pure function of t (ep43 duck ring) jumps at the rewind end (state(REW_TARGET) -> state(right1.start)): hide it with a camera `cut(tRew1, …)`.
+- Never put the camera inside a car: the roof's underside is visible (dark band). Shoot close-ups from outside, 3/4 front.
+- `bubble()` in ep43/ep44 clamps its x so long texts don't leave the frame – copy that version.
+- mix_ep.py has a new `jingle` cue (ice-cream-van tune). ep44 has a monotone-cubic `mono()` helper for smooth keyed motion and a vertex-animated flood plane.
+- Telephoto shots (fov 13–18) are great for following one small character (hat duckling) or showing something far away.

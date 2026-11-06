@@ -1,10 +1,10 @@
 # Plot Twist Traffic – state
 
-Last published Q: **37** (Q36 posts 2026-11-06 15:30, Q37 posts 2026-11-06 18:00; no posts on 2026-11-05 – that day's run did not happen)
-Next episode folder: ep43 = Q38
-Announced in last outro (must be next video): **A duck crosses the road with endless ducklings** (zebra crossing)
+Last published Q: **39** (Q38 posts 2026-11-07 15:30, Q39 posts 2026-11-07 18:00)
+Next episode folder: ep45 = Q40
+Announced in last outro (must be next video): **The car wash is a giant octopus**
 STYLE: from Q34 back to the OLD opening style (no driving-tip/rule intro), see RUNBOOK §2. Opening references: ep32, ep31.
-Then from IDEAS.md new-direction list: ice-cream van (emergency lane), octopus car wash, reindeer sleigh (December); list nearly empty -> invent new ones in the same style.
+Then from IDEAS.md: reindeer sleigh (December) and the new Nov-6 list.
 
 Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day's two videos.
 
@@ -14,6 +14,8 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - YouTube Shorts flat ~1.0-1.7k for all; best: goose (1.7k), moose (1.7k), dragon (1.5k). Avg view ~13-28 s.
 
 - 2026-11-05 (TikTok views): Q34 knight blind spot 5.1k (old twist opening + heroic character = back at the top level, confirms the style switch), Q35 crocodile 1.7k after 1 day. Q32 fire-breather 1.1k, Q33 tortoise 0.9k (driving-tip intros) stay weak. Top tier ~5k: knight, treadmill, fashion photographer, sumo.
+
+- 2026-11-06 (TikTok views): Q34 knight 5.3k, Q35 crocodile 4.3k (both old twist opening), Q29 treadmill / Q28 photographer / Q26 sumo / Q21 dragon ~5.0-5.2k. Driving-tip intros Q30-Q33 stay ~1.0-1.3k. Q36/Q37 posted today, no data yet. -> keep: one-line everyday opening + big character with personality.
 
 ## History (folder | Q | hook)
 - ep2 | Q2 | There's just one problem. The other lane is full of tanks. And they're all looking at you. What do y
@@ -57,3 +59,5 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - ep40 | Q35 | But the kerb just yawned. It's a sleeping crocodile. What do you do?
 - ep41 | Q36 | But today, that someone is a parrot. What do you do?
 - ep42 | Q37 | And right behind you: a lorry. Full of watermelons. Ten thousand of them. What do you do?
+- ep43 | Q38 | But behind her: ducklings. And more ducklings. And more. The line never ends. What do you do?
+- ep44 | Q39 | But it's not an ambulance. It's an ice-cream van. And its emergency? It's all melting. What do you do?

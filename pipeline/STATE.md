@@ -1,10 +1,10 @@
 # Plot Twist Traffic – state
 
-Last published Q: **35** (Q34 posts 2026-11-04 15:30, Q35 posts 2026-11-04 18:00)
-Next episode folder: ep41 = Q36
-Announced in last outro (must be next video): **The roadworks STOP/GO man is a parrot** (roadworks)
+Last published Q: **37** (Q36 posts 2026-11-06 15:30, Q37 posts 2026-11-06 18:00; no posts on 2026-11-05 – that day's run did not happen)
+Next episode folder: ep43 = Q38
+Announced in last outro (must be next video): **A duck crosses the road with endless ducklings** (zebra crossing)
 STYLE: from Q34 back to the OLD opening style (no driving-tip/rule intro), see RUNBOOK §2. Opening references: ep32, ep31.
-Then from IDEAS.md new-direction list: watermelon lorry (hill start), ducklings (zebra crossing), ice-cream van (emergency lane), octopus car wash, reindeer sleigh (December).
+Then from IDEAS.md new-direction list: ice-cream van (emergency lane), octopus car wash, reindeer sleigh (December); list nearly empty -> invent new ones in the same style.
 
 Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day's two videos.
 
@@ -12,6 +12,8 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - 2026-11-03 (TikTok views, last ~14 days): best ~5k = Q29 treadmill, Q28 fashion photographer, Q26 sumo parking, Q21 dragon parking (all mystery/twist openings, characters with personality; parking + big characters work).
   Weak ~1.1k: Q30 racehorses, Q31 bears (driving-tip style intro), Q25 goose, Q23 night glare. -> old twist-style opening confirmed; parking episodes with a big creature do well.
 - YouTube Shorts flat ~1.0-1.7k for all; best: goose (1.7k), moose (1.7k), dragon (1.5k). Avg view ~13-28 s.
+
+- 2026-11-05 (TikTok views): Q34 knight blind spot 5.1k (old twist opening + heroic character = back at the top level, confirms the style switch), Q35 crocodile 1.7k after 1 day. Q32 fire-breather 1.1k, Q33 tortoise 0.9k (driving-tip intros) stay weak. Top tier ~5k: knight, treadmill, fashion photographer, sumo.
 
 ## History (folder | Q | hook)
 - ep2 | Q2 | There's just one problem. The other lane is full of tanks. And they're all looking at you. What do y
@@ -53,3 +55,5 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - ep38 | Q33 | But today, the one coming from the right is a giant tortoise. Top speed: one metre per minute. What 
 - ep39 | Q34 | In your blind spot rides a knight in shining armour. With a very long lance. What do you do?
 - ep40 | Q35 | But the kerb just yawned. It's a sleeping crocodile. What do you do?
+- ep41 | Q36 | But today, that someone is a parrot. What do you do?
+- ep42 | Q37 | And right behind you: a lorry. Full of watermelons. Ten thousand of them. What do you do?

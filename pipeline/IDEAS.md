@@ -80,3 +80,6 @@ Skipped: Q30 dominoes, Q31 spinning top (too unrealistic / weak). Proposed list 
 
 Done (Nov 4): Q34 knight in blind spot (ep39), Q35 crocodile kerb (ep40). Q35 announces next: roadworks STOP/GO man is a parrot.
 Remaining order: 7 parrot STOP/GO (announced), 8 watermelon lorry hill start, 9 ducklings zebra crossing, 10 ice-cream van emergency lane, 11 octopus car wash, 12 reindeer sleigh (December).
+
+Done (Nov 6): Q36 parrot STOP/GO man (ep41), Q37 watermelon lorry hill start (ep42). Q37 announces next: duck with endless ducklings (zebra crossing).
+Remaining order: 9 ducklings zebra crossing (announced), 10 ice-cream van emergency lane, 11 octopus car wash, 12 reindeer sleigh (December).

@@ -117,3 +117,10 @@ episodes – copy the structure of the closest one.
 - 9:16 frame is narrow (horizontal half-FOV ~11.6°): put the camera roughly in line with subject pairs (behind/above), not beside them.
 - Static props near camera paths (oncoming cars, parked cars at the gap ends) block shots – leave room for the camera.
 - mix_ep.py now has `fanfare`, `clang`, `chomp`, `burp` cues and a `gallop` bed.
+
+## 7. Lessons (Nov 5 run)
+- Per-shot FOV: return `[pos, look, fov]` from camera keys and set `camera.fov` in update (ep41 telephoto "digger POV" shot uses fov 6–9).
+- InstancedMesh whose instances move far from the origin must have `frustumCulled = false` (flying melons were invisible).
+- Slopes: build the world in a tilted `hill` group (ep42) and convert camera keys with `hill.localToWorld`; vertical props go in an `upright()` sub-group.
+- Emissive traffic-light lamps: pure colours, intensity 1.0, `toneMapped:false` – higher values clip to orange/white.
+- Two renders + stills on 2 CPUs: ~10–12 min per pair of 5 s parts; waitrun.sh stops after ~115 min, relaunch it if jobs remain.

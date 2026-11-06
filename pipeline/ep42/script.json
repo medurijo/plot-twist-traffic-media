@@ -1,0 +1,52 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 37,
+  "next": ["A DUCK CROSSES THE ROAD", "WITH ENDLESS DUCKLINGS"],
+  "gfx": true,
+  "gfxopt": {"sunDir": [-80, 70, 90], "sunCol": "#ffd2a0", "hemi": 0.85, "vignette": 0.2}
+ },
+ "segments": [
+  {"id": "hook1", "text": "A red light. On a very, very steep hill.", "gap": 0.4},
+  {"id": "hook2", "text": "And right behind you: a lorry. Full of watermelons. Ten thousand of them. What do you do?", "gap": 0.9},
+  {"id": "wrong1", "text": "Most drivers let the clutch out too fast, and roll back.", "gap": 0.4},
+  {"id": "wrong2", "text": "Big mistake. Bonk! The lorry wobbles. And ten thousand watermelons jump into the air.", "gap": 0.4},
+  {"id": "wrong3", "text": "They all come down on you. Splat! Splat! Splat! Now your car is a fruit salad. And the light? Still red.", "gap": 0.9},
+  {"id": "wrong4", "text": "Exam failed.", "gap": 1.15},
+  {"id": "right1", "text": "Here's how you do it properly.", "gap": 0.3},
+  {"id": "right2", "text": "Handbrake on. And ask the lorry driver for just one watermelon.", "gap": 0.4},
+  {"id": "right3", "text": "Karate chop it in half, and put the halves behind your back wheels. The world's juiciest wheel chocks.", "gap": 0.4},
+  {"id": "right4", "text": "Green light. Gas, handbrake off, and up you go. Not one centimetre back.", "gap": 0.4},
+  {"id": "right5", "text": "And the lorry driver gets the chocks back. As lunch.", "gap": 0.6},
+  {"id": "right6", "text": "Watermelons: all still on board.", "gap": 0.6},
+  {"id": "right7", "text": "Exam passed.", "gap": 1.3},
+  {"id": "outro", "text": "Next exam question: a duck crosses the road, with endless ducklings. Follow, so you don't miss it.", "gap": 1.2}
+ ],
+ "cues": [
+  ["hook1", "red", "beep", 0.15],
+  ["hook2", "lorry", "honk", 0.2, 0.3],
+  ["wrong1", "roll", "whoosh", 0.2],
+  ["wrong2", "Bonk", "thud", 0.5],
+  ["wrong2", "wobbles", "boing", 0.25],
+  ["wrong2", "jump", "whoosh", 0.3],
+  ["wrong3", "Splat", "splat", 0.45, 0.0],
+  ["wrong3", "Splat", "splat", 0.4, 0.35],
+  ["wrong3", "Splat", "splat", 0.45, 0.7],
+  ["wrong3", "salad", "slurp", 0.25],
+  ["wrong3", "red", "buzz", 0.15, 0.2],
+  ["right2", "Handbrake", "tilt", 0.25],
+  ["right2", "watermelon", "whoosh", 0.2, 0.2],
+  ["right3", "Karate", "whoosh", 0.25, 0.2],
+  ["right3", "chop", "crack", 0.35, 0.15],
+  ["right3", "halves", "pop", 0.25],
+  ["right3", "juiciest", "chime", 0.2],
+  ["right4", "Green", "ding", 0.25],
+  ["right4", "Not", "chime", 0.2],
+  ["right5", "lunch", "chomp", 0.4, 0.3],
+  ["right6", "board", "fanfare", 0.18]
+ ],
+ "beds": [
+  ["engine", 0.0, 8.5, 0.035],
+  ["engine", ["right4"], ["right4"], 0.05]
+ ]
+}

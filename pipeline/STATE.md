@@ -1,8 +1,8 @@
 # Plot Twist Traffic – state
 
-Last published Q: **41** (Q40 posts 2026-11-10 15:30, Q41 posts 2026-11-10 18:00; nothing was scheduled for 11-08/11-09)
-Next episode folder: ep47 = Q42
-Announced in last outro (must be next video): **A sheepdog runs the roundabout** (sheep flock on the roundabout, sheepdog directs traffic)
+Last published Q: **43** (Q42 posts 2026-11-11 15:30, Q43 posts 2026-11-11 18:00)
+Next episode folder: ep49 = Q44
+Announced in last outro (must be next video): **A dragon is sleeping in the tunnel** (tunnel – a sleeping dragon snoring fire at the exit)
 STYLE: from Q34 back to the OLD opening style (no driving-tip/rule intro), see RUNBOOK §2. Opening references: ep32, ep31.
 Then from IDEAS.md: the Nov-6 list (reindeer sleigh saved for December).
 
@@ -18,6 +18,8 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - 2026-11-06 (TikTok views): Q34 knight 5.3k, Q35 crocodile 4.3k (both old twist opening), Q29 treadmill / Q28 photographer / Q26 sumo / Q21 dragon ~5.0-5.2k. Driving-tip intros Q30-Q33 stay ~1.0-1.3k. Q36/Q37 posted today, no data yet. -> keep: one-line everyday opening + big character with personality.
 
 - 2026-11-09 (TikTok views): Q34 knight 5.5k, Q35 crocodile 4.4k stay top; Q38 ducklings 2.6k (best of the new batch: cute animal crowd), Q36 parrot 1.8k, Q37 watermelons 1.0k, Q39 ice-cream van 0.9k (vehicle/object gags weaker than animal characters). -> lean on big animal characters with faces + one clear visual gag (octopus car wash, giraffe barrier).
+
+- 2026-11-10 (TikTok views): Q34 knight 5.5k, Q35 crocodile 4.4k, Q38 ducklings 2.7k, Q36 parrot 1.9k, Q37 watermelons 1.1k, Q39 ice-cream van 1.0k. Q40 octopus / Q41 giraffe posted today, no data yet. Comments stay low (0-3) everywhere. -> keep big animal characters with faces (made Q42 sheepdog + 100 sheep, Q43 caterpillar train).
 
 ## History (folder | Q | hook)
 - ep2 | Q2 | There's just one problem. The other lane is full of tanks. And they're all looking at you. What do y
@@ -65,3 +67,5 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - ep44 | Q39 | But it's not an ambulance. It's an ice-cream van. And its emergency? It's all melting. What do you do?
 - ep45 | Q40 | But then the brushes open an eye. It's a giant octopus. What do you do?
 - ep46 | Q41 | But the barrier isn't a barrier. It's a giraffe. What do you do?
+- ep47 | Q42 | It's a hundred sheep. And the sheepdog is in charge. What do you do?
+- ep48 | Q43 | But it's not a train. It's a caterpillar. And it is very, very long. What do you do?

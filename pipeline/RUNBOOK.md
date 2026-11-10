@@ -140,3 +140,13 @@ episodes – copy the structure of the closest one.
 - Sign boxes/posts at portal frames sit right in camera lines: check every cut for posts/signs between camera and subject (ep45 front/back signs, ep46 deck edges).
 - Stills while two renders run take ~3x longer (sheet.sh can exceed the 2 min tool timeout -> pass a longer timeout).
 
+## 10. Lessons (Nov 10 run, ep47/ep48)
+- `WT()` prefix traps again: 'drive' hits 'drivers', "It's" hits "it's" earlier in the line, 'And' hits ', and' mid-sentence -> grep every WT word against timeline.json and pass k.
+- Fixing word timings in audio/timings.json by word text also hits repeated words ('the') – fix by index.
+- Instanced crowd with per-part local matrices (ep47 `PARTS`: body/head/leg groups, head pitch via neck pivot, legs swing + tuck) works well for 100 animals; sleeping = eye-white y-scale + pupils 0.
+- Co-rotating ring layout with a hole lets the car squeeze into a moving flock (ep47 `A_CAR`).
+- Chain body on a spiral (ep48 `SPIR`, Archimedean spiral by arc length) = a creature curling into a rolling wheel; car as axle, roll = -dist/R.
+- Under-belly camera along the track axis (ep48 x=13, z=0) gives a great "tunnel of legs" shot.
+- Rainbow car: swap body material to a gradient canvas map (+ emissiveMap) and scroll `offset.x`.
+- Thumbnail with the subject high in frame: shift the still down (stretch top sky rows) before make_thumb so the headline does not cover the face.
+

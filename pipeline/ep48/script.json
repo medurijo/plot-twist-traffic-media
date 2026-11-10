@@ -1,0 +1,227 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 43,
+  "next": [
+   "A DRAGON IS SLEEPING",
+   "IN THE TUNNEL"
+  ],
+  "gfx": true,
+  "gfxopt": {
+   "sunDir": [
+    -90,
+    70,
+    75
+   ],
+   "sunCol": "#ffd6a0",
+   "hemi": 0.9,
+   "vignette": 0.2
+  }
+ },
+ "segments": [
+  {
+   "id": "hook1",
+   "text": "Level crossing. Barrier down. Lights flashing. Here comes the train.",
+   "gap": 0.4
+  },
+  {
+   "id": "hook2",
+   "text": "But it's not a train. It's a caterpillar. And it is very, very long. What do you do?",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong1",
+   "text": "Most drivers get impatient. They lift the barrier, and drive under its belly.",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong2",
+   "text": "Big mistake. Caterpillars are ticklish. A hundred little legs start giggling.",
+   "gap": 0.5
+  },
+  {
+   "id": "wrong3",
+   "text": "It curls up into a ball. With you right in the middle. And rolls away, down the track. Next stop: who knows?",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong4",
+   "text": "Exam failed.",
+   "gap": 1.15
+  },
+  {
+   "id": "right1",
+   "text": "Here's how you do it properly.",
+   "gap": 0.3
+  },
+  {
+   "id": "right2",
+   "text": "Engine off. Open the boot. And hand it your picnic blanket.",
+   "gap": 0.4
+  },
+  {
+   "id": "right3",
+   "text": "The caterpillar wraps itself up. Snug as a bug. One giant cocoon, right on the tracks.",
+   "gap": 0.4
+  },
+  {
+   "id": "right4",
+   "text": "Five seconds later. Pop! A giant butterfly.",
+   "gap": 0.4
+  },
+  {
+   "id": "right5",
+   "text": "One flap of its wings, and the barrier flies open. And your car? Covered in rainbow glitter.",
+   "gap": 0.5
+  },
+  {
+   "id": "right6",
+   "text": "Track clear. Prettiest car in town.",
+   "gap": 0.6
+  },
+  {
+   "id": "right7",
+   "text": "Exam passed.",
+   "gap": 1.3
+  },
+  {
+   "id": "outro",
+   "text": "Next exam question: a dragon is sleeping in the tunnel. Follow, so you don't miss it.",
+   "gap": 1.2
+  }
+ ],
+ "cues": [
+  [
+   "hook1",
+   "Lights",
+   "bell",
+   0.12
+  ],
+  [
+   "hook2",
+   "caterpillar",
+   "blinkfx",
+   0.3
+  ],
+  [
+   "wrong1",
+   "lift",
+   "servo",
+   0.25
+  ],
+  [
+   "wrong1",
+   "belly",
+   "rev",
+   0.2
+  ],
+  [
+   "wrong2",
+   "ticklish",
+   "squeak",
+   0.25
+  ],
+  [
+   "wrong2",
+   "giggling",
+   "chirp",
+   0.3
+  ],
+  [
+   "wrong3",
+   "curls",
+   "whoosh",
+   0.3
+  ],
+  [
+   "wrong3",
+   "middle",
+   "boing",
+   0.25
+  ],
+  [
+   "wrong3",
+   "rolls",
+   "thud",
+   0.3
+  ],
+  [
+   "right2",
+   "boot",
+   "pop",
+   0.25
+  ],
+  [
+   "right2",
+   "blanket",
+   "whoosh",
+   0.2
+  ],
+  [
+   "right3",
+   "wraps",
+   "swipe",
+   0.25
+  ],
+  [
+   "right3",
+   "cocoon",
+   "thud",
+   0.2
+  ],
+  [
+   "right4",
+   "Pop",
+   "poof",
+   0.4
+  ],
+  [
+   "right4",
+   "butterfly",
+   "chime",
+   0.25
+  ],
+  [
+   "right5",
+   "flap",
+   "whoosh",
+   0.35
+  ],
+  [
+   "right5",
+   "flies",
+   "clang",
+   0.25
+  ],
+  [
+   "right5",
+   "glitter",
+   "chime",
+   0.25
+  ],
+  [
+   "right6",
+   "Prettiest",
+   "fanfare",
+   0.18
+  ]
+ ],
+ "beds": [
+  [
+   "engine",
+   0.0,
+   4.0,
+   0.03
+  ],
+  [
+   "ticker",
+   [
+    "hook1"
+   ],
+   [
+    "wrong1"
+   ],
+   0.12
+  ]
+ ]
+}

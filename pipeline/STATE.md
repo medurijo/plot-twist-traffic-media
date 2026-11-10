@@ -1,10 +1,10 @@
 # Plot Twist Traffic – state
 
-Last published Q: **39** (Q38 posts 2026-11-07 15:30, Q39 posts 2026-11-07 18:00)
-Next episode folder: ep45 = Q40
-Announced in last outro (must be next video): **The car wash is a giant octopus**
+Last published Q: **41** (Q40 posts 2026-11-10 15:30, Q41 posts 2026-11-10 18:00; nothing was scheduled for 11-08/11-09)
+Next episode folder: ep47 = Q42
+Announced in last outro (must be next video): **A sheepdog runs the roundabout** (sheep flock on the roundabout, sheepdog directs traffic)
 STYLE: from Q34 back to the OLD opening style (no driving-tip/rule intro), see RUNBOOK §2. Opening references: ep32, ep31.
-Then from IDEAS.md: reindeer sleigh (December) and the new Nov-6 list.
+Then from IDEAS.md: the Nov-6 list (reindeer sleigh saved for December).
 
 Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day's two videos.
 
@@ -16,6 +16,8 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - 2026-11-05 (TikTok views): Q34 knight blind spot 5.1k (old twist opening + heroic character = back at the top level, confirms the style switch), Q35 crocodile 1.7k after 1 day. Q32 fire-breather 1.1k, Q33 tortoise 0.9k (driving-tip intros) stay weak. Top tier ~5k: knight, treadmill, fashion photographer, sumo.
 
 - 2026-11-06 (TikTok views): Q34 knight 5.3k, Q35 crocodile 4.3k (both old twist opening), Q29 treadmill / Q28 photographer / Q26 sumo / Q21 dragon ~5.0-5.2k. Driving-tip intros Q30-Q33 stay ~1.0-1.3k. Q36/Q37 posted today, no data yet. -> keep: one-line everyday opening + big character with personality.
+
+- 2026-11-09 (TikTok views): Q34 knight 5.5k, Q35 crocodile 4.4k stay top; Q38 ducklings 2.6k (best of the new batch: cute animal crowd), Q36 parrot 1.8k, Q37 watermelons 1.0k, Q39 ice-cream van 0.9k (vehicle/object gags weaker than animal characters). -> lean on big animal characters with faces + one clear visual gag (octopus car wash, giraffe barrier).
 
 ## History (folder | Q | hook)
 - ep2 | Q2 | There's just one problem. The other lane is full of tanks. And they're all looking at you. What do y
@@ -61,3 +63,5 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - ep42 | Q37 | And right behind you: a lorry. Full of watermelons. Ten thousand of them. What do you do?
 - ep43 | Q38 | But behind her: ducklings. And more ducklings. And more. The line never ends. What do you do?
 - ep44 | Q39 | But it's not an ambulance. It's an ice-cream van. And its emergency? It's all melting. What do you do?
+- ep45 | Q40 | But then the brushes open an eye. It's a giant octopus. What do you do?
+- ep46 | Q41 | But the barrier isn't a barrier. It's a giraffe. What do you do?

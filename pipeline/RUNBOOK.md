@@ -131,3 +131,12 @@ episodes – copy the structure of the closest one.
 - `bubble()` in ep43/ep44 clamps its x so long texts don't leave the frame – copy that version.
 - mix_ep.py has a new `jingle` cue (ice-cream-van tune). ep44 has a monotone-cubic `mono()` helper for smooth keyed motion and a vertex-animated flood plane.
 - Telephoto shots (fov 13–18) are great for following one small character (hat duckling) or showing something far away.
+
+## 9. Lessons (Nov 9 run, ep45/ep46)
+- Tentacles / giraffe neck: tube along a cubic Bezier rebuilt every frame (`makeTent`/`buildTent` in ep45, `buildNeck` in ep46) + per-arm pose schedule `[t0, pose, blend]` blending control points. Very flexible for arms reaching into windows, scrubbing, lifting a car.
+- Hide a reveal behind a prop: ep45 "SUPER SHINE 3000" housing with portholes (canvas texture with destination-out holes + alphaTest) for the eyes, flies off at the reveal.
+- Hero-car glass is nearly black: anything dark on it (window gap) is invisible -> lighten `bodyG.children[1].material` for that car and add a HUD arrow.
+- Decals on the windscreen: offset >= 0.085 along the normal (glass bevel), and check orientation (setFromUnitVectors may flip the image -> rotateZ(PI)).
+- Sign boxes/posts at portal frames sit right in camera lines: check every cut for posts/signs between camera and subject (ep45 front/back signs, ep46 deck edges).
+- Stills while two renders run take ~3x longer (sheet.sh can exceed the 2 min tool timeout -> pass a longer timeout).
+

@@ -98,3 +98,7 @@ Remaining order: 11 octopus car wash (announced), 12 reindeer sleigh (December),
 8. Overtaking a tractor – the farmer is a giant hen sitting on the trailer of eggs
 9. Petrol station – the pump nozzle is an elephant's trunk
 10. School zone – the lollipop lady is a snowman (winter)
+
+Done (Nov 9 run, posting Nov 10): Q40 octopus car wash – window crack -> foam-filled car + bubble hairdo / music -> dancing octopus scrubs with 8 sponges, heart on the windscreen, one big puff (ep45); Q41 giraffe barrier – honk -> neck through all 4 floors, walks off wearing the car park / tree air freshener -> neck goes up, nibble, lifts your car to the last space on the roof (ep46). Q41 announces next: a sheepdog runs the roundabout.
+Remaining order: 4 roundabout sheepdog (announced), 5 tunnel dragon, 6 caterpillar level crossing, 7 T-rex drive-through, 8 hen on the tractor trailer, 9 elephant-trunk pump nozzle, 10 snowman lollipop lady (winter); reindeer sleigh in December.
+

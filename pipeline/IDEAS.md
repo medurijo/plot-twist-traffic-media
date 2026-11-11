@@ -107,3 +107,7 @@ Q43 caterpillar train at the level crossing – stretchy arm lifts the barrier, 
 (Order note: took the caterpillar before the tunnel dragon so two "fall asleep" stories are not back to back.) Q43 announces next: a dragon is sleeping in the tunnel.
 Remaining order: 5 tunnel dragon (announced), 7 T-rex drive-through, 8 hen on the tractor trailer, 9 elephant-trunk pump nozzle, 10 snowman lollipop lady (winter); reindeer sleigh in December.
 
+Done (Nov 11 run, posting Nov 12): Q44 dragon in the tunnel – honk -> one grumpy eye, grumpy yawn = toasted car -> grabs the nearest teddy bear (your car), cuddles it, sleeps 100 years / engine + lights off, fluffy socks, tiptoe past its nose between two snores -> lullaby radio -> smiles, heart-shaped smoke rings (ep49);
+Q45 giant hen drives the tractor (overtaking) – honk + squeeze past -> fright: egg volley, splat x3 on the hot bonnet = fried eggs, sunny side up / stay back, wiper-wiper = chicken for "may I pass, please?" -> nod, wing signal, pulls over, waves, thank-you egg through the sunroof -> crack: chick co-driver (ep50).
+(Order note: took the hen before the T-rex so dragon + T-rex are not back to back.) Q45 announces next: a T-rex runs the drive-through.
+Remaining order: 7 T-rex drive-through (announced), 9 elephant-trunk pump nozzle, 10 snowman lollipop lady (winter); reindeer sleigh in December. List is running out -> next run: invent new ones (same style) and append.

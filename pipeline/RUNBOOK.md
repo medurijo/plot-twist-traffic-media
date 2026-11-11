@@ -150,3 +150,11 @@ episodes – copy the structure of the closest one.
 - Rainbow car: swap body material to a gradient canvas map (+ emissiveMap) and scroll `offset.x`.
 - Thumbnail with the subject high in frame: shift the still down (stretch top sky rows) before make_thumb so the headline does not cover the face.
 
+## 11. Lessons (Nov 11 run, ep49/ep50)
+- GTAO renders sprites (fire/smoke) as full quads -> dark blocky squares. Fix per scene: `import { aoPass }` and override `aoPass.overrideVisibility` to also hide `o.isSprite` / `o.userData.noAO` objects (see ep49/ep50 top).
+- Additive fire sprites wash out to white on the transparent-sky GFX render: use normal blending.
+- Shape with a hole that touches the outer edge fails to triangulate: build arches/portals as one outline (ep49 facade).
+- Eyelid hemispheres: iris/pupil/highlight must stay inside the lid radius or they poke through closed lids.
+- Wipers on the windscreen: group oriented with setFromUnitVectors(z, glassNormal); local +y then points into the bonnet, so sweep with negative rotation.z. Hero glass lightened (`bodyG.children[1]`) so light-grey wipers read.
+- WT word timings were off again for long multi-sentence lines; `python3 align_timings.py epNN seg1,seg2` re-aligns words to silence gaps by syllable rate (skips if fewer gaps than phrases -> fix by hand) – check every segment with commas against the wav envelope.
+- Renders ~6-8 s/frame with stills running in parallel: ~2 h per episode. A watchdog loop that relaunches waitrun.sh while jobs remain avoids stalls.

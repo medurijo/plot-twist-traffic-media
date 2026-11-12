@@ -158,3 +158,13 @@ episodes – copy the structure of the closest one.
 - Wipers on the windscreen: group oriented with setFromUnitVectors(z, glassNormal); local +y then points into the bonnet, so sweep with negative rotation.z. Hero glass lightened (`bodyG.children[1]`) so light-grey wipers read.
 - WT word timings were off again for long multi-sentence lines; `python3 align_timings.py epNN seg1,seg2` re-aligns words to silence gaps by syllable rate (skips if fewer gaps than phrases -> fix by hand) – check every segment with commas against the wav envelope.
 - Renders ~6-8 s/frame with stills running in parallel: ~2 h per episode. A watchdog loop that relaunches waitrun.sh while jobs remain avoids stalls.
+
+## 12. Lessons (Nov 12 run, ep51/ep52)
+- Big character heads need room: 9:16 close-ups at < 6 m crop everything. Scale the head (`hd.scale` 0.82 in ep51) and keep the head 7–9 m from the camera; check the gag prop (paper hat, cone) is fully in frame.
+- Eyes that scale up must move the pupil/highlight with them (`E.p.position = c0 + (p0 - c0) * scale`), otherwise the white swallows the pupil.
+- Hiding a character before the reveal: push the whole body group back behind a wall (ep51 `emerge`) or behind a billboard (ep52 elephant only has head/ears/trunk, body never modelled).
+- Canvas text on an extruded/box side reads mirrored from the other side: keep text only on a plane you orient to the camera (ep51 TO GO flag rotation.y = 2.5 for a +x/-z camera).
+- Thin CircleGeometry nostrils/decals: always set their scale (unscaled radius-1 discs showed up as huge black shapes).
+- Low cameras + a billboard in front of a character hide the eyes: put the camera above the occluder's top edge.
+- `TubeGeometry` drawRange grows a ketchup squiggle; custom bezier tube with per-u radius function (ep52 `buildTrunk`) gives squeeze pinch, travelling gulps and a trumpet flare.
+- Render speed this run: ~5.7 s/frame with 2 runners (~13 min per 4.6 s part each) -> ~2 h per episode; schedule the first finished episode right away.

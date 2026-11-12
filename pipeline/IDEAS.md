@@ -111,3 +111,17 @@ Done (Nov 11 run, posting Nov 12): Q44 dragon in the tunnel – honk -> one grum
 Q45 giant hen drives the tractor (overtaking) – honk + squeeze past -> fright: egg volley, splat x3 on the hot bonnet = fried eggs, sunny side up / stay back, wiper-wiper = chicken for "may I pass, please?" -> nod, wing signal, pulls over, waves, thank-you egg through the sunroof -> crack: chick co-driver (ep50).
 (Order note: took the hen before the T-rex so dragon + T-rex are not back to back.) Q45 announces next: a T-rex runs the drive-through.
 Remaining order: 7 T-rex drive-through (announced), 9 elephant-trunk pump nozzle, 10 snowman lollipop lady (winter); reindeer sleigh in December. List is running out -> next run: invent new ones (same style) and append.
+
+Done (Nov 12 run, posting Nov 13): Q46 T-rex drive-through – shout "the biggest burger you've got!" -> literal T-rex: your car is the biggest thing here -> bun, cheese, ketchup: one giant car burger, to go / order nicely -> tiny arms can't reach -> hand her your barbecue tongs -> burger, fries, tiny high five -> happy dance, restaurant wiggles -> free dessert: giant ice-cream cone on the roof (ep51);
+Q47 elephant pump – grab the trunk and squeeze -> that's her nose -> ah.. ah.. ACHOO: car parked on the canopy roof next to the prices (ROOF: FREE) / pump sign "payment: peanuts only" -> one peanut on the fuel cap -> she sniffs, finds the tank, fills up, happy trumpet -> trunk shower car wash -> rainbow, all for one peanut (ep52). Q47 announces next: the lollipop lady is a snowman.
+
+## New list (Nov 12, same style: everyday situation + ONE crazy element, big character with a face; never two of the same category in a row)
+1. School zone – the lollipop lady is a snowman (announced, winter)
+2. Toll booth – it's a troll booth: a troll under the bridge wants a riddle answered
+3. Speed bump – the bump is a sleeping walrus
+4. Zebra crossing – a real zebra lies on it, perfectly camouflaged
+5. Breakdown on the hard shoulder – the tow truck is a giant crab
+6. Car park ticket machine – a goat eats your ticket
+7. Height barrier at the car park – a giant snail with its house won't fit
+8. Motorway – a penguin parade waddles across (winter)
+9. Deer-crossing sign – reindeer with a sleigh (December)

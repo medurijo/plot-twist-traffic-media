@@ -1,0 +1,239 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 46,
+  "next": [
+   "THE PETROL PUMP",
+   "IS AN ELEPHANT"
+  ],
+  "gfx": true,
+  "gfxopt": {
+   "sunDir": [
+    95,
+    65,
+    55
+   ],
+   "sunCol": "#ffd6a0",
+   "hemi": 0.95,
+   "vignette": 0.2
+  }
+ },
+ "segments": [
+  {
+   "id": "hook1",
+   "text": "You're starving. You pull up to the drive-through window.",
+   "gap": 0.4
+  },
+  {
+   "id": "hook2",
+   "text": "The window opens. And out comes a T-rex. In a paper hat. What do you do?",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong1",
+   "text": "Most drivers shout: the biggest burger you've got!",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong2",
+   "text": "Big mistake. A T-rex takes every order very literally. And the biggest thing here is your car.",
+   "gap": 0.5
+  },
+  {
+   "id": "wrong3",
+   "text": "Bun. Cheese. Ketchup. One giant car burger. To go.",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong4",
+   "text": "Exam failed.",
+   "gap": 1.15
+  },
+  {
+   "id": "right1",
+   "text": "Here's how you do it properly.",
+   "gap": 0.3
+  },
+  {
+   "id": "right2",
+   "text": "Order nicely. Then spot the problem. Tiny arms. She can't reach your window.",
+   "gap": 0.4
+  },
+  {
+   "id": "right3",
+   "text": "So hand her your barbecue tongs. Every good driver carries some.",
+   "gap": 0.4
+  },
+  {
+   "id": "right4",
+   "text": "Now she can reach. Burger. Fries. And a tiny high five.",
+   "gap": 0.4
+  },
+  {
+   "id": "right5",
+   "text": "She's so happy, she does a little dance. The whole restaurant wiggles.",
+   "gap": 0.5
+  },
+  {
+   "id": "right6",
+   "text": "Free dessert. Extra large.",
+   "gap": 0.6
+  },
+  {
+   "id": "right7",
+   "text": "Exam passed.",
+   "gap": 1.3
+  },
+  {
+   "id": "outro",
+   "text": "Next exam question: the petrol pump is an elephant. Follow, so you don't miss it.",
+   "gap": 1.2
+  }
+ ],
+ "cues": [
+  [
+   "hook2",
+   "opens",
+   "servo",
+   0.25
+  ],
+  [
+   "hook2",
+   "trex",
+   "roar",
+   0.3
+  ],
+  [
+   "wrong2",
+   "car",
+   "chomp",
+   0.3,
+   0.35
+  ],
+  [
+   "wrong2",
+   "car",
+   "whoosh",
+   0.2,
+   0.7
+  ],
+  [
+   "wrong3",
+   "Bun",
+   "thud",
+   0.35,
+   0.15
+  ],
+  [
+   "wrong3",
+   "Cheese",
+   "splat",
+   0.3,
+   0.3
+  ],
+  [
+   "wrong3",
+   "Ketchup",
+   "slurp",
+   0.25,
+   0.1
+  ],
+  [
+   "wrong3",
+   "One",
+   "boing",
+   0.3,
+   0.35
+  ],
+  [
+   "wrong3",
+   "To",
+   "ding",
+   0.25
+  ],
+  [
+   "right2",
+   "nicely",
+   "chime",
+   0.15
+  ],
+  [
+   "right2",
+   "Tiny",
+   "squeak",
+   0.2
+  ],
+  [
+   "right3",
+   "tongs",
+   "clang",
+   0.2
+  ],
+  [
+   "right3",
+   "carries",
+   "clack",
+   0.3,
+   -0.2
+  ],
+  [
+   "right3",
+   "carries",
+   "clack",
+   0.3,
+   0.1
+  ],
+  [
+   "right4",
+   "Burger",
+   "pop",
+   0.25
+  ],
+  [
+   "right4",
+   "Fries",
+   "pop",
+   0.25
+  ],
+  [
+   "right4",
+   "five",
+   "ding",
+   0.3
+  ],
+  [
+   "right5",
+   "happy",
+   "party",
+   0.1
+  ],
+  [
+   "right6",
+   "Free",
+   "pop",
+   0.2
+  ],
+  [
+   "right6",
+   "large",
+   "boing",
+   0.3,
+   0.2
+  ],
+  [
+   "right6",
+   "large",
+   "fanfare",
+   0.15,
+   0.6
+  ]
+ ],
+ "beds": [
+  [
+   "engine",
+   0.0,
+   4.0,
+   0.035
+  ]
+ ]
+}

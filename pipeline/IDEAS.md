@@ -125,3 +125,7 @@ Q47 elephant pump – grab the trunk and squeeze -> that's her nose -> ah.. ah..
 7. Height barrier at the car park – a giant snail with its house won't fit
 8. Motorway – a penguin parade waddles across (winter)
 9. Deer-crossing sign – reindeer with a sleigh (December)
+
+Done (Nov 13 run, posting Nov 14): Q48 snowman lollipop lady – honk -> snowmen scare easily, she falls apart -> bottom snowball rolls at you, grows, gulp: your car is the bottom of the snowman until spring / stop at the line and wait -> 10 little snowmen hop across -> smallest lost his nose: spare carrot from the glovebox -> she flips her sign: a real lollipop, planted on your roof (ep53);
+Q49 troll booth – throw coins -> they want MORE coins (coin eyes) -> shakes your car like a piggy bank, keeps it (coin slot on the roof) / sign: toll = 1 riddle -> "what has 4 wheels and flies?" -> steam from his ears -> "a bin lorry!" -> laughs, drops the club into the river -> free passage for you and the bin lorry (ep54). Q49 announces next: the speed bump is a sleeping walrus.
+Remaining order: 3 walrus speed bump (announced), 4 zebra on the zebra crossing, 5 crab tow truck, 6 goat eats parking ticket, 7 snail height barrier, 8 penguin parade (winter), 9 reindeer sleigh (December).

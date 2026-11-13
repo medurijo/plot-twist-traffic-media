@@ -1,10 +1,10 @@
 # Plot Twist Traffic – state
 
-Last published Q: **47** (Q46 posts 2026-11-13 15:30, Q47 posts 2026-11-13 18:00)
-Next episode folder: ep53 = Q48
-Announced in last outro (must be next video): **The lollipop lady is a snowman** (school zone / zebra crossing, winter)
+Last published Q: **49** (Q48 posts 2026-11-14 15:30, Q49 posts 2026-11-14 18:00)
+Next episode folder: ep55 = Q50
+Announced in last outro (must be next video): **The speed bump is a sleeping walrus**
 STYLE: from Q34 back to the OLD opening style (no driving-tip/rule intro), see RUNBOOK §2. Opening references: ep32, ep31.
-Then from IDEAS.md: the Nov-6 list (reindeer sleigh saved for December).
+Then from IDEAS.md: the Nov-12 list (reindeer sleigh saved for December).
 
 Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day's two videos.
 
@@ -24,6 +24,8 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - 2026-11-11 (TikTok views): Q34 knight 5.5k, Q35 crocodile 4.5k, Q38 ducklings 2.7k, Q36 parrot 1.9k, Q37 watermelons 1.1k, Q39 ice-cream van 1.0k, Q40 octopus 1.0k, Q41 giraffe 0.9k (after 1 day). Q42/Q43 posted today, no data yet. Likes ~40-190, comments 0-3. -> big expressive animal faces still the bet; made Q44 grumpy dragon + Q45 frightened giant hen (both with clear face close-ups in the hook).
 
 - 2026-11-12 (TikTok views): Q34 knight 5.6k, Q35 crocodile 4.5k, Q38 ducklings 2.8k, Q36 parrot 1.9k; everything since Q37 sits at ~1.0-1.1k (Q40 octopus 1.0k, Q41 giraffe 1.0k, Q42 sheep 1.1k, Q43 caterpillar 1.0k). Q44/Q45 posted today, no data yet. Likes 41-57 on the recent ones, comments 1-2. -> plateau; made Q46 T-rex drive-through (tiny-arms gag, food) + Q47 elephant pump (cute character, sneeze slapstick, rainbow ending). Idea for next runs: try more relatable everyday frustrations as hook (queue, parking ticket) and stronger first-second visuals.
+
+- 2026-11-13 (TikTok views): Q34 knight 5.6k, Q35 crocodile 4.5k, Q38 ducklings 2.8k, Q36 parrot 2.0k; Q37-Q43 ~1.0-1.2k; Q44 dragon 0.80k, Q45 hen 0.76k after 1 day (likes 28-34). Q46/Q47 posted today. Plateau continues ~1k. -> made Q48 snowman lollipop lady (winter look, falling snow, cute crowd of 10 mini snowmen = like the ducklings that did 2.8k) + Q49 troll booth (wordplay hook, riddle joke). Next idea: try a crowd of cute animals again (penguin parade) and stronger first-second visuals.
 
 ## History (folder | Q | hook)
 - ep2 | Q2 | There's just one problem. The other lane is full of tanks. And they're all looking at you. What do y
@@ -77,3 +79,5 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - ep50 | Q45 | But the farmer is a giant hen. And the trailer is full of eggs. What do you do?
 - ep51 | Q46 | The window opens. And out comes a T-rex. In a paper hat. What do you do?
 - ep52 | Q47 | You grab the hose. It's warm. And it just sniffed you. It's an elephant. What do you do?
+- ep53 | Q48 | But her nose is a carrot. Her buttons are coal. She's a snowman. What do you do?
+- ep54 | Q49 | But the barrier is a club. And the hand holding it is green. It's a troll booth. What do you do?

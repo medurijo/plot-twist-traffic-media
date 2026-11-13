@@ -168,3 +168,11 @@ episodes – copy the structure of the closest one.
 - Low cameras + a billboard in front of a character hide the eyes: put the camera above the occluder's top edge.
 - `TubeGeometry` drawRange grows a ketchup squiggle; custom bezier tube with per-u radius function (ep52 `buildTrunk`) gives squeeze pinch, travelling gulps and a trumpet flare.
 - Render speed this run: ~5.7 s/frame with 2 runners (~13 min per 4.6 s part each) -> ~2 h per episode; schedule the first finished episode right away.
+
+## 13. Lessons (Nov 13 run, ep53/ep54)
+- Winter scene without makeLandscape (ep53): own snow plane, snowy pine cones (3 stacked instanced cones, white top), snow mounds, `hemi.groundColor` bluish, `scene.fog` pale; falling snow = THREE.Points around the camera, positions a pure function of t (hidden from AO automatically).
+- Character that falls apart: build parts as separate top-level groups (ep53 LB/LM/LH) and compute their world positions per frame -> easy to separate, roll (axis = up x dir, angle = dist / r) and reassemble on something else.
+- River without terrain cuts (ep54): opaque water plane at ground level + rock lines on the banks; a giant can stand "in" it (everything below the water plane is hidden) and rise up for the reveal (root y from -7.6 to -1.3).
+- makeLandscape trees get very close behind the set: pass a generous `avoid` box.
+- Distant/static props cast long thin shadows when they "sink" under the water: hide them (ep54 club).
+- Render with stills running in parallel is ~3x slower (first ep53 parts took ~40 min each); do stills before queueing or accept the delay.

@@ -1,0 +1,220 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 48,
+  "next": [
+   "A TROLL RUNS",
+   "THE TOLL BOOTH"
+  ],
+  "quiz": {
+   "options": [
+    "HONK SO SHE HURRIES",
+    "DRIVE AROUND HER",
+    "AIR CON ON MAX"
+   ],
+   "short": [
+    "A: HONK",
+    "B: AROUND",
+    "C: AIR CON"
+   ],
+   "wrong": 0,
+   "right": 2
+  },
+  "gfx": true,
+  "gfxopt": {
+   "sunDir": [
+    70,
+    65,
+    80
+   ],
+   "sunCol": "#ffe0b0",
+   "hemi": 0.95,
+   "vignette": 0.18
+  }
+ },
+ "segments": [
+  {
+   "id": "hook1",
+   "text": "School zone. The lollipop lady is a snowman.",
+   "gap": 0.3
+  },
+  {
+   "id": "hook2",
+   "text": "And she's melting. What do you do?",
+   "gap": 2.4
+  },
+  {
+   "id": "wrong1",
+   "text": "Most learners pick A.",
+   "gap": 0.3
+  },
+  {
+   "id": "wrong2",
+   "text": "Honk! She jumps. And collapses. Right into our car.",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong3",
+   "text": "And me? I'm a snowman now.",
+   "gap": 0.5
+  },
+  {
+   "id": "wrong4",
+   "text": "Failed. Obviously.",
+   "gap": 1.0
+  },
+  {
+   "id": "right1",
+   "text": "The answer is C.",
+   "gap": 0.3
+  },
+  {
+   "id": "right2",
+   "text": "Air con on max. All vents on her.",
+   "gap": 0.4
+  },
+  {
+   "id": "right3",
+   "text": "She freezes back up, and walks the penguins safely across.",
+   "gap": 0.4
+  },
+  {
+   "id": "right4",
+   "text": "Then she turns her sign around. Go!",
+   "gap": 0.5
+  },
+  {
+   "id": "right7",
+   "text": "Passed. Barely.",
+   "gap": 0.9
+  },
+  {
+   "id": "outro",
+   "text": "Next question: a troll runs the toll booth. Comment your letter!",
+   "gap": 1.0
+  }
+ ],
+ "cues": [
+  [
+   "hook1",
+   "snowman",
+   "squeak",
+   0.2,
+   0.3
+  ],
+  [
+   "hook2",
+   "melting",
+   "plink",
+   0.15
+  ],
+  [
+   "hook2",
+   "What",
+   "ding",
+   0.2
+  ],
+  [
+   "wrong1",
+   "A",
+   "buzz",
+   0.2
+  ],
+  [
+   "wrong2",
+   "Honk",
+   "honk",
+   0.35
+  ],
+  [
+   "wrong2",
+   "jumps",
+   "boing",
+   0.3
+  ],
+  [
+   "wrong2",
+   "collapses",
+   "whoosh",
+   0.25
+  ],
+  [
+   "wrong2",
+   "Right",
+   "thud",
+   0.3,
+   -0.15
+  ],
+  [
+   "wrong2",
+   "car",
+   "thud",
+   0.35,
+   0.05
+  ],
+  [
+   "wrong2",
+   "car",
+   "poof",
+   0.25,
+   0.05
+  ],
+  [
+   "wrong4",
+   "Failed",
+   "thud",
+   0.3
+  ],
+  [
+   "right1",
+   "C",
+   "chime",
+   0.2
+  ],
+  [
+   "right2",
+   "max",
+   "whoosh",
+   0.25
+  ],
+  [
+   "right3",
+   "freezes",
+   "chime",
+   0.2
+  ],
+  [
+   "right4",
+   "Go",
+   "ding",
+   0.25
+  ],
+  [
+   "right7",
+   "Passed",
+   "thud",
+   0.3
+  ],
+  [
+   "right7",
+   "Passed",
+   "fanfare",
+   0.15,
+   0.2
+  ]
+ ],
+ "beds": [
+  [
+   "wind",
+   21.952,
+   25.412,
+   0.06
+  ],
+  [
+   "march",
+   25.5,
+   28.853,
+   0.05
+  ]
+ ]
+}

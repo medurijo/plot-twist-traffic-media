@@ -176,3 +176,13 @@ episodes – copy the structure of the closest one.
 - makeLandscape trees get very close behind the set: pass a generous `avoid` box.
 - Distant/static props cast long thin shadows when they "sink" under the water: hide them (ep54 club).
 - Render with stills running in parallel is ~3x slower (first ep53 parts took ~40 min each); do stills before queueing or accept the delay.
+
+## 14. Lessons (Nov 14 run, ep55/ep56)
+- `mkdir -p epNN/out` BEFORE queueing jobs – without it every job fails instantly and is still marked done.
+- `watchdog.sh` (in pipeline/) relaunches waitrun.sh while jobs.txt has content: `nohup bash watchdog.sh &` once after queueing.
+- Removing files with a glob after `cd` is blocked by the safety check – just let re-renders overwrite `out/pNN.ts`.
+- Body as one vertex-coloured tube along a posed spine (ep55 walrus `buildBody`: lying <-> upright bezier blend, belly colour from the cross-section angle, roll by rotating the parent group about the spine axis) – head kept as a separate world group.
+- Half-sphere eyelids: Rx(+a) turns the +y cap towards +z (closed), negative = open. Pupils must stay inside the lid radius.
+- Car paint pattern: replace the body/roof geometry UVs with a planar projection (ep56 `uv = (x+1)/12`) and swap the body material (striped car).
+- Kids/band/elephant walking over the car: walker y = car height profile across x; squash = hero.scale.
+- mix_ep.py: new `notes` (piano run) and `gallop1` cues.

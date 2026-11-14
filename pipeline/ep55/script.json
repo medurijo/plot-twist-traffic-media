@@ -1,0 +1,50 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 50,
+  "next": ["A ZEBRA IS LYING", "ON THE ZEBRA CROSSING"],
+  "gfx": true,
+  "gfxopt": {"sunDir": [100, 60, 70], "sunCol": "#ffd9b0", "hemi": 0.9, "vignette": 0.2, "contrast": 1.1}
+ },
+ "segments": [
+  {"id": "hook1", "text": "Quiet street. Thirty zone. Speed bump ahead.", "gap": 0.4},
+  {"id": "hook2", "text": "But the speed bump just snored. It has whiskers. And tusks. It's a sleeping walrus. What do you do?", "gap": 0.9},
+  {"id": "wrong1", "text": "Most drivers don't slow down. They just drive over it.", "gap": 0.4},
+  {"id": "wrong2", "text": "Big mistake. Bump! The walrus wakes up. And he is very grumpy.", "gap": 0.5},
+  {"id": "wrong3", "text": "He flips your car onto his nose, like a circus ball. Spins it. And falls back asleep. Still holding it. Forever.", "gap": 0.9},
+  {"id": "wrong4", "text": "Exam failed.", "gap": 1.15},
+  {"id": "right1", "text": "Here's how you do it properly.", "gap": 0.3},
+  {"id": "right2", "text": "A speed bump means: slow down. So you stop. Completely.", "gap": 0.4},
+  {"id": "right3", "text": "Walruses love a back scratch. So you grab your snow brush.", "gap": 0.4},
+  {"id": "right4", "text": "Scratch, scratch. He smiles. And rolls onto his back.", "gap": 0.4},
+  {"id": "right5", "text": "Now he's the softest speed bump in town. Boing. Boing.", "gap": 0.5},
+  {"id": "right6", "text": "And he waves goodbye with his flipper.", "gap": 0.6},
+  {"id": "right7", "text": "Exam passed.", "gap": 1.3},
+  {"id": "outro", "text": "Next exam question: a zebra is lying on the zebra crossing. Follow, so you don't miss it.", "gap": 1.2}
+ ],
+ "cues": [
+  ["hook2", "snored", "snore", 0.3],
+  ["hook2", "whiskers", "pop", 0.18],
+  ["hook2", "tusks", "pop", 0.18],
+  ["hook2", "walrus", "boing", 0.2],
+  ["wrong1", "over", "rev", 0.2],
+  ["wrong2", "Bump", "thud", 0.4],
+  ["wrong2", "wakes", "blinkfx", 0.25],
+  ["wrong2", "grumpy", "roar", 0.14],
+  ["wrong3", "flips", "whoosh", 0.25],
+  ["wrong3", "nose", "boing", 0.25],
+  ["wrong3", "Spins", "servo", 0.18],
+  ["wrong3", "asleep", "snore", 0.3],
+  ["right2", "stop", "squeak", 0.15],
+  ["right3", "grab", "pop", 0.18],
+  ["right4", "Scratch", "swipe", 0.2],
+  ["right4", "scratch", "swipe", 0.2, 0.0],
+  ["right4", "smiles", "chime", 0.12],
+  ["right4", "rolls", "whoosh", 0.2],
+  ["right5", "Boing", "boing", 0.3],
+  ["right5", "Boing.", "boing", 0.3],
+  ["right6", "waves", "chime", 0.18],
+  ["right6", "flipper", "fanfare", 0.14, 0.3]
+ ],
+ "beds": [["engine", 0.0, 3.0, 0.035]]
+}

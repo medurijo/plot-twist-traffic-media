@@ -371,6 +371,16 @@ def gallop_bed(d):
                 if n > 0: out[i:i+n] += sg[:n] * (0.7 + 0.3 * rng.random())
         t_ += 0.42
     return out
+def gallop1_sfx(d=1.3):
+    return gallop_bed(d) * np.minimum(1, (d - tt(d)) / 0.4)[:int(d*SR)]
+def piano_note(f, d=0.7):
+    x = tt(d); s_ = sum((0.7 / k) * np.sin(2*np.pi*f*k*x) * np.exp(-x*(3 + 2*k)) for k in range(1, 6)); return s_ * env(d, 0.003, 0.3) * 0.8
+def notes_sfx(d=2.6, n=8):
+    seq = [60, 62, 64, 65, 67, 69, 71, 72, 74, 76]; out = np.zeros(int((d + 0.8) * SR))
+    for k in range(n):
+        f = 440 * 2 ** ((seq[k % len(seq)] - 69) / 12); sg = piano_note(f) + 0.4 * piano_note(f * 2); i = int(k * d / n * SR); m = min(len(sg), len(out) - i); out[i:i+m] += sg[:m]
+    return out
+LIB["gallop1"] = gallop1_sfx; LIB["notes"] = notes_sfx
 SC = json.load(open(os.path.join(EP, "script.json")))
 for cue in SC.get("cues", []):
     seg, word, name, g = cue[:4]; off = cue[4] if len(cue) > 4 else 0

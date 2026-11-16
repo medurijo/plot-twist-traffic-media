@@ -1,0 +1,51 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 52,
+  "next": ["A GOAT EATS", "YOUR PARKING TICKET"],
+  "gfx": true,
+  "gfxopt": {"sunDir": [120, 55, 60], "sunCol": "#ffd2a0", "hemi": 0.9, "vignette": 0.2, "contrast": 1.1}
+ },
+ "segments": [
+  {"id": "hook1", "text": "Your car breaks down on the motorway. So you call a tow truck.", "gap": 0.4},
+  {"id": "hook2", "text": "It arrives sideways. With flashing lights. And two giant claws. The tow truck is a crab. What do you do?", "gap": 0.9},
+  {"id": "wrong1", "text": "Most drivers just point and shout: pick it up!", "gap": 0.4},
+  {"id": "wrong2", "text": "Big mistake. It picks it up by the roof. Snip! Now your car is a convertible.", "gap": 0.5},
+  {"id": "wrong3", "text": "And crabs only walk sideways. So it doesn't go to the garage. It takes you home, to the beach. And builds a sandcastle on you.", "gap": 0.9},
+  {"id": "wrong4", "text": "Exam failed.", "gap": 1.15},
+  {"id": "right1", "text": "Here's how you do it properly.", "gap": 0.3},
+  {"id": "right2", "text": "Hazard lights on. Warning triangle out. Then wave hello.", "gap": 0.4},
+  {"id": "right3", "text": "It waves back. Clack, clack. That's crab for: no problem!", "gap": 0.4},
+  {"id": "right4", "text": "It lifts your car like a tray, and scuttles sideways. Right past the traffic jam.", "gap": 0.4},
+  {"id": "right5", "text": "Straight to the garage. Faster than any tow truck.", "gap": 0.4},
+  {"id": "right6", "text": "And as a tip, it keeps your warning triangle. Perfect party hat!", "gap": 0.6},
+  {"id": "right7", "text": "Exam passed.", "gap": 1.3},
+  {"id": "outro", "text": "Next exam question: a goat eats your parking ticket. Follow, so you don't miss it.", "gap": 1.2}
+ ],
+ "cues": [
+  ["hook1", "Your", "waves", 0.10],
+  ["hook1", "breaks", "hiss", 0.12],
+  ["hook1", "call", "beep", 0.10],
+  ["hook2", "sideways", "clack", 0.30],
+  ["hook2", "claws", "clack", 0.40, 0.25],
+  ["hook2", "claws", "clack", 0.40, 0.5],
+  ["hook2", "crab", "boing", 0.20],
+  ["wrong2", "roof", "clack", 0.35],
+  ["wrong2", "Snip", "snip", 0.55],
+  ["wrong2", "convertible", "whoosh", 0.22],
+  ["wrong3", "beach", "waves", 0.14],
+  ["wrong3", "sandcastle", "poof", 0.30],
+  ["wrong3", "sandcastle", "ding", 0.15, 0.6],
+  ["right2", "triangle", "pop", 0.20],
+  ["right2", "wave", "squeak", 0.12],
+  ["right3", "waves", "clack", 0.35],
+  ["right3", "Clack", "clack", 0.40],
+  ["right3", "clack", "clack", 0.40, 0.3],
+  ["right4", "lifts", "whoosh", 0.15],
+  ["right4", "jam", "honk", 0.12],
+  ["right5", "garage", "ding", 0.20],
+  ["right6", "triangle", "pop", 0.22],
+  ["right6", "party", "fanfare", 0.15, 0.3]
+ ],
+ "beds": [["engine", 0.0, 2.0, 0.035], ["clack", ["wrong3"], ["wrong3"], 0.10], ["clack", ["right4"], ["right5"], 0.10]]
+}

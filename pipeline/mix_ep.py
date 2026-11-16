@@ -381,6 +381,17 @@ def notes_sfx(d=2.6, n=8):
         f = 440 * 2 ** ((seq[k % len(seq)] - 69) / 12); sg = piano_note(f) + 0.4 * piano_note(f * 2); i = int(k * d / n * SR); m = min(len(sg), len(out) - i); out[i:i+m] += sg[:m]
     return out
 LIB["gallop1"] = gallop1_sfx; LIB["notes"] = notes_sfx
+def snip_sfx():
+    o = np.zeros(int(0.35*SR))
+    for t0 in (0.0, 0.13):
+        b = hp(rng.standard_normal(int(0.05*SR)), 3000) * env(0.05, 0.001, 0.012) * 1.4 + tone(3400, 0.05, r=0.01) * 0.5
+        i = int(t0*SR); o[i:i+len(b)] += b
+    return o
+def bleat_sfx(d=0.9):
+    x = tt(d); f = 520 + 60*np.sin(2*np.pi*3*x); vib = 0.6 + 0.4*np.sin(2*np.pi*14*x)
+    s = np.sign(np.sin(2*np.pi*np.cumsum(f)/SR)) * vib
+    return bp(s, 400, 3000) * np.minimum(1, x/0.04) * np.minimum(1, (d - x)/0.25) * 0.5
+LIB["snip"] = snip_sfx; LIB["bleat"] = bleat_sfx
 SC = json.load(open(os.path.join(EP, "script.json")))
 for cue in SC.get("cues", []):
     seg, word, name, g = cue[:4]; off = cue[4] if len(cue) > 4 else 0

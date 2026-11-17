@@ -138,3 +138,15 @@ Done (Nov 16 run, posting Nov 17): Q53 goat in the car park ticket machine – s
 Q54 penguin parade on the motorway – honk -> 200 penguins dive belly first under your car -> car is a sledge: slid off the motorway into the sea onto an iceberg, bye bye / hazard lights, engine off, wait -> radio: marching music, the parade waddles to the beat, twice as fast -> the smallest one climbs your roof and uses your car as a slide (whee!) -> its dad leaves a fish under the wiper (ep59). Q54 announces next: a giant snail at the height barrier.
 (Order note: snail height barrier skipped after the goat because both are car park episodes.)
 Remaining order: 7 snail height barrier (announced), 9 reindeer sleigh (December). List is running out -> next run: invent new ones (same style: everyday situation + ONE crazy element, big character with a face) and append, e.g. traffic light run by an owl that only works at night, car park full of sleeping bats, roadworks digger is a mole, sat-nav voice is a parrot that repeats everything, hedgehog family on the cycle lane.
+
+Done (Nov 17 run, posting Nov 18): Q55 giant snail at the supermarket height barrier – honk twice -> snails are shy: she jumps out of her house, it lands on YOUR car -> now you're 4.5 m (CLANG), the naked snail slides under the barrier and takes the last space / snails love rain: windscreen washers full power -> happy snail dance -> lays her house down flat: 1.99 m, 1 mm to spare -> thank-you slime trail into the last space, you glide in sideways, whee (ep60);
+Q56 the traffic light is an owl (night) – nobody's watching, drive through red -> owls see everything, head turns 360 -> swoops, grabs your car like a mouse, flies it to her nest, sits on it: you = egg / stop at the line, wink with your headlight -> she blushes, winks back: red eye closed, green eye open = green light -> flies along as two giant headlights, hoo hoo (ep61). Q56 announces next: the digger is a giant mole.
+
+## New list (Nov 17, same style: everyday situation + ONE crazy element, big character with a face; never two of the same category in a row)
+1. Roadworks – the digger is a giant mole (announced)
+2. Cycle lane – a hedgehog family rolls along it as balls
+3. Car park at night – full of sleeping bats hanging from the ceiling
+4. Sat-nav – the voice is a parrot that repeats everything
+5. Level crossing / bridge – a giant beaver has built a dam across the road
+6. Deer-crossing sign – reindeer with a sleigh (December)
+

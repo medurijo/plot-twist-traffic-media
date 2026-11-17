@@ -109,9 +109,10 @@
   ],
   [
    "wrong1",
-   "drive",
+   "straight",
    "rev",
-   0.15
+   0.15,
+   -0.3
   ],
   [
    "wrong2",

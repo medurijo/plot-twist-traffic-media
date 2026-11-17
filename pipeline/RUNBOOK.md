@@ -197,3 +197,13 @@ episodes – copy the structure of the closest one.
 - Penguins (ep59): 202 instanced penguins, per-part local matrices (incl. animated flippers/feet), base matrix Euler 'YZX' (roll, yaw, -pitch) -> pitch PI/2 = belly slide; per-instance colour via setColorAt (grey baby).
 - Column of walkers moving through a static camera: check the camera is never inside the column at ANY time of the shot (the "very slowly" camera ended up inside the parade).
 - Marching to the beat: drive the waddle phase from the march bed tempo (60/132 s per step) so picture and sound match.
+
+## 16. Lessons (Nov 17 run, ep60/ep61)
+- Kokoro sometimes runs a comma phrase together ("You glide in, sideways") or stretches "Whee!" – align_timings.py then mis-assigns words. Always print the 50 ms envelope (`#`/`.` string) of segments with exclamations and fix by hand by index.
+- WT prefix trap again: 'drive' matched "drivers" (ep61) – also check mix cues in script.json, they use the same prefix match.
+- Snail (ep60): body = vertex-coloured tube along a fixed bezier spine with y clamped to 0 (flat foot); shell = logarithmic-spiral tube (R = R0·e^(-kθ), tube radius 0.45R) in the local YZ plane; "lay flat" = rotate the shell 90° about the forward axis.
+- Slime trail: ribbon mesh along a Catmull-Rom path, revealed with setDrawRange; must be DoubleSide (winding faced down -> culled, invisible).
+- Night scene (ep61): dark-blue scene.background + gfx sky, emissive window textures (emissiveMap), a few PointLights only near the action, moon = MeshBasic circle with fog:false, stars = Points. Glowing eyes = MeshBasic iris (toneMapped false) + small PointLight in front – keep it weak (~7) or it tints the whole face.
+- Eyelid hemisphere (cap along +y) for eyes looking -z: open = rotation.x +0.62π (cap folds back into the head), closed = -0.5π.
+- "Reveal by light": darken the creature materials (lerp colour to near-black) until the reveal word, then flicker a street lamp on.
+- Gantry posts / lamp poles / sign poles keep ending up in the foreground: for every camera key check the line camera->subject against all vertical props.

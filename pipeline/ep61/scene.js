@@ -18,7 +18,7 @@ hemi.color.set('#9fb4ea'); hemi.groundColor.set('#2a3352'); hemi.intensity = 1.0
 // ---------------- timing ----------------
 const tRed = WT('hook1', 'Red'), tMiddle = WT('hook1', 'Middle'), tNobody = WT('hook1', 'Nobody'), tWait = WT('hook1', 'wait');
 const tThen = WT('hook2', 'Then'), tBlinks = WT('hook2', 'blinks'), tIts = WT('hook2', "It's"), tEye = WT('hook2', 'eye'), tTraffic = WT('hook2', 'traffic'), tOwl = WT('hook2', 'owl'), tWhat = WT('hook2', 'What');
-const tThink = WT('wrong1', 'think'), tWatching = WT('wrong1', 'watching'), tDrive = WT('wrong1', 'drive'), tThrough = WT('wrong1', 'through');
+const tThink = WT('wrong1', 'think'), tWatching = WT('wrong1', 'watching'), tDrive = WT('wrong1', 'drive', 1), tThrough = WT('wrong1', 'through');
 const tBig = WT('wrong2', 'Big'), tOwls2 = WT('wrong2', 'Owls'), tHead = WT('wrong2', 'head'), tTurns = WT('wrong2', 'turns'), tAllW = WT('wrong2', 'All'), tRound = WT('wrong2', 'round');
 const tSwoops = WT('wrong3', 'swoops'), tGrabs = WT('wrong3', 'grabs'), tMouse = WT('wrong3', 'mouse'), tFlies = WT('wrong3', 'flies'), tNest = WT('wrong3', 'nest'), tNow = WT('wrong3', 'Now'), tSitting = WT('wrong3', 'sitting'), tThinks = WT('wrong3', 'thinks'), tEgg = WT('wrong3', 'egg');
 const tStop = WT('right2', 'Stop'), tOwls = WT('right2', 'Owls'), tManners = WT('right2', 'manners'), tWinking = WT('right2', 'winking');

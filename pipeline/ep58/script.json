@@ -1,0 +1,255 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 53,
+  "next": [
+   "A PENGUIN PARADE",
+   "ON THE MOTORWAY"
+  ],
+  "gfx": true,
+  "gfxopt": {
+   "sunDir": [
+    -90,
+    70,
+    70
+   ],
+   "sunCol": "#ffd6a6",
+   "hemi": 0.9,
+   "vignette": 0.2,
+   "contrast": 1.1
+  }
+ },
+ "segments": [
+  {
+   "id": "hook1",
+   "text": "You're leaving the car park. You put your ticket in the machine.",
+   "gap": 0.4
+  },
+  {
+   "id": "hook2",
+   "text": "But the machine just chewed it. And said: baa. There's a goat inside. What do you do?",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong1",
+   "text": "Most drivers shout: hey! Give that back!",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong2",
+   "text": "Big mistake. Shouting makes goats hungry. So it eats your wing mirror. Then your number plate. Then your tyres.",
+   "gap": 0.5
+  },
+  {
+   "id": "wrong3",
+   "text": "Chomp, chomp, chomp. Five minutes later, all that's left is you, your seat, and the steering wheel. And the goat? Still hungry.",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong4",
+   "text": "Exam failed.",
+   "gap": 1.15
+  },
+  {
+   "id": "right1",
+   "text": "Here's how you do it properly.",
+   "gap": 0.3
+  },
+  {
+   "id": "right2",
+   "text": "Never argue with a goat. Open the glovebox, and offer it your old road map.",
+   "gap": 0.4
+  },
+  {
+   "id": "right3",
+   "text": "Munch, munch. It eats the whole of Europe. Happy goat!",
+   "gap": 0.4
+  },
+  {
+   "id": "right4",
+   "text": "It presses the button with its nose. Barrier up!",
+   "gap": 0.4
+  },
+  {
+   "id": "right5",
+   "text": "And now it knows every road by heart. So it hops on as your sat-nav.",
+   "gap": 0.4
+  },
+  {
+   "id": "right6",
+   "text": "In two hundred metres, turn left. Baa!",
+   "gap": 0.6
+  },
+  {
+   "id": "right7",
+   "text": "Exam passed.",
+   "gap": 1.3
+  },
+  {
+   "id": "outro",
+   "text": "Next exam question: a penguin parade on the motorway. Follow, so you don't miss it.",
+   "gap": 1.2
+  }
+ ],
+ "cues": [
+  [
+   "hook1",
+   "ticket",
+   "beep",
+   0.1,
+   0.3
+  ],
+  [
+   "hook2",
+   "chewed",
+   "chomp",
+   0.35
+  ],
+  [
+   "hook2",
+   "baa",
+   "bleat",
+   0.45
+  ],
+  [
+   "hook2",
+   "goat",
+   "boing",
+   0.18
+  ],
+  [
+   "wrong1",
+   "hey",
+   "honk",
+   0.1
+  ],
+  [
+   "wrong2",
+   "mirror",
+   "chomp",
+   0.35
+  ],
+  [
+   "wrong2",
+   "plate",
+   "chomp",
+   0.35
+  ],
+  [
+   "wrong2",
+   "tyres",
+   "chomp",
+   0.35
+  ],
+  [
+   "wrong2",
+   "tyres",
+   "hiss",
+   0.15,
+   0.3
+  ],
+  [
+   "wrong3",
+   "Five",
+   "poof",
+   0.25
+  ],
+  [
+   "wrong3",
+   "hungry",
+   "bleat",
+   0.35
+  ],
+  [
+   "right2",
+   "glovebox",
+   "pop",
+   0.2
+  ],
+  [
+   "right2",
+   "map",
+   "whoosh",
+   0.15
+  ],
+  [
+   "right3",
+   "Munch",
+   "chomp",
+   0.3
+  ],
+  [
+   "right3",
+   "Happy",
+   "bleat",
+   0.35,
+   0.4
+  ],
+  [
+   "right4",
+   "button",
+   "beep",
+   0.15,
+   0.3
+  ],
+  [
+   "right4",
+   "Barrier",
+   "servo",
+   0.25
+  ],
+  [
+   "right5",
+   "hops",
+   "boing",
+   0.25
+  ],
+  [
+   "right6",
+   "left",
+   "ding",
+   0.18
+  ],
+  [
+   "right6",
+   "Baa",
+   "bleat",
+   0.4
+  ],
+  [
+   "right7",
+   "Exam",
+   "fanfare",
+   0.15
+  ],
+  [
+   "wrong3",
+   "Chomp",
+   "chomp",
+   0.35,
+   0.0
+  ],
+  [
+   "wrong3",
+   "Chomp",
+   "chomp",
+   0.35,
+   0.32
+  ],
+  [
+   "wrong3",
+   "Chomp",
+   "chomp",
+   0.35,
+   0.66
+  ]
+ ],
+ "beds": [
+  [
+   "engine",
+   0.0,
+   2.0,
+   0.035
+  ]
+ ]
+}

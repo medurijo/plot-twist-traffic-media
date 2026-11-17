@@ -186,3 +186,14 @@ episodes – copy the structure of the closest one.
 - Car paint pattern: replace the body/roof geometry UVs with a planar projection (ep56 `uv = (x+1)/12`) and swap the body material (striped car).
 - Kids/band/elephant walking over the car: walker y = car height profile across x; squash = hero.scale.
 - mix_ep.py: new `notes` (piano run) and `gallop1` cues.
+
+## 15. Lessons (Nov 16 run, ep58/ep59)
+- Previous run lost its Q53 sources (only the thumbnail was committed) -> ALWAYS commit epNN sources to pipeline/ right after the stills are approved, before rendering.
+- The checkout can be a detached HEAD: `git checkout main && git pull` before committing.
+- Goat (ep58): character inside a box = body hidden in the machine, head pokes out of a dark hatch decal (neck intersects the solid face, reads as a hole); roll-up shutter = flap scale.y -> 0; jump out through a hinged lid.
+- "Eaten" car parts: hide the original mesh and fly a clone (copy matrixWorld) into the mouth while shrinking -> no need to walk the character to every part.
+- Driver visible through windows: make the hero glass transparent (opacity ~0.42, depthWrite false, noAO).
+- Head pose: NECK.rotation.z tilts the neck forward (negative), HEAD.rotation.z positive = nose UP; for "nose on the button" use a negative head pitch.
+- Penguins (ep59): 202 instanced penguins, per-part local matrices (incl. animated flippers/feet), base matrix Euler 'YZX' (roll, yaw, -pitch) -> pitch PI/2 = belly slide; per-instance colour via setColorAt (grey baby).
+- Column of walkers moving through a static camera: check the camera is never inside the column at ANY time of the shot (the "very slowly" camera ended up inside the parade).
+- Marching to the beat: drive the waddle phase from the march bed tempo (60/132 s per step) so picture and sound match.

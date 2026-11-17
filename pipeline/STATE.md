@@ -1,8 +1,9 @@
 # Plot Twist Traffic – state
 
-Last published Q: **51** (Q50 posts 2026-11-15 15:30, Q51 posts 2026-11-15 18:00)
-Next episode folder: ep57 = Q52
-Announced in last outro (must be next video): **The tow truck is a giant crab**
+Last published Q: **54** (Q52 posted 2026-11-16 15:30; Q53 posts 2026-11-17 15:30, Q54 posts 2026-11-17 18:00)
+Note: the 2026-11-16 18:00 slot stayed empty (previous run only finished Q52; Q53 sources were lost and rebuilt on Nov 16 evening).
+Next episode folder: ep60 = Q55
+Announced in last outro (must be next video): **A giant snail at the height barrier** (car park height barrier, snail house too tall)
 STYLE: from Q34 back to the OLD opening style (no driving-tip/rule intro), see RUNBOOK §2. Opening references: ep32, ep31.
 Then from IDEAS.md: the Nov-12 list (reindeer sleigh saved for December).
 
@@ -28,6 +29,8 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - 2026-11-13 (TikTok views): Q34 knight 5.6k, Q35 crocodile 4.5k, Q38 ducklings 2.8k, Q36 parrot 2.0k; Q37-Q43 ~1.0-1.2k; Q44 dragon 0.80k, Q45 hen 0.76k after 1 day (likes 28-34). Q46/Q47 posted today. Plateau continues ~1k. -> made Q48 snowman lollipop lady (winter look, falling snow, cute crowd of 10 mini snowmen = like the ducklings that did 2.8k) + Q49 troll booth (wordplay hook, riddle joke). Next idea: try a crowd of cute animals again (penguin parade) and stronger first-second visuals.
 
 - 2026-11-14 (TikTok views): Q34 knight 5.6k, Q35 crocodile 4.5k, Q38 ducklings 2.8k, Q36 parrot 2.0k; Q37-Q43 ~1.0-1.2k; Q46 T-rex 1.0k, Q45 hen 0.81k, Q44 dragon 0.83k, Q47 elephant 0.75k (likes 32-49, comments 1-2). Q48/Q49 posted today, no data yet. Plateau ~0.8-1.2k; animal crowd/zebra-crossing (ducklings) still the best of the new batch -> made Q50 walrus speed bump (big face close-ups, circus-ball gag, belly-up boing) + Q51 zebra on the zebra crossing (camouflage hook, crowd walks over the car, piano crossing, striped car). Next: penguin parade (cute crowd) soon.
+
+- 2026-11-16 (TikTok views): Q38 ducklings 2.8k, Q36 parrot 2.0k; Q49 troll booth 1.6k = best of the recent batch (wordplay/riddle hook + big face), Q43 caterpillar 1.24k, Q42 sheep 1.19k, Q48 snowman 1.17k, Q46 T-rex 1.16k; Q50 walrus 0.87k, Q51 zebra 0.92k after 1 day (likes 51-57). Q52 crab posted today. -> wordplay + cute crowds still the best bets; made Q53 goat in the ticket machine (eats your car part by part / road-map snack, goat sat-nav on the roof) + Q54 penguin parade (cute crowd of 200, belly-slide sledge to an iceberg / marching music, baby uses your car as a slide, dad leaves a fish).
 
 ## History (folder | Q | hook)
 - ep2 | Q2 | There's just one problem. The other lane is full of tanks. And they're all looking at you. What do y
@@ -85,3 +88,6 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - ep54 | Q49 | But the barrier is a club. And the hand holding it is green. It's a troll booth. What do you do?
 - ep55 | Q50 | But the speed bump just snored. It has whiskers. And tusks. It's a sleeping walrus. What do you do?
 - ep56 | Q51 | But one of the stripes just blinked. A real zebra is lying on it. What do you do?
+- ep57 | Q52 | It arrives sideways. With flashing lights. And two giant claws. The tow truck is a crab. What do you do?
+- ep58 | Q53 | But the machine just chewed it. And said: baa. There's a goat inside. What do you do?
+- ep59 | Q54 | Then you see why. A penguin parade. Two hundred of them, crossing the motorway. Very, very slowly. What do you do?

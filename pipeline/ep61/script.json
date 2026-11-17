@@ -1,0 +1,234 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 56,
+  "next": [
+   "THE DIGGER",
+   "IS A GIANT MOLE"
+  ],
+  "gfx": true,
+  "gfxopt": {
+   "sunDir": [
+    -60,
+    70,
+    90
+   ],
+   "sunCol": "#9db8ff",
+   "hemi": 0.85,
+   "vignette": 0.22,
+   "contrast": 1.1,
+   "sunBoost": 0.9,
+   "warm": 0
+  }
+ },
+ "segments": [
+  {
+   "id": "hook1",
+   "text": "Red light. Middle of the night. Nobody around. You wait. And wait.",
+   "gap": 0.4
+  },
+  {
+   "id": "hook2",
+   "text": "Then the red light blinks. It's an eye. The traffic light is an owl. What do you do?",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong1",
+   "text": "Most drivers think: nobody's watching. And drive straight through.",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong2",
+   "text": "Big mistake. Owls see everything. Her head turns. All the way round.",
+   "gap": 0.5
+  },
+  {
+   "id": "wrong3",
+   "text": "She swoops down, grabs your car like a mouse, and flies it home to her nest. Now she's sitting on you. She thinks you're an egg.",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong4",
+   "text": "Exam failed.",
+   "gap": 1.15
+  },
+  {
+   "id": "right1",
+   "text": "Here's how you do it properly.",
+   "gap": 0.3
+  },
+  {
+   "id": "right2",
+   "text": "Stop at the line. Owls love good manners. And they love winking.",
+   "gap": 0.4
+  },
+  {
+   "id": "right3",
+   "text": "So you wink at her. With your headlight. Blink.",
+   "gap": 0.4
+  },
+  {
+   "id": "right4",
+   "text": "She blushes, and winks back. Red eye closed. Green eye open. Green light!",
+   "gap": 0.4
+  },
+  {
+   "id": "right5",
+   "text": "And she likes you so much, she flies along, and lights up the whole road for you.",
+   "gap": 0.4
+  },
+  {
+   "id": "right6",
+   "text": "Two giant headlights. Hoo hoo!",
+   "gap": 0.6
+  },
+  {
+   "id": "right7",
+   "text": "Exam passed.",
+   "gap": 1.3
+  },
+  {
+   "id": "outro",
+   "text": "Next exam question: the digger is a giant mole. Follow, so you don't miss it.",
+   "gap": 1.2
+  }
+ ],
+ "cues": [
+  [
+   "hook2",
+   "blinks",
+   "blinkfx",
+   0.2
+  ],
+  [
+   "hook2",
+   "owl",
+   "hoot",
+   0.25,
+   0.2
+  ],
+  [
+   "wrong1",
+   "drive",
+   "rev",
+   0.15
+  ],
+  [
+   "wrong2",
+   "turns",
+   "servo",
+   0.2
+  ],
+  [
+   "wrong2",
+   "round",
+   "tilt",
+   0.15
+  ],
+  [
+   "wrong3",
+   "swoops",
+   "whoosh",
+   0.22
+  ],
+  [
+   "wrong3",
+   "grabs",
+   "thud",
+   0.25
+  ],
+  [
+   "wrong3",
+   "flies",
+   "whoosh",
+   0.18
+  ],
+  [
+   "wrong3",
+   "nest",
+   "thud",
+   0.25
+  ],
+  [
+   "wrong3",
+   "egg",
+   "squeak",
+   0.12
+  ],
+  [
+   "right2",
+   "Stop",
+   "beep",
+   0.08
+  ],
+  [
+   "right3",
+   "wink",
+   "plink",
+   0.14
+  ],
+  [
+   "right3",
+   "Blink",
+   "blinkfx",
+   0.2
+  ],
+  [
+   "right4",
+   "winks",
+   "plink",
+   0.14
+  ],
+  [
+   "right4",
+   "Green",
+   "chime",
+   0.12,
+   0.3
+  ],
+  [
+   "right5",
+   "flies",
+   "whoosh",
+   0.16
+  ],
+  [
+   "right5",
+   "lights",
+   "chime",
+   0.1
+  ],
+  [
+   "right6",
+   "Hoo",
+   "hoot",
+   0.25
+  ],
+  [
+   "right7",
+   "Exam",
+   "fanfare",
+   0.15
+  ]
+ ],
+ "beds": [
+  [
+   "engine",
+   0.0,
+   4.4,
+   0.03
+  ],
+  [
+   "wind",
+   0.0,
+   11.5,
+   0.04
+  ],
+  [
+   "ticker",
+   0.4,
+   4.6,
+   0.12
+  ]
+ ]
+}

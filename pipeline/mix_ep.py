@@ -359,6 +359,12 @@ def jingle_sfx(d=2.6):
         ph = np.cumsum(fw) / SR; sg = (np.sin(2*np.pi*ph) + 0.3*np.sin(4*np.pi*ph) + 0.15*np.sin(6*np.pi*ph)) * env(nd * 1.6, 0.004, 0.18)
         i = int(k * nd * SR); m = min(len(sg), len(out) - i); out[i:i+m] += sg[:m]
     return out * 0.7
+def hoot_sfx():
+    o = np.zeros(int(1.1*SR))
+    for k, (d, f0) in enumerate([(0.32, 420), (0.55, 390)]):
+        x = tt(d); f = f0 * (1 + 0.04*np.sin(np.pi*x/d)) ; s_ = lp(np.sin(2*np.pi*np.cumsum(f)/SR) + 0.25*np.sin(4*np.pi*np.cumsum(f)/SR), 1500) * np.sin(np.pi*x/d)**0.6; j = int(k*0.42*SR); o[j:j+len(s_)] += s_
+    return o * 0.8
+LIB["hoot"] = hoot_sfx
 LIB["jingle"] = jingle_sfx
 LIB["fanfare"] = fanfare_sfx; LIB["clang"] = clang_sfx; LIB["chomp"] = chomp_sfx; LIB["burp"] = burp_sfx
 def gallop_bed(d):

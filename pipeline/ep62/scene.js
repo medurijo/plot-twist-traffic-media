@@ -100,10 +100,10 @@ function drawField(u) {
 drawField(0);
 // wheat tufts (not inside the crop circle / entry lane)
 const tufts = [];
-{ const R = rng(57); for (let i = 0; i < 9000; i++) { const x = FX0 + 0.8 + R() * (FW - 1.6), z = FZ0 + 0.8 + R() * (FD - 1.6);
+{ const R = rng(57); for (let i = 0; i < 6500; i++) { const x = FX0 + 0.8 + R() * (FW - 1.6), z = FZ0 + 0.8 + R() * (FD - 1.6);
     if (Math.hypot(x - C.x, z - C.z) < R0 + RA + 2.2) continue; if (x < 12 && z > -22 && z < -6) continue; tufts.push([x, 0, z, R() * 6, 0.9 + R() * 0.5, 0.7 + R() * 0.6, 0.9 + R() * 0.5]); }
-  const parts = []; const R2 = rng(8); for (let k = 0; k < 9; k++) { const c = new THREE.ConeGeometry(0.035, 0.95 + R2() * 0.25, 4); c.translate(0, 0.5, 0); c.rotateZ((R2() - 0.5) * 0.35); c.rotateX((R2() - 0.5) * 0.35); const ox = (R2() - 0.5) * 0.5, oz = (R2() - 0.5) * 0.5; c.translate(ox, 0, oz); parts.push(c);
-    const e = new THREE.SphereGeometry(0.06, 5, 4); e.scale(1, 2.6, 1); e.translate(ox * 1.1, 1.08, oz * 1.1); parts.push(e); }
+  const parts = []; const R2 = rng(8); for (let k = 0; k < 6; k++) { const c = new THREE.ConeGeometry(0.04, 0.95 + R2() * 0.25, 3); c.translate(0, 0.5, 0); c.rotateZ((R2() - 0.5) * 0.35); c.rotateX((R2() - 0.5) * 0.35); const ox = (R2() - 0.5) * 0.5, oz = (R2() - 0.5) * 0.5; c.translate(ox, 0, oz); parts.push(c);
+    const e = new THREE.SphereGeometry(0.065, 4, 3); e.scale(1, 2.6, 1); e.translate(ox * 1.1, 1.08, oz * 1.1); parts.push(e); }
   const g = mergeGeo(parts); const m = instanced(g, L('#ffffff', { flatShading: true }), tufts);
   const cols = ['#d6a23a', '#e4b74b', '#c8922c', '#eac25a']; tufts.forEach((_, i) => m.setColorAt(i, new THREE.Color(cols[i % 4]))); m.castShadow = false; }
 

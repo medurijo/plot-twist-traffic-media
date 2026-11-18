@@ -1,12 +1,12 @@
 # Plot Twist Traffic – state
 
-Last published Q: **56** (Q53/Q54 posted 2026-11-17; Q55 posts 2026-11-18 15:30, Q56 posts 2026-11-18 18:00)
+Last published Q: **58** (Q55/Q56 posted 2026-11-18; Q57 posts 2026-11-19 15:30, Q58 posts 2026-11-19 18:00)
 Note: the 2026-11-16 18:00 slot stayed empty (previous run only finished Q52; Q53 sources were lost and rebuilt on Nov 16 evening).
-Next episode folder: ep62 = Q57
-Announced in last outro (must be next video): **A tornado takes the car in front of you** (Q56 outro re-rendered on Nov 18 at the user's request; mole dropped)
+Next episode folder: ep64 = Q59
+Announced in last outro (must be next video): **The traffic light turns into a disco** (all three colours at once, then blinking like a disco; IDEAS Nov-18 list item 2)
 CONTENT (user 18 Nov): fewer animals, back to crazy semi-realistic events (see RUNBOOK §2 CONTENT SWITCH, IDEAS Nov-18 list).
 STYLE: from Q34 back to the OLD opening style (no driving-tip/rule intro), see RUNBOOK §2. Opening references: ep32, ep31.
-Then from IDEAS.md: the Nov-12 list (reindeer sleigh saved for December).
+Then from IDEAS.md: the Nov-18 list, item 3 onwards (house on a lorry), never two of the same category in a row.
 
 Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day's two videos.
 
@@ -34,6 +34,8 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - 2026-11-16 (TikTok views): Q38 ducklings 2.8k, Q36 parrot 2.0k; Q49 troll booth 1.6k = best of the recent batch (wordplay/riddle hook + big face), Q43 caterpillar 1.24k, Q42 sheep 1.19k, Q48 snowman 1.17k, Q46 T-rex 1.16k; Q50 walrus 0.87k, Q51 zebra 0.92k after 1 day (likes 51-57). Q52 crab posted today. -> wordplay + cute crowds still the best bets; made Q53 goat in the ticket machine (eats your car part by part / road-map snack, goat sat-nav on the roof) + Q54 penguin parade (cute crowd of 200, belly-slide sledge to an iceberg / marching music, baby uses your car as a slide, dad leaves a fish).
 
 - 2026-11-17 (TikTok views): Q38 ducklings 2.85k, Q36 parrot 2.0k, Q52 crab tow truck 1.8k after 1 day (= best of the recent batch: big animal with a clear visual gag, claws), Q49 troll booth 1.6k, Q43 caterpillar 1.26k, Q42 sheep 1.2k; Q50 walrus 0.98k, Q51 zebra 1.17k, Q46/Q48 ~1.17k, Q44/Q45 ~0.86k, Q47 0.93k. Likes 36-131, comments 1-3. Q53 goat / Q54 penguins posted today. -> big expressive creature + one strong visual (claws, crowd) keeps winning; made Q55 giant snail at the height barrier (shell on your car, washer rain dance, slime-trail drift parking) + Q56 owl traffic light (night look, red/green eyes, nest, headlight wink, owl headlights).
+
+- 2026-11-18 (TikTok views): Q52 crab tow truck 4.0k (!) = best since Q35 (big creature + one strong visual gag), Q38 ducklings 2.9k, Q36 parrot 2.0k, Q49 troll 1.7k, Q43 1.28k, Q51 zebra 1.2k, Q48 1.2k, Q42 1.2k, Q46 1.18k, Q50 1.0k, Q47 0.95k; Q53 goat 0.81k, Q54 penguins 0.81k after 1 day (likes 45-51). User asked for fewer animals -> made Q57 tornado (event: car in front spinning above you, cow/caravan/gnome inside, windmill / counter-rotating circles make it dizzy, crop circle from above) + Q58 drawbridge (opens with you on it: jump into a cruise-ship pool / handbrake, best view, captain throws you his hat).
 
 ## History (folder | Q | hook)
 - ep2 | Q2 | There's just one problem. The other lane is full of tanks. And they're all looking at you. What do y
@@ -96,3 +98,5 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - ep59 | Q54 | Then you see why. A penguin parade. Two hundred of them, crossing the motorway. Very, very slowly. What do you do?
 - ep60 | Q55 | Because at the front, there's a giant snail. And her house is too tall for the height barrier. What do you do?
 - ep61 | Q56 | Then the red light blinks. It's an eye. The traffic light is an owl. What do you do?
+- ep62 | Q57 | Then the breeze becomes a tornado. It takes the car in front of you. And spins it, right above your head. What do you do?
+- ep63 | Q58 | The barriers come down. Behind you. The bridge is opening. With you on it. What do you do?

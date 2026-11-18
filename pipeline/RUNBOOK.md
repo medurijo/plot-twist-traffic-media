@@ -213,3 +213,12 @@ episodes – copy the structure of the closest one.
 - Eyelid hemisphere (cap along +y) for eyes looking -z: open = rotation.x +0.62π (cap folds back into the head), closed = -0.5π.
 - "Reveal by light": darken the creature materials (lerp colour to near-black) until the reveal word, then flicker a street lamp on.
 - Gantry posts / lamp poles / sign poles keep ending up in the foreground: for every camera key check the line camera->subject against all vertical props.
+
+## 17. Lessons (Nov 18 run, ep62/ep63)
+- Render cost: instanced wheat tufts (9000 bundles of 9 cones + 9 spheres) doubled the frame time (~20 s/frame under load). Keep instanced foliage low-poly (3-seg cones, 4x3 spheres, < ~1M tris total) and time one still per scene (`render.py stills`) before queueing: target <= 5 s/frame single.
+- Tornado (ep62): 3 nested LatheGeometry funnels r(y)=2+0.11y+0.0062y^2 with alpha streak canvas textures, vertexColors brown->grey, transparent, depthWrite false, noAO; debris = Points (size scaled with the tornado scale), dust skirt = sprites; spin angle from an integrated rate table (spinTable) so it can slow down smoothly. Inside-the-tornado shot: switch the funnel materials to BackSide and put the camera outside, co-rotating with the passengers.
+- Live crop circle: 2048 canvas field texture redrawn from t each frame (base copy + polyline up to the current path parameter).
+- Object glued to a rotating part (car on the windmill sail): world matrix = part.matrixWorld * fixed local matrix, decompose into the car.
+- Drawbridge (ep63): leaf = pivot group at the hinge, car placed with leaf.matrixWorld * translation; the deck top faces the hinge side when raised (camera must be on the hinge side to see the car, the other side shows the underside).
+- Town quays with house rows: cameras over the water or above roof height, otherwise they end up inside houses. Ship cameras that move with the ship also need z inside the river.
+- floatText helper argument order: (text, x, y, t, a, b, size, color, rot) – a wrapper with swapped size/colour silently draws nothing.

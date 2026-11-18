@@ -142,17 +142,21 @@ Remaining order: 7 snail height barrier (announced), 9 reindeer sleigh (December
 Done (Nov 17 run, posting Nov 18): Q55 giant snail at the supermarket height barrier – honk twice -> snails are shy: she jumps out of her house, it lands on YOUR car -> now you're 4.5 m (CLANG), the naked snail slides under the barrier and takes the last space / snails love rain: windscreen washers full power -> happy snail dance -> lays her house down flat: 1.99 m, 1 mm to spare -> thank-you slime trail into the last space, you glide in sideways, whee (ep60);
 Q56 the traffic light is an owl (night) – nobody's watching, drive through red -> owls see everything, head turns 360 -> swoops, grabs your car like a mouse, flies it to her nest, sits on it: you = egg / stop at the line, wink with your headlight -> she blushes, winks back: red eye closed, green eye open = green light -> flies along as two giant headlights, hoo hoo (ep61). Q56 announces next: the digger is a giant mole.
 
-## New list (Nov 18, user: fewer animals – back to crazy but semi-realistic EVENTS like the early episodes; an animal only now and then, max ~1 in 4)
-Q57 is already announced in the Q56 outro: roadworks – the digger is a giant mole (last animal for a while; keep the focus on the roadworks chaos).
+## New list (Nov 18, user: fewer animals – back to crazy but semi-realistic EVENTS like the early episodes: black hole roundabout, purple traffic light, lane full of tanks; an animal only now and then, max ~1 in 4)
+User especially liked: the TORNADO and the DRAWBRIDGE ideas -> this is the direction.
+Q57 (announced in the re-rendered Q56 outro): a tornado takes the car in front of you (it spins above you).
 Then, in this order (never two of the same category in a row):
-1. Traffic light – a sinkhole opens right in front of you, and it keeps growing
-2. Motorway – a wide load: a whole house on a lorry, taking both lanes (someone is still living in it)
-3. Car park / town – hailstones the size of footballs
-4. Bridge – the drawbridge starts to open while you're on it
-5. Mountain road – a giant mining-truck tyre rolls down towards you
-6. Junction – every traffic light in town turns green at once
-7. Country road – a tornado picks up the car in front (and it lands... somewhere)
-8. Motorway at noon – a total solar eclipse, suddenly pitch dark
-9. Scrapyard road – a giant magnet crane wants your car
-10. Earthquake – the road splits right under your wheels
-(Occasional animal ideas kept for later: hedgehog family on the cycle lane, sleeping bats in the car park, beaver dam, reindeer sleigh in December.)
+1. Bridge – the drawbridge starts to open while you're right in the middle
+2. Traffic light – shows all three colours at once, then starts blinking like a disco
+3. Motorway – a whole house on a lorry comes towards you, both lanes, the TV is still on inside
+4. Junction – a giant scrapyard magnet hangs over the crossing and pulls every car up
+5. Road ahead folds up like a sheet of paper – a wall of asphalt
+6. Traffic light – a sinkhole opens and grows with every red phase
+7. Motorway at noon – total solar eclipse, suddenly pitch dark
+8. Next to the motorway – rocket launch countdown while you're stuck in the jam
+9. Bridge – gravity flips, everything starts to float (incl. your coffee)
+10. Sat-nav says turn left – left is a runway with a plane landing
+11. The crash barrier comes alive and wriggles across the road like a rubber band
+12. Fog wall on the motorway – knights from the Middle Ages come out of it (time portal)
+13. Car park – hailstones the size of footballs
+(Mole digger dropped. Occasional animal ideas kept for later: hedgehog family on the cycle lane, sleeping bats in the car park, beaver dam, reindeer sleigh in December.)

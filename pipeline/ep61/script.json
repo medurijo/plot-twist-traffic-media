@@ -3,8 +3,8 @@
  "meta": {
   "q": 56,
   "next": [
-   "THE DIGGER",
-   "IS A GIANT MOLE"
+   "A TORNADO TAKES",
+   "THE CAR IN FRONT"
   ],
   "gfx": true,
   "gfxopt": {
@@ -89,7 +89,7 @@
   },
   {
    "id": "outro",
-   "text": "Next exam question: the digger is a giant mole. Follow, so you don't miss it.",
+   "text": "Next exam question: a tornado takes the car in front of you. Follow, so you don't miss it.",
    "gap": 1.2
   }
  ],

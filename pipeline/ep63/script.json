@@ -1,0 +1,275 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 58,
+  "next": [
+   "THE TRAFFIC LIGHT",
+   "TURNS INTO A DISCO"
+  ],
+  "gfx": true,
+  "gfxopt": {
+   "sunDir": [
+    -80,
+    55,
+    70
+   ],
+   "sunCol": "#ffcf9a",
+   "hemi": 0.85,
+   "vignette": 0.2,
+   "contrast": 1.1
+  }
+ },
+ "segments": [
+  {
+   "id": "hook1",
+   "text": "You're crossing the old bridge into town. Halfway across, a bell starts ringing.",
+   "gap": 0.4
+  },
+  {
+   "id": "hook2",
+   "text": "The barriers come down. Behind you. The bridge is opening. With you on it. What do you do?",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong1",
+   "text": "Most drivers think: full throttle. Jump it, like in the movies.",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong2",
+   "text": "Big mistake. The ramp gets steeper and steeper. And you fly. Really high.",
+   "gap": 0.5
+  },
+  {
+   "id": "wrong3",
+   "text": "Over the river, and right into the swimming pool of a cruise ship. Splash. Next stop: Australia.",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong4",
+   "text": "Exam failed.",
+   "gap": 1.15
+  },
+  {
+   "id": "right1",
+   "text": "Here's how you do it properly.",
+   "gap": 0.3
+  },
+  {
+   "id": "right2",
+   "text": "Stop. Engine off. Handbrake on. Hold on to your coffee.",
+   "gap": 0.4
+  },
+  {
+   "id": "right3",
+   "text": "Up you go. Best view in town.",
+   "gap": 0.4
+  },
+  {
+   "id": "right4",
+   "text": "The cruise ship glides past underneath. Everybody waves. The captain salutes, and sounds the horn, just for you.",
+   "gap": 0.4
+  },
+  {
+   "id": "right5",
+   "text": "He's so impressed, he throws you his captain's hat.",
+   "gap": 0.4
+  },
+  {
+   "id": "right6",
+   "text": "The bridge comes down. And you drive into town, as captain of the road.",
+   "gap": 0.6
+  },
+  {
+   "id": "right7",
+   "text": "Exam passed.",
+   "gap": 1.3
+  },
+  {
+   "id": "outro",
+   "text": "Next exam question: the traffic light turns into a disco. Follow, so you don't miss it.",
+   "gap": 1.2
+  }
+ ],
+ "cues": [
+  [
+   "hook1",
+   "crossing",
+   "waves",
+   0.08
+  ],
+  [
+   "hook1",
+   "bell",
+   "bell",
+   0.2
+  ],
+  [
+   "hook2",
+   "barriers",
+   "servo",
+   0.15
+  ],
+  [
+   "hook2",
+   "opening",
+   "servo",
+   0.18
+  ],
+  [
+   "wrong1",
+   "full",
+   "rev",
+   0.18,
+   -0.2
+  ],
+  [
+   "wrong2",
+   "steeper",
+   "servo",
+   0.12
+  ],
+  [
+   "wrong2",
+   "fly",
+   "whoosh",
+   0.25
+  ],
+  [
+   "wrong3",
+   "river",
+   "whoosh",
+   0.15
+  ],
+  [
+   "wrong3",
+   "Splash",
+   "splash",
+   0.35,
+   -0.05
+  ],
+  [
+   "wrong3",
+   "Australia",
+   "shiphorn",
+   0.2
+  ],
+  [
+   "right2",
+   "Stop",
+   "beep",
+   0.06
+  ],
+  [
+   "right2",
+   "Handbrake",
+   "clack",
+   0.25
+  ],
+  [
+   "right3",
+   "Up",
+   "servo",
+   0.15
+  ],
+  [
+   "right4",
+   "waves",
+   "crowd",
+   0.12
+  ],
+  [
+   "right4",
+   "salutes",
+   "ding",
+   0.12
+  ],
+  [
+   "right4",
+   "horn",
+   "shiphorn",
+   0.22
+  ],
+  [
+   "right5",
+   "throws",
+   "whoosh",
+   0.15
+  ],
+  [
+   "right5",
+   "hat",
+   "pop",
+   0.3,
+   0.3
+  ],
+  [
+   "right6",
+   "down",
+   "servo",
+   0.12
+  ],
+  [
+   "right6",
+   "captain",
+   "chime",
+   0.12
+  ],
+  [
+   "right7",
+   "Exam",
+   "fanfare",
+   0.15
+  ],
+  [
+   "hook1",
+   "bell",
+   "bell",
+   0.16,
+   0.9
+  ],
+  [
+   "hook1",
+   "ringing",
+   "bell",
+   0.16,
+   0.5
+  ],
+  [
+   "hook2",
+   "barriers",
+   "bell",
+   0.12,
+   0.2
+  ],
+  [
+   "hook2",
+   "Behind",
+   "bell",
+   0.12,
+   0.1
+  ],
+  [
+   "hook2",
+   "bridge",
+   "bell",
+   0.1,
+   0.2
+  ],
+  [
+   "hook2",
+   "With",
+   "bell",
+   0.1,
+   0.0
+  ]
+ ],
+ "beds": [
+  [
+   "engine",
+   0.0,
+   4.0,
+   0.03
+  ]
+ ]
+}

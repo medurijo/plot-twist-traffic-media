@@ -66,6 +66,12 @@ episodes – copy the structure of the closest one.
 - SFX must NEVER cover the narrator. Camera smooth and wide, subject always readable; no
   flicker, no objects blocking shots (check pillars/hedges/houses in stills).
 
+- **CONTENT SWITCH (user, 18 Nov 2026): too many animals lately.** Go back to the spirit of the early episodes
+  (black hole in the roundabout, the other lane full of tanks, tsunami on the on-ramp, meteorite over the jam, UFO beams up
+  the car ahead, lava on the road): crazy EVENTS that happen on the road, absurd but with a touch of realism.
+  Default = event/object/weather/vehicle twist, NOT an animal. An animal episode is allowed only occasionally
+  (at most ~1 in 4), never two in a row. Old-style one-line twist opening (see above) stays.
+
 ## 3. Build an episode (commands from /home/claude/fahrschule)
 1. `mkdir epNN && cp ep38/scene.html epNN/` ; write `epNN/script.json`
    (meta q + next[2 lines], segments hook1,hook2,wrong1-4,right1-7,outro; cues

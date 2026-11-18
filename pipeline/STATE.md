@@ -4,6 +4,7 @@ Last published Q: **56** (Q53/Q54 posted 2026-11-17; Q55 posts 2026-11-18 15:30,
 Note: the 2026-11-16 18:00 slot stayed empty (previous run only finished Q52; Q53 sources were lost and rebuilt on Nov 16 evening).
 Next episode folder: ep62 = Q57
 Announced in last outro (must be next video): **The digger is a giant mole** (roadworks: the digger is a giant mole)
+CONTENT (user 18 Nov): fewer animals, back to crazy semi-realistic events (see RUNBOOK §2 CONTENT SWITCH, IDEAS Nov-18 list).
 STYLE: from Q34 back to the OLD opening style (no driving-tip/rule intro), see RUNBOOK §2. Opening references: ep32, ep31.
 Then from IDEAS.md: the Nov-12 list (reindeer sleigh saved for December).
 

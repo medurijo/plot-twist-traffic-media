@@ -445,8 +445,9 @@ if SW:
         add(music, t2, pad([n2f(n - 12) for n in ch], lb * 4), 0.22)
         for j, m in enumerate(mel): add(music, t2 + j * lb / 2, bell(n2f(ch[m] + 12)), 0.2)
         t2 += lb * 4; k += 1
-CC = json.load(open(os.path.join(EP, "script.json"))).get("meta", {}).get("concert")
-if CC:  # [seg, word, endSeg]: normal music pauses, a funky octopus band takes over
+CC0 = json.load(open(os.path.join(EP, "script.json"))).get("meta", {}).get("concert")
+CCs = (CC0 if (CC0 and isinstance(CC0[0], list)) else [CC0]) if CC0 else []
+for CC in CCs:  # [seg, word, endSeg] (or a list of them): normal music pauses, a funky band takes over
     c0 = WT(CC[0], CC[1]) - 0.05; c1 = S(CC[2])["start"] - 0.1
     i0, i1 = int(c0 * SR), int(c1 * SR); ramp_ = np.ones(N)
     ramp_[i0:i1] = 0; fi = int(0.25 * SR); ramp_[max(0, i0 - fi):i0] = np.linspace(1, 0, min(fi, i0)); ramp_[i1:i1 + fi] = np.linspace(0, 1, len(ramp_[i1:i1 + fi]))

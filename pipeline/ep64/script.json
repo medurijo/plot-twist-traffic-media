@@ -1,0 +1,53 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 59,
+  "next": ["A WHOLE HOUSE ON A LORRY", "COMES TOWARDS YOU"],
+  "gfx": true,
+  "gfxopt": {"sunDir": [-60, 40, 90], "sunCol": "#ffb98a", "hemi": 0.9, "vignette": 0.18, "contrast": 1.1, "sunBoost": 0.6},
+  "concert": [["hook2", "Music", "wrong4"], ["right2", "Hazard", "right7"]]
+ },
+ "segments": [
+  {"id": "hook1", "text": "You're waiting at a red light. Then it goes yellow. And green. All at the same time.", "gap": 0.4},
+  {"id": "hook2", "text": "Then it starts to blink. Music. A mirror ball. The traffic light has turned into a disco. What do you do?", "gap": 0.9},
+  {"id": "wrong1", "text": "Most drivers think: honk, until it stops.", "gap": 0.4},
+  {"id": "wrong2", "text": "Big mistake. The traffic light thinks you're cheering. Volume up! The bass is so strong, your car starts to bounce.", "gap": 0.4},
+  {"id": "wrong3", "text": "Higher, and higher. Until you land on top of the traffic light. Spinning. You're the new mirror ball.", "gap": 0.9},
+  {"id": "wrong4", "text": "Exam failed.", "gap": 1.15},
+  {"id": "right1", "text": "Here's how you do it properly.", "gap": 0.3},
+  {"id": "right2", "text": "Every disco needs a light show. Hazard lights on.", "gap": 0.4},
+  {"id": "right3", "text": "Blink to the beat. Left. Right. Left.", "gap": 0.4},
+  {"id": "right4", "text": "The other drivers join in. Headlights flashing, everybody swaying. The whole junction is dancing.", "gap": 0.4},
+  {"id": "right5", "text": "The traffic light is so happy, it gives everybody green. At once.", "gap": 0.4},
+  {"id": "right6", "text": "So you all drive off together. One big conga line, once around, and out.", "gap": 0.6},
+  {"id": "right7", "text": "Exam passed.", "gap": 1.3},
+  {"id": "outro", "text": "Next exam question: a whole house on a lorry comes towards you. Follow, so you don't miss it.", "gap": 1.2}
+ ],
+ "cues": [
+  ["hook1", "yellow", "ding", 0.1],
+  ["hook1", "green", "ding", 0.1],
+  ["hook1", "All", "chime", 0.12],
+  ["hook2", "blink", "blinkfx", 0.12],
+  ["hook2", "mirror", "servo", 0.12],
+  ["hook2", "ball", "chime", 0.1, 0.2],
+  ["wrong1", "honk", "honk3", 0.2, 0.1],
+  ["wrong2", "cheering", "crowd", 0.12],
+  ["wrong2", "Volume", "servo", 0.12],
+  ["wrong2", "bounce", "boing", 0.16],
+  ["wrong3", "Higher", "boing", 0.14],
+  ["wrong3", "higher", "boing", 0.16],
+  ["wrong3", "land", "clang", 0.22],
+  ["wrong3", "Spinning", "servo", 0.12],
+  ["wrong3", "mirror", "chime", 0.12],
+  ["right2", "Hazard", "clack", 0.18],
+  ["right3", "Left", "blinkfx", 0.1],
+  ["right3", "Right", "blinkfx", 0.1],
+  ["right3", "Left", "blinkfx", 0.1],
+  ["right4", "drivers", "honk", 0.1, 0.3],
+  ["right4", "dancing", "crowd", 0.12],
+  ["right5", "green", "chime", 0.14],
+  ["right6", "conga", "whistle", 0.1],
+  ["right7", "Exam", "fanfare", 0.15]
+ ],
+ "beds": [["engine", 0.0, 3.0, 0.03]]
+}

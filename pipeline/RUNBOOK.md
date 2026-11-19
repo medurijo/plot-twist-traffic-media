@@ -224,3 +224,13 @@ episodes – copy the structure of the closest one.
 - floatText helper argument order: (text, x, y, t, a, b, size, color, rot) – a wrapper with swapped size/colour silently draws nothing.
 - Long tool sleeps can get the container's background jobs killed (exit 137): after any interruption check done.txt vs jobs and requeue the missing parts (half-written .ts files are simply overwritten).
 - Metricool createScheduledPost can return 502: check getScheduledPosts for that slot before retrying, to never double-post.
+
+## 18. Lessons (Nov 19 run, ep64/ep65)
+- `git pull` failed on a detached HEAD in the fresh container: `git checkout main && git pull origin main` first, then setup.sh.
+- mix_ep.py `meta.concert` now also takes a LIST of ranges (`[["hook2","Music","wrong4"],["right2","Hazard","right7"]]`) = funky 118 bpm band (disco) in several parts; drive visual beats from the same clock: beat = (t - (WT(seg,word) - 0.05)) / (60/118).
+- Disco look (ep64): blue-hour background, lamp discs MeshBasic toneMapped:false + small additive halo (keep opacity <= 0.2 or they wash the lamp out), rotating coloured SpotLights from the head, mirror-ball dots = InstancedMesh of flat circles on the ground (polygonOffset, fog:false, frustumCulled=false).
+- Hero headlights/indicators are hard to read in daylight or from behind: add additive blob sprites / small additive discs on the lamps when they flash (ep64 blHaloM, ep65 flares; keep them small, 0.2-0.75 m).
+- roundedPath radius r rounds the corner r metres BEFORE the corner on each leg: a "straight" stretch ends r m earlier than the corner point (ep65 lorry was still on the curve) -> put the corner far enough away and keep stop positions on the true straight.
+- Big box props (a 9 m house) block everything in 9:16: for flights/landings go wide and high (camera 35+ m away); for the inside of a building, hide roof + ceiling and shoot a top-down "dollhouse" view – very readable (ep65 drive-through).
+- A cab/vehicle with a visible driver must be hollow (floor, roof, back, sides + transparent windscreen); a solid box hides the driver.
+- Character facing: check which way the face points vs. the camera for every shot (grandma first showed her back); arm sideways reach = rotation.z on the shoulder pivot.

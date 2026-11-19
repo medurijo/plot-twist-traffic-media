@@ -1,12 +1,12 @@
 # Plot Twist Traffic – state
 
-Last published Q: **58** (Q55/Q56 posted 2026-11-18; Q57 posts 2026-11-19 15:30, Q58 posts 2026-11-19 18:00)
+Last published Q: **60** (Q57/Q58 posted 2026-11-19; Q59 posts 2026-11-20 15:30, Q60 posts 2026-11-20 18:00)
 Note: the 2026-11-16 18:00 slot stayed empty (previous run only finished Q52; Q53 sources were lost and rebuilt on Nov 16 evening).
-Next episode folder: ep64 = Q59
-Announced in last outro (must be next video): **The traffic light turns into a disco** (all three colours at once, then blinking like a disco; IDEAS Nov-18 list item 2)
+Next episode folder: ep66 = Q61
+Announced in last outro (must be next video): **A giant magnet over the crossing pulls up every car** (scrapyard magnet; IDEAS Nov-18 list item 4)
 CONTENT (user 18 Nov): fewer animals, back to crazy semi-realistic events (see RUNBOOK §2 CONTENT SWITCH, IDEAS Nov-18 list).
 STYLE: from Q34 back to the OLD opening style (no driving-tip/rule intro), see RUNBOOK §2. Opening references: ep32, ep31.
-Then from IDEAS.md: the Nov-18 list, item 3 onwards (house on a lorry), never two of the same category in a row.
+Then from IDEAS.md: the Nov-18 list, item 5 onwards (road folds up like paper), never two of the same category in a row.
 
 Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day's two videos.
 
@@ -36,6 +36,8 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - 2026-11-17 (TikTok views): Q38 ducklings 2.85k, Q36 parrot 2.0k, Q52 crab tow truck 1.8k after 1 day (= best of the recent batch: big animal with a clear visual gag, claws), Q49 troll booth 1.6k, Q43 caterpillar 1.26k, Q42 sheep 1.2k; Q50 walrus 0.98k, Q51 zebra 1.17k, Q46/Q48 ~1.17k, Q44/Q45 ~0.86k, Q47 0.93k. Likes 36-131, comments 1-3. Q53 goat / Q54 penguins posted today. -> big expressive creature + one strong visual (claws, crowd) keeps winning; made Q55 giant snail at the height barrier (shell on your car, washer rain dance, slime-trail drift parking) + Q56 owl traffic light (night look, red/green eyes, nest, headlight wink, owl headlights).
 
 - 2026-11-18 (TikTok views): Q52 crab tow truck 4.0k (!) = best since Q35 (big creature + one strong visual gag), Q38 ducklings 2.9k, Q36 parrot 2.0k, Q49 troll 1.7k, Q43 1.28k, Q51 zebra 1.2k, Q48 1.2k, Q42 1.2k, Q46 1.18k, Q50 1.0k, Q47 0.95k; Q53 goat 0.81k, Q54 penguins 0.81k after 1 day (likes 45-51). User asked for fewer animals -> made Q57 tornado (event: car in front spinning above you, cow/caravan/gnome inside, windmill / counter-rotating circles make it dizzy, crop circle from above) + Q58 drawbridge (opens with you on it: jump into a cruise-ship pool / handbrake, best view, captain throws you his hat).
+
+- 2026-11-19 (TikTok views): Q52 crab 4.07k stays the best recent one; Q51 zebra 1.24k, Q50 walrus 1.03k, Q49 troll 1.67k, Q48 1.21k; the newest animal batch is flat: Q53 goat 0.83k, Q54 penguins 0.88k, Q55 snail 0.80k, Q56 owl 0.82k (likes 30-52, comments 1). Q57 tornado / Q58 drawbridge posted today, no data yet. -> animals are tired (matches the user's 18 Nov note); made two event episodes: Q59 disco traffic light (blue-hour junction, mirror ball, car bounces onto the light and becomes the mirror ball / hazard-light light show, conga line) + Q60 house on a lorry (house flies off onto your car, SOLD sign, TV still on / ding-dong honk, grandma opens the garage, drive straight through the living room in a dollhouse top view, tea cup rides on your roof).
 
 ## History (folder | Q | hook)
 - ep2 | Q2 | There's just one problem. The other lane is full of tanks. And they're all looking at you. What do y
@@ -100,3 +102,5 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - ep61 | Q56 | Then the red light blinks. It's an eye. The traffic light is an owl. What do you do?
 - ep62 | Q57 | Then the breeze becomes a tornado. It takes the car in front of you. And spins it, right above your head. What do you do?
 - ep63 | Q58 | The barriers come down. Behind you. The bridge is opening. With you on it. What do you do?
+- ep64 | Q59 | Then it starts to blink. Music. A mirror ball. The traffic light has turned into a disco. What do you do?
+- ep65 | Q60 | It's a house. A whole house, on a lorry. Both lanes. And the TV is still on. What do you do?

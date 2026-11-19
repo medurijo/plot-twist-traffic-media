@@ -1,0 +1,51 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 60,
+  "next": ["A GIANT MAGNET", "PULLS UP EVERY CAR"],
+  "gfx": true,
+  "gfxopt": {"sunDir": [90, 65, 70], "sunCol": "#ffdcb0", "hemi": 0.85, "vignette": 0.2, "contrast": 1.1}
+ },
+ "segments": [
+  {"id": "hook1", "text": "Quiet country road. Then something big comes around the bend.", "gap": 0.4},
+  {"id": "hook2", "text": "It's a house. A whole house, on a lorry. Both lanes. And the TV is still on. What do you do?", "gap": 0.9},
+  {"id": "wrong1", "text": "Most drivers think: honk, and flash your lights. It'll make room.", "gap": 0.4},
+  {"id": "wrong2", "text": "Big mistake. The lorry driver gets a fright. Full brake!", "gap": 0.4},
+  {"id": "wrong3", "text": "But the house keeps going. Over the cab, and lands right on top of you. Congratulations, new homeowner. And the TV? Still on.", "gap": 0.9},
+  {"id": "wrong4", "text": "Exam failed.", "gap": 1.15},
+  {"id": "right1", "text": "Here's how you do it properly.", "gap": 0.3},
+  {"id": "right2", "text": "Pull over. Stop. And honk politely, like a doorbell. Ding dong.", "gap": 0.4},
+  {"id": "right3", "text": "Grandma opens the window. She knows exactly what to do.", "gap": 0.4},
+  {"id": "right4", "text": "She opens the garage, in the front, and in the back. And rolls out a ramp.", "gap": 0.4},
+  {"id": "right5", "text": "You drive straight through the house. Past the sofa. Past the TV. She even hands you a cup of tea.", "gap": 0.4},
+  {"id": "right6", "text": "Out the back, and on you go. The cosiest tunnel in the world.", "gap": 0.6},
+  {"id": "right7", "text": "Exam passed.", "gap": 1.3},
+  {"id": "outro", "text": "Next exam question: a giant magnet over the crossing pulls up every car. Follow, so you don't miss it.", "gap": 1.2}
+ ],
+ "cues": [
+  ["hook1", "something", "rev", 0.12],
+  ["hook2", "house", "honk", 0.06, 0.2],
+  ["hook2", "TV", "static", 0.1],
+  ["wrong1", "honk", "honk3", 0.2, 0.05],
+  ["wrong1", "flash", "blinkfx", 0.12],
+  ["wrong2", "fright", "squeak", 0.15],
+  ["wrong2", "brake", "tilt", 0.2],
+  ["wrong3", "keeps", "whoosh", 0.22],
+  ["wrong3", "cab", "whoosh", 0.18],
+  ["wrong3", "lands", "boom", 0.28],
+  ["wrong3", "Congratulations", "chime", 0.12],
+  ["wrong3", "Still", "static", 0.12],
+  ["right2", "Pull", "beep", 0.06],
+  ["right2", "Ding", "ding", 0.25],
+  ["right2", "dong", "chime", 0.2],
+  ["right3", "window", "squeak", 0.1],
+  ["right4", "garage", "servo", 0.14],
+  ["right4", "back", "servo", 0.12],
+  ["right4", "ramp", "clang", 0.16, 0.2],
+  ["right5", "drive", "rev", 0.12],
+  ["right5", "tea", "plink", 0.18],
+  ["right6", "cosiest", "chime", 0.12],
+  ["right7", "Exam", "fanfare", 0.15]
+ ],
+ "beds": [["engine", 0.0, 4.0, 0.03], ["engine", ["right5"], ["right6"], 0.025]]
+}

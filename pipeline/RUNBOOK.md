@@ -222,3 +222,5 @@ episodes – copy the structure of the closest one.
 - Drawbridge (ep63): leaf = pivot group at the hinge, car placed with leaf.matrixWorld * translation; the deck top faces the hinge side when raised (camera must be on the hinge side to see the car, the other side shows the underside).
 - Town quays with house rows: cameras over the water or above roof height, otherwise they end up inside houses. Ship cameras that move with the ship also need z inside the river.
 - floatText helper argument order: (text, x, y, t, a, b, size, color, rot) – a wrapper with swapped size/colour silently draws nothing.
+- Long tool sleeps can get the container's background jobs killed (exit 137): after any interruption check done.txt vs jobs and requeue the missing parts (half-written .ts files are simply overwritten).
+- Metricool createScheduledPost can return 502: check getScheduledPosts for that slot before retrying, to never double-post.

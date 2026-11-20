@@ -234,3 +234,12 @@ episodes – copy the structure of the closest one.
 - Big box props (a 9 m house) block everything in 9:16: for flights/landings go wide and high (camera 35+ m away); for the inside of a building, hide roof + ceiling and shoot a top-down "dollhouse" view – very readable (ep65 drive-through).
 - A cab/vehicle with a visible driver must be hollow (floor, roof, back, sides + transparent windscreen); a solid box hides the driver.
 - Character facing: check which way the face points vs. the camera for every shot (grandma first showed her back); arm sideways reach = rotation.z on the shoulder pivot.
+
+## 19. Lessons (Nov 20 run, ep66/ep67)
+- Another routine (FKN STUPID channel) pushes to the same repo: always `git pull --rebase origin main` right before `git push`.
+- Rolling road (ep67): one strip mesh (top/bottom/2 edges) rebuilt every frame from a contact parameter sc: s < sc flat, s > sc on an Archimedean spiral (core radius 3.2, thickness 0.3, r(phi) = r0 + th*phi/2pi, arc length solved with the quadratic); sc < 0 = rigid free roll (rotate about the centre by D/Yc, move +z). Top surface faces INWARD (like a real carpet roll), so a car can loop on the inner core surface (pitch = psi). Index winding (a, b, c, b, d, c) for an upward-facing top; underside with BackSide.
+- Swapping the top material when the roll unrolls (asphalt -> red carpet) is invisible because the top faces inward while rolled.
+- Town crossing (ep66): houses at x = +-14 swallowed several wide cameras (camera inside a house = flat orange/blank frame). Put wide cameras on the road axis or above roof height.
+- Crowd lines along a road: the camera must look ALONG the line from beyond the subject (crowd at the frame sides), not from inside the crowd.
+- sheet.sh fails with a single timestamp (hstack=1) – read the still file directly.
+

@@ -13,7 +13,7 @@ Next episode type: **absurd everyday** (ep9 was a law/arson episode).
 | ep5 | elevator | elevator full of goats, takes the stairs | everyday | 2026-11-19 15:00 |
 | ep6 | echo | yelled HELLO into a canyon, canyon arrested | law | 2026-11-19 18:00 |
 | ep7 | sheep | counting sheep, sheep #4 won't jump, shepherd sleeps in his bed | everyday | 2026-11-19 21:00 |
-| ep8 | lawn | neighbor's lawn 1 inch taller → mows neighbor, cop, police car, whole street; rain → grows 1 inch → mower | law | 2026-11-20 15:00 |
+| ep8 | lawn | neighbor's lawn 1 inch taller → mows neighbor, cop, police car, whole street; rain → grows 1 inch → mower | law | 2026-11-20 20:00 (15:00 missed) |
 | ep9 | spider | saw a spider → burns house, car, fire truck, cop's hat; new house; spider on his hat → opens door | law | 2026-11-20 21:00 |
 
 ## Notes

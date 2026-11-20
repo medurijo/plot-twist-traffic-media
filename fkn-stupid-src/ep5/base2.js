@@ -1,0 +1,153 @@
+'use strict';
+// =====================================================================
+//  BOX-HEAD 3D — "The Umbrella" (FKN STUPID Ep1)
+// =====================================================================
+const W = 1080, H = 1920; const cv = document.getElementById('c'); const g2 = cv.getContext('2d');
+const glc = document.createElement('canvas'); glc.width = 720; glc.height = 1280; const R = new Renderer(glc);
+R.mesh('box', Geo.box()); R.mesh('cyl', Geo.cyl(.5, .5, 1, 40));
+(() => { const A = .95, n = 18, P = [], N = [], I = []; for (let i = 0; i <= n; i++) { const th = -A + 2 * A * i / n; for (const y of [-.5, .5]) { P.push(Math.sin(th) / (2 * Math.sin(A)), y, (Math.cos(th) - Math.cos(A)) / (2 * Math.sin(A))); N.push(Math.sin(th), 0, Math.cos(th)); } } for (let i = 0; i < n; i++) { const a = i * 2; I.push(a, a + 2, a + 1, a + 1, a + 2, a + 3); } R.mesh('cface', { P, N, I }); })(); const CFA = .95; R.mesh('quad', { P: [-.5, -.5, 0, .5, -.5, 0, .5, .5, 0, -.5, .5, 0], N: [0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1], I: [0, 1, 2, 0, 2, 3] });
+const TAX = .1795; (() => { const A = [-.5, -.5], Bq = [.5, -.5], C = [TAX, .5], P = [], N = [], I = []; const tri = (z, nz) => { const b = P.length / 3; P.push(A[0], A[1], z, Bq[0], Bq[1], z, C[0], C[1], z); for (let k = 0; k < 3; k++) N.push(0, 0, nz); I.push(b, b + 1, b + 2); }; tri(.5, 1); tri(-.5, -1);
+  const side = (a, c) => { const b = P.length / 3, nx = c[1] - a[1], ny = -(c[0] - a[0]), l = Math.hypot(nx, ny); P.push(a[0], a[1], .5, c[0], c[1], .5, c[0], c[1], -.5, a[0], a[1], -.5); for (let k = 0; k < 4; k++) N.push(nx / l, ny / l, 0); I.push(b, b + 1, b + 2, b, b + 2, b + 3); }; side(A, Bq); side(Bq, C); side(C, A); R.mesh('tri', { P, N, I });
+  R.mesh('triface', { P: [A[0], A[1], 0, Bq[0], Bq[1], 0, C[0], C[1], 0], N: [0, 0, 1, 0, 0, 1, 0, 0, 1], I: [0, 1, 2] }); })();
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x)), lerp = (a, b, u) => a + (b - a) * u, lerp3 = (a, b, u) => [lerp(a[0], b[0], u), lerp(a[1], b[1], u), lerp(a[2], b[2], u)];
+const eout = u => 1 - Math.pow(1 - u, 3), eio = u => u < .5 ? 4 * u * u * u : 1 - Math.pow(-2 * u + 2, 3) / 2, eback = u => { const c1 = 2.2, c3 = c1 + 1; return 1 + c3 * Math.pow(u - 1, 3) + c1 * Math.pow(u - 1, 2); };
+const hsh = (a, b = 0) => { const x = Math.sin(a * 127.1 + b * 311.7) * 43758.5453; return x - Math.floor(x); }; const n1 = x => { const i = Math.floor(x), f = x - i, u = f * f * (3 - 2 * f); return lerp(hsh(i), hsh(i + 1), u) * 2 - 1; };
+const hex = h => [parseInt(h.slice(1, 3), 16) / 255, parseInt(h.slice(3, 5), 16) / 255, parseInt(h.slice(5, 7), 16) / 255];
+// ---------- timeline (word-exact from ElevenLabs transcript) ----------
+const TIM = window.TIM || { L: [0.16, 3.36, 5.36, 7.92, 11.52, 13.12, 15.44, 18.64, 20.46, 24.0, 25.84, 28.16, 30.96, 33.5, 34.48, 35.92, 37.82], end: 39.84 };
+const NOFF = .15; const P = TIM.L.map(x => x + NOFF); const NEND = TIM.end + NOFF; const T_END = NEND + 1.1;
+const WD = { rain: 4.4, forhis: 10.13, pigeon: 11.72, third: 15.92, fourth: 16.76, fifth: 17.48, neighbors: 18.92, tall: 21.52, plane: 22.24, swerve: 22.96, permit: 27.04, house: 29.08, dry: 32.68, wasnt: 33.6, sun: 34.8, another: 36.64, sunburn: 39.24 };
+for (const k in WD) WD[k] += NOFF;
+const ph = t => { let i = 0; for (let k = 0; k < P.length; k++) if (t >= P[k]) i = k; return i; }; const pend = i => P[i + 1] ?? NEND; const pu = (t, i) => clamp((t - P[i]) / (pend(i) - P[i])); const at = (i, f) => P[i] + (pend(i) - P[i]) * f;
+const CAPS = ['This man just bought a *brand new umbrella.*', 'Then it started to *rain.*', 'But he didn\'t want his umbrella to *get wet.*', 'So he bought a second umbrella... *for his umbrella.*', 'A *pigeon* moved in.', 'Now the *second umbrella* was getting wet.',
+  'So he got a *third.* And a *fourth.* And a *fifth!*', 'The *neighbors* moved in too.', 'The tower got so tall... a *plane had to swerve!*', 'A *police officer* showed up.', '"Sir... you need a *permit* for this."', 'So he built a *house* around it.',
+  'Finally, the umbrella was *dry.*', 'He *wasn\'t.*', 'Then the *sun* came out.', 'So he got *another umbrella...*', '...so his umbrella wouldn\'t get a *sunburn.*'];
+
+// ---------- face textures (deliberately dumb proportions) ----------
+const SK = { hero: '#f0cdb4', cop: '#d9a987', med: '#f3d6c2', med2: '#b98a66' };
+const LAY = {
+  hero: { W: 256, H: 312, eyes: [[122, 196, 28], [199, 178, 11]], nose: [166, 212, 16], mouth: [150, 266, 22], stubble: [56, 240, 238, 304], wrinkle: [136, 198, [118, 134]] },
+  cop: { W: 464, H: 320, bg: SK.cop, eyes: [[62, 86, 14], [398, 96, 24]], nose: [232, 104, 70], stache: [232, 214, 130], mouth: [236, 268, 18] },
+  cop2: { W: 464, H: 320, bg: SK.hero, eyes: [[80, 96, 22], [384, 82, 13]], nose: [232, 104, 70], stache: [232, 214, 110], mouth: [228, 268, 18] },
+  med: { W: 256, H: 256, bg: SK.med, eyes: [[82, 104, 60], [182, 116, 44]], mouth: [196, 218, 15] },
+  med2: { W: 256, H: 256, bg: SK.med2, eyes: [[66, 84, 34], [180, 140, 56]], mouth: [84, 220, 17], stubble: [20, 236, 190, 250] } };
+function faceTex(key, L, o) { const c = document.createElement('canvas'); c.width = L.W; c.height = L.H; const x = c.getContext('2d'); if (L.bg) { x.fillStyle = L.bg; x.fillRect(0, 0, L.W, L.H); } const ink = '#1b1b20'; x.strokeStyle = ink; x.fillStyle = ink; x.lineCap = 'round'; x.lineJoin = 'round';
+  if (L.fringe) { x.lineWidth = 3; for (let k = 0; k < 90; k++) { const px = hsh(k, 1) * L.W, py = 70 + hsh(k, 2) * hsh(k, 5) * 70; x.beginPath(); x.arc(px, py, 5 + hsh(k, 3) * 7, hsh(k, 4) * 6, hsh(k, 4) * 6 + 3.6); x.stroke(); } }
+  if (L.wrinkle) { const [wa, wb, wy] = L.wrinkle; x.lineWidth = 3; for (const yy of wy) { x.beginPath(); x.moveTo(wa, yy); x.quadraticCurveTo((wa + wb) / 2, yy - 7, wb, yy); x.stroke(); } }
+  if (L.stubble) for (let k = 0; k < 240; k++) { const px = L.stubble[0] + hsh(k, 7) * (L.stubble[1] - L.stubble[0]), py = L.stubble[2] + hsh(k, 8) * (L.stubble[3] - L.stubble[2]); if (L.mouth && Math.abs(px - L.mouth[0]) < L.mouth[2] + 8 && Math.abs(py - L.mouth[1]) < 16) continue; x.fillStyle = ink; x.fillRect(px, py, 2.4, 2.4 + hsh(k, 9) * 3); }
+  const e = o.e || 'neutral';
+  L.eyes.forEach(([ex, ey, r], n) => { const sg = n ? 1 : -1; x.lineWidth = Math.max(3, r * .16);
+    if (e === 'squint' || e === 'closed') { x.beginPath(); x.moveTo(ex - r, ey); x.quadraticCurveTo(ex, ey + (e === 'closed' ? r * .45 : r * .1), ex + r, ey); x.stroke(); if (e === 'squint') { x.beginPath(); x.moveTo(ex - r * .85, ey + r * .42); x.lineTo(ex + r * .85, ey + r * .42); x.stroke(); } }
+    else { const rw = e === 'wide' ? r * 1.15 : r, rh = e === 'wide' ? r * 1.15 : r * .6; x.fillStyle = '#fff'; x.beginPath(); x.ellipse(ex, ey, rw, rh, 0, 0, 6.283); x.fill(); x.stroke(); x.fillStyle = ink; x.beginPath(); x.arc(ex + (o.lx || 0) * rw * .5, ey + (o.ly || 0) * rh * .4, Math.max(3, r * (e === 'wide' ? .2 : .3)), 0, 6.283); x.fill(); if (e === 'half') { x.save(); x.beginPath(); x.ellipse(ex, ey, rw + 1, rh + 1, 0, 0, 6.283); x.clip(); x.fillStyle = L.bg || L.skin || '#f0cdb4'; x.fillRect(ex - rw - 4, ey - rh - 4, rw * 2 + 8, rh + 4); x.restore(); x.lineWidth = Math.max(4, r * .22); x.beginPath(); x.moveTo(ex - rw * 1.05, ey); x.lineTo(ex + rw * 1.05, ey); x.stroke(); } if (e !== 'wide') { x.lineWidth = Math.max(4, r * .2); x.beginPath(); x.moveTo(ex - rw * 1.1, ey - rh * .92); x.lineTo(ex + rw * 1.1, ey - rh * .92); x.stroke(); } }
+    x.lineWidth = Math.max(4, r * .22); const bt = e === 'wide' ? -r * .7 : e === 'squint' ? r * .3 : 0, by = ey - r * 1.55 + bt; x.beginPath(); x.moveTo(ex - r * 1.1, by - sg * (o.brow || 0) * r * .4); x.lineTo(ex + r * 1.1, by + sg * (o.brow || 0) * r * .4); x.stroke(); });
+  if (L.nose) { x.lineWidth = 4; x.beginPath(); x.moveTo(L.nose[0], L.nose[1]); x.lineTo(L.nose[0] - 6, L.nose[1] + L.nose[2]); x.lineTo(L.nose[0] + 12, L.nose[1] + L.nose[2] + 2); x.stroke(); }
+  if (L.stache) { const [sx, sy, sw] = L.stache; x.fillStyle = ink; x.beginPath(); x.moveTo(sx - sw, sy + 12); x.quadraticCurveTo(sx, sy - sw * .5, sx + sw, sy + 12); x.quadraticCurveTo(sx, sy + 6, sx - sw, sy + 12); x.fill(); }
+  const [mx, my, mw] = L.mouth; if (o.m === 'open') { x.fillStyle = '#3a1418'; x.beginPath(); x.ellipse(mx, my + 4, mw * 1.15, mw * .8, 0, 0, 6.283); x.fill(); x.lineWidth = 4; x.stroke(); x.fillStyle = '#c0434d'; x.beginPath(); x.ellipse(mx, my + mw * .45, mw * .6, mw * .3, 0, 0, 6.283); x.fill(); }
+  else if (o.m === 'grin') { x.fillStyle = '#3a1418'; x.beginPath(); x.moveTo(mx - mw * 1.4, my - 6); x.quadraticCurveTo(mx, my + mw * 1.7, mx + mw * 1.4, my - 6); x.closePath(); x.fill(); x.lineWidth = 4; x.stroke(); x.fillStyle = '#fff'; x.fillRect(mx - mw * 1.05, my - 4, mw * 2.1, mw * .38); }
+  else if (o.m === 'o') { x.fillStyle = '#3a1418'; x.beginPath(); x.ellipse(mx, my + 2, mw * .5, mw * .62, 0, 0, 6.283); x.fill(); x.lineWidth = 4; x.stroke(); }
+  else { x.lineWidth = 5; x.beginPath(); x.moveTo(mx - mw, my + 2); x.quadraticCurveTo(mx, my + (o.m === 'frown' ? -mw * .4 : mw * .2), mx + mw, my); x.stroke(); }
+  if (L.bg) { x.lineWidth = 9; x.strokeStyle = ink; x.strokeRect(2, 2, L.W - 4, L.H - 4); } R.tex(key, c); }
+for (const who of Object.keys(LAY)) for (const [k, v] of Object.entries({ neutral: {}, wide: { e: 'wide', m: 'o' }, squint: { e: 'squint', m: 'frown', brow: 1 }, talk: { m: 'open' }, talksq: { e: 'squint', m: 'open', brow: 1 }, closed: { e: 'closed' }, left: { lx: -1 }, down: { ly: 1, lx: -.6 }, widel: { e: 'wide', m: 'o', lx: -1 } })) faceTex(who + '_' + k, LAY[who], v);
+// ---------- extra faces ----------
+LAY.hero.skin = SK.hero;
+LAY.nb = { W: 256, H: 464, eyes: [[86, 180, 26], [172, 196, 14]], nose: [128, 214, 30], mouth: [118, 320, 20], skin: '#e8b48f', wrinkle: [70, 190, [108, 124, 140]] };
+LAY.pilot = { W: 256, H: 256, bg: '#e8b48f', eyes: [[78, 100, 40], [182, 92, 48]], nose: [128, 120, 26], mouth: [128, 208, 24] };
+for (const who of ['hero', 'nb', 'cop', 'pilot']) for (const [k, v] of Object.entries({ neutral: {}, wide: { e: 'wide', m: 'o' }, squint: { e: 'squint', m: 'frown', brow: 1 }, talk: { m: 'open' }, talksq: { e: 'squint', m: 'open', brow: 1 }, closed: { e: 'closed' },
+  up: { ly: -1.2 }, wideup: { e: 'wide', m: 'o', ly: -1.3 }, half: { e: 'half' }, halfup: { e: 'half', ly: -1 }, grin: { m: 'grin' }, grinup: { m: 'grin', ly: -1 }, scream: { e: 'wide', m: 'open' }, worry: { brow: -1.2, m: 'frown', lx: .4 }, dizzy: { e: 'closed', m: 'o' }, sip: { e: 'closed', m: 'o' } })) faceTex(who + '_' + k, LAY[who], v);
+
+// ---------- builders ----------
+const B = (c, p, s, o = {}) => new Node('box', Object.assign({ c: hex(c), out: .012, spec: .05, rim: .04 }, o), p, s);
+function noodle(n, len, w, c, mo) { const segs = []; let parent = null, root = null; const l = len / n; for (let k = 0; k < n; k++) { const piv = new Node(null, null, [0, k ? -l : 0, 0]); piv.add(B(c, [0, -l / 2, 0], [w, l * 1.14, w], Object.assign({ out: .03 }, mo || {}))); if (parent) parent.add(piv); else root = piv; parent = piv; segs.push(piv); } const end = new Node(null, null, [0, -l, 0]); parent.add(end); return { root, segs, end }; }
+function man(o) { const root = new Node(), body = new Node(); root.add(body); const skin = o.skin; const m = { root, body, id: o.id, seed: o.seed || 0, wob: .06 };
+  const st = o.stripe ? { c2: hex(o.stripe), pat: 5, ps: 3 } : {};
+  const leg = sg => { const ch = noodle(4, .95, .12, o.pants); ch.root.p = [sg * .15, .95, 0]; ch.end.add(B(o.shoe || '#3b3540', [0, .03, .07], [.22, .1, .38])); body.add(ch.root); return ch; }; m.legL = leg(-1); m.legR = leg(1); m.lL = { r: [0, 0, 0] }; m.lR = { r: [0, 0, 0] };
+  m.torso = B(o.shirt, [0, 1.36, 0], [.56, .82, .34], o.stripe ? { c2: hex(o.stripe), pat: 5, ps: 9 } : {}); body.add(m.torso); const nk = o.neck || .08; body.add(B(skin, [0, 1.77 + nk / 2, 0], [.11, nk + .06, .11], { out: .03 }));
+  if (o.badge) body.add(B('#f0c44a', [-.15, 1.56, .175], [.11, .13, .02])); if (o.pocket) { body.add(B(o.pocket, [-.15, 1.48, .175], [.15, .12, .02])); body.add(B(o.pocket, [.15, 1.48, .175], [.15, .12, .02])); } if (o.cross) { body.add(B('#e03a3a', [.15, 1.54, .175], [.14, .05, .02])); body.add(B('#e03a3a', [.15, 1.54, .176], [.05, .14, .02])); }
+  const head = new Node(null, null, [0, 1.8 + nk, 0]); m.head = head; let hw, hd, topY;
+  if (o.shape === 'can') { const r = .25, h = .86; hw = hd = r * 2; topY = h; head.add(new Node('cyl', { c: hex(skin), out: 0, spec: .06, rim: .08 }, [0, 0, 0], [r * 2, h, r * 2])); for (const y of [-.008, h - .006]) head.add(new Node('cyl', { c: [.1, .1, .12], out: 0 }, [0, y, 0], [r * 2 + .03, .016, r * 2 + .03]));
+    m.face = new Node('cface', { c: hex(skin), tex: o.id + '_neutral', spec: 0, rim: 0, out: 0 }, [0, h / 2, r * Math.cos(CFA) + .004], [2 * r * Math.sin(CFA), h, 2 * r * Math.sin(CFA)]); head.add(m.face); for (const sg of [-1, 1]) head.add(B(skin, [sg * (r + .02), .3, 0], [.05, .13, .09], { out: .03 })); }
+  else if (o.shape === 'disc') { const r = .38, th = .16; hw = r * 2; hd = th; topY = r * 2; head.add(new Node('cyl', { c: hex('#e0a87e'), out: 0, spec: .06, rim: .08 }, [0, r, -th / 2], [r * 2, th, r * 2], [Math.PI / 2, 0, 0])); for (const z of [-th / 2 - .006, th / 2 - .01]) head.add(new Node('cyl', { c: [.1, .1, .12], out: 0 }, [0, r, z], [r * 2 + .03, .016, r * 2 + .03], [Math.PI / 2, 0, 0]));
+    m.face = new Node('circ', { c: hex(skin), tex: o.id + '_neutral', spec: 0, rim: 0, out: 0 }, [0, r, th / 2 + .012], [r * 2, r * 2, 1]); head.add(m.face); for (const sg of [-1, 1]) head.add(B(skin, [sg * (r + .02), r, 0], [.05, .13, .09], { out: .03 })); }
+  else if (o.shape === 'tri') { const w = .78, h = .95, d = .2; hw = w; hd = d; topY = h; head.add(new Node('tri', { c: hex('#e2ab88'), c2: hex(skin), em: .85, out: 0, spec: .06, rim: .08 }, [0, h / 2, 0], [w, h, d]));
+    m.face = new Node('triface', { c: hex(skin), tex: o.id + '_neutral', spec: 0, rim: 0, out: 0 }, [0, h / 2, d / 2 + .002], [w, h, 1]); head.add(m.face);
+    const V = [[-w / 2, 0], [w / 2, 0], [TAX * w, h]]; for (const zz of [d / 2 + .006, -d / 2 - .006]) for (let k = 0; k < 3; k++) { const a = V[k], b = V[(k + 1) % 3]; head.add(new Node('box', { c: hex('#7a4a36'), out: 0 }, [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2, zz], [Math.hypot(b[0] - a[0], b[1] - a[1]) + .01, .02, .01], [0, 0, Math.atan2(b[1] - a[1], b[0] - a[0])])); }
+    head.add(B(skin, [-.25, .3, 0], [.05, .16, .09], { out: .03 })); head.add(B(skin, [.345, .26, 0], [.05, .1, .07], { out: .03 }));
+    const hat = new Node(null, null, [TAX * w + .02, h - .04, 0], null, [0, 0, -.32]); hat.add(new Node('cyl', { c: hex('#2a2a30'), out: 0, spec: .2, rim: .12 }, [0, 0, 0], [.4, .035, .4])); hat.add(new Node('cyl', { c: hex('#2a2a30'), out: 0, spec: .2, rim: .12 }, [0, .02, 0], [.22, .2, .22])); hat.add(new Node('cyl', { c: hex('#d8302c'), out: 0 }, [0, .03, 0], [.226, .045, .226])); head.add(hat); m.hat = hat; }
+  else { const [w, h, d] = o.shape === 'wide' ? [.76, .5, .44] : [.36, .36, .36]; hw = w; hd = d; topY = h; head.add(B(skin, [0, h / 2, 0], [w, h, d])); m.face = new Node('quad', { c: hex(skin), tex: o.id + '_neutral', spec: 0, rim: 0, out: 0 }, [0, h / 2, d / 2 + .0015], [w, h, 1]); head.add(m.face); for (const sg of [-1, 1]) head.add(B(skin, [sg * (w / 2 + .02), h * .45, 0], [.05, .12, .09], { out: .03 })); }
+  if (o.hair) { head.add(B(o.hair, [0, topY + .04, -.01], [hw + .05, .1, hd + .05])); for (let k = 0; k < 4; k++) head.add(B(o.hair, [-hw * .36 + k * hw * .24, topY - .03 - (k % 2) * .03, hd / 2 + .012], [hw * .2, .1 + (k % 3) * .04, .02], { out: .04 })); }
+  if (o.beanie && o.shape !== 'tri') { head.add(new Node('cyl', { c: hex(o.beanie), c2: hex(o.beanie2), pat: 5, ps: 8, out: 0, spec: .03, rim: .03 }, [0, topY - .1, 0], [hw + .05, .2, hd + .05])); head.add(new Node('cyl', { c: hex(o.beanie), out: 0 }, [0, topY + .1, 0], [hw - .04, .08, hd - .04])); head.add(B(o.beanie2, [0, topY + .23, 0], [.11, .11, .11], { out: .03 })); }
+  m.cap = null; m.capY = topY; if (o.cap) { const cap = new Node(null, null, [0, topY, 0]); cap.add(B(o.cap, [0, .07, -.02], [hw + .08, .16, hd + .1])); cap.add(B(o.cap, [0, 0, hd / 2 + .12], [hw + .02, .04, .2])); cap.add(B(o.capBadge || '#f0c44a', [0, .08, hd / 2 + .035], [.1, .1, .02])); head.add(cap); m.cap = cap; }
+  body.add(head);
+  const arm = sg => { const ch = noodle(5, 1.0, .1, o.shirt, st); ch.root.p = [sg * .33, 1.73, 0]; ch.end.add(B(skin, [0, -.06, 0], [.15, .15, .12], { out: .03 })); body.add(ch.root); return ch; }; m.armL = arm(-1); m.armR = arm(1); m.sL = { r: [0, 0, 0] }; m.sR = { r: [0, 0, 0] }; m.eL = { r: [0, 0, 0] }; m.eR = { r: [0, 0, 0] };
+  m.phone = B('#1c1c22', [0, -.14, .08], [.12, .26, .03]); m.phone.visible = false; m.armR.end.add(m.phone); return m; }
+const setFace = (m, e) => { m.face.mat.tex = m.id + '_' + e; };
+function resetPose(m) { m.root.p = [0, 0, 0]; m.root.r = [0, 0, 0]; m.body.p = [0, 0, 0]; m.body.r = [0, 0, 0]; m.head.r = [0, 0, 0]; m.wob = .06; m.lL.r = [0, 0, 0]; m.lR.r = [0, 0, 0]; m.lL.k = m.lR.k = 0; m.eL.r = [0, 0, 0]; m.eR.r = [0, 0, 0]; m.sL.r = [0, 0, .1]; m.sR.r = [0, 0, -.1]; m.phone.visible = false; if (m.cap) { m.cap.p = [0, m.capY, 0]; m.cap.r = [0, 0, 0]; } m.root.visible = true; }
+function applyNoodle(m, t) { const w = m.wob; const A = (ch, s, e, sd) => { ch.segs[0].r = [s.r[0], 0, s.r[2] || 0]; const q = ch.segs.length - 1; for (let k = 1; k <= q; k++) ch.segs[k].r = [e.r[0] / q + Math.sin(t * 5.5 + k * 1.2 + sd) * w, 0, (e.r[2] || 0) / q + Math.cos(t * 4.7 + k * 1.4 + sd) * w]; };
+  A(m.armL, m.sL, m.eL, m.seed); A(m.armR, m.sR, m.eR, m.seed + 2); const G = (ch, l, sd) => { ch.segs[0].r = [l.r[0], 0, l.r[2] || 0]; for (let k = 1; k < ch.segs.length; k++) ch.segs[k].r = [(l.k || 0) / 3 + Math.sin(t * 5 + k + sd) * w * .5, 0, Math.cos(t * 4.3 + k + sd) * w * .35]; }; G(m.legL, m.lL, m.seed + 4); G(m.legR, m.lR, m.seed + 6);
+  if (m.hat) m.hat.r = [0, 0, -.32 + Math.sin(t * 4.1) * (.02 + m.wob * .3)];
+  if (m.hatSegs) m.hatSegs.forEach((q, k) => { q.r = [Math.sin(t * 3.3 + k) * .06, 0, (k ? .5 : .35) + Math.sin(t * 4.1 + k * .9) * (.04 + m.wob * .6)]; });
+  m.head.r = [m.head.r[0] + Math.sin(t * 3.1 + m.seed) * .03, m.head.r[1], m.head.r[2] + Math.sin(t * 2.3 + m.seed * 2) * .05]; }
+const walkPose = (m, t, sp = 8, amp = .85) => { const a = Math.sin(t * sp) * amp; m.lL.r = [-a, 0, 0]; m.lR.r = [a, 0, 0]; m.lL.k = Math.max(0, a) * 1.3; m.lR.k = Math.max(0, -a) * 1.3; m.sL.r = [a * .9, 0, .25]; m.sR.r = [-a * .9, 0, -.25]; m.eL.r = [-.5, 0, 0]; m.eR.r = [-.5, 0, 0]; m.wob = .22; m.body.p = [0, Math.abs(Math.cos(t * sp)) * .1, 0]; m.body.r = [.08, 0, Math.sin(t * sp) * .07]; };
+const phonePose = m => { m.sR.r = [-.2, 0, .9]; m.eR.r = [-.4, 0, 2.3]; m.phone.visible = true; };
+const kneel = m => { m.body.p = [0, -.7, 0]; m.lL.r = [1.5, 0, 0]; m.lR.r = [1.5, 0, 0]; };
+// ---------- world ----------
+const scene = new Node(); const M = (c, o = {}) => Object.assign({ c: hex(c), out: 0, spec: .03, rim: .02 }, o);
+scene.add(new Node('box', M('#8fb86a'), [0, -.16, -10], [160, .2, 30]));                       // grass
+scene.add(new Node('box', M('#d9d3c8', { c2: hex('#b9b2a6'), pat: 6, ps: 1.2 }), [0, -.05, -.3], [160, .1, 4.2])); // sidewalk
+scene.add(new Node('box', M('#c9c2b5'), [0, -.02, 1.9], [160, .16, .25]));                     // curb
+scene.add(new Node('box', M('#4a4854'), [0, -.12, 7], [160, .2, 10]));                         // road
+for (let k = -12; k <= 12; k++) scene.add(new Node('box', M('#e9e4d4', { noShadow: 1 }), [k * 5, .0, 7], [2.2, .04, .18]));
+scene.add(new Node('box', M('#8fb86a'), [0, -.16, 22], [160, .2, 20]));
+const WINS = []; const HC = ['#e8c9a0', '#c98f7a', '#a9c4d6', '#e6d58a', '#b7d0a8', '#d8a8b8', '#c9b79a'];
+for (let k = -4; k <= 4; k++) { const x = k * 8.2 + (k % 2) * .8, z = -9.5, c = HC[(k + 8) % 7]; const h = new Node(); h.p = [x, 0, z]; h.add(B(c, [0, 2, 0], [6, 4, 5], { out: .004 })); h.add(new Node('box', M(k % 2 ? '#8a4a3c' : '#5d6b7a', { out: 0 }), [0, 4, 0], [6.4, 3.4, 3.6], [Math.PI / 4, 0, 0]));
+  h.add(B('#6b4a36', [-1.5, 1.05, 2.52], [1.1, 2.1, .06], { out: .01 })); for (const wx of [.6, 2.1]) { const w = B('#bcd9e6', [wx, 2.3, 2.52], [1, 1.1, .06], { out: .03 }); WINS.push(w); h.add(w); h.add(B('#f4f1e8', [wx, 2.3, 2.56], [.06, 1.1, .02], { out: 0 })); h.add(B('#f4f1e8', [wx, 2.3, 2.56], [1, .06, .02], { out: 0 })); h.add(B('#f4f1e8', [wx, 1.7, 2.6], [1.2, .08, .14], { out: 0 })); } h.add(B('#f0c44a', [-1.15, 1.05, 2.57], [.1, .1, .05], { out: 0 })); h.add(B('#9a6a52', [1.9, 5.6, -.6], [.7, 1.6, .7], { out: .01 })); h.add(B('#cfc8ba', [-1.5, .08, 2.8], [1.5, .16, .5], { out: 0 })); h.add(B('#5fa257', [1.4, .35, 2.95], [2.3, .7, .7], { out: .01 })); h.add(B('#e9e4d4', [-1.5, -.02, 4.2], [1.3, .08, 3.4], { out: 0 })); scene.add(h);
+  const h2 = new Node(); h2.p = [x + 3, 0, 21]; h2.add(B(HC[(k + 11) % 7], [0, 2, 0], [6, 4, 5], { out: .004 })); h2.add(new Node('box', M('#8a4a3c'), [0, 4, 0], [6.4, 3.4, 3.6], [Math.PI / 4, 0, 0])); for (const wx of [-1.6, 1.4]) { const w = B('#bcd9e6', [wx, 2.3, -2.52], [1.1, 1.1, .06], { out: .03 }); WINS.push(w); h2.add(w); } scene.add(h2); }
+for (let k = -5; k <= 5; k++) { const x = k * 8.2 + 4.3, tr = new Node(); tr.p = [x, 0, -5 - (k % 2) * 1.2]; tr.add(B('#7a5238', [0, 1.1, 0], [.4, 2.2, .4], { out: .01 })); tr.add(B(k % 2 ? '#5c9a54' : '#6fae5e', [0, 3.2, 0], [2.3, 2.5, 2.3], { out: .008 })); tr.add(B('#7fbd68', [.3, 4.6, -.2], [1.4, 1.2, 1.4], { out: .008 })); scene.add(tr); }
+for (let k = -18; k <= 18; k++) scene.add(B('#f1ece0', [k * .95 + 3.8, .45, -2.6], [.14, .9, .06], { out: .02 }));
+scene.add(B('#f1ece0', [3.8, .6, -2.62], [34, .1, .04], { out: 0 }));
+const lamp = new Node(); lamp.p = [3.2, 0, 1.4]; lamp.add(B('#3d3f4a', [0, 2.4, 0], [.14, 4.8, .14], { out: .02 })); lamp.add(B('#3d3f4a', [-.5, 4.75, 0], [1.1, .1, .12], { out: 0 })); const bulb = new Node('box', M('#fff1b8', { em: .2 }), [-.95, 4.62, 0], [.34, .14, .26]); lamp.add(bulb); scene.add(lamp);
+scene.add(B('#d8483c', [-5.6, .45, 1.3], [.34, .9, .34], { out: .02 })); scene.add(B('#d8483c', [-5.6, .95, 1.3], [.22, .14, .22], { out: .02 }));
+scene.add(B('#3f6fb5', [5.6, .65, -1.9], [.5, 1.3, .4], { out: .015 })); scene.add(B('#3f6fb5', [5.6, 1.33, -1.9], [.56, .1, .46], { out: .015 }));
+// cars
+function car(o) { const c = new Node(); c.add(B(o.body, [0, .55, 0], [1.9, .6, 4.3], { out: .008 })); c.add(B(o.top || o.body, [0, 1.1, -.2], [1.7, .56, 2.3], { out: .01 })); c.add(B('#9fd0e8', [0, 1.12, .96], [1.5, .4, .04], { out: 0 })); for (const [x, z] of [[-.95, 1.4], [.95, 1.4], [-.95, -1.4], [.95, -1.4]]) c.add(B('#1d1d22', [x, .3, z], [.24, .6, .6], { out: .03 }));
+  if (o.stripe) c.add(B(o.stripe, [0, .58, 0], [1.92, .18, 4.32], { out: 0 })); const l1 = new Node('box', M('#ff3b3b', { em: .5 }), [-.4, 1.46, -.2], [.6, .16, .3]), l2 = new Node('box', M('#3b6bff', { em: .5 }), [.4, 1.46, -.2], [.6, .16, .3]); c.add(l1, l2); return { root: c, l1, l2 }; }
+// people
+const hero = man({ id: 'hero', shape: 'tri', seed: 1, skin: SK.hero, shirt: '#e2b23c', stripe: '#b8862a', pants: '#5b6f8f', shoe: '#e9e4d4', beanie: '#3f8f7a', beanie2: '#2c6b5a' });
+const cop = man({ id: 'cop', shape: 'wide', neck: .28, seed: 3, skin: SK.cop, shirt: '#3d5a80', pants: '#2b3a55', shoe: '#1d1d22', cap: '#2b3a55', badge: 1, pocket: '#31496b' });
+for (const m of [hero, cop]) scene.add(m.root);
+// ---------- extra detail ----------
+const D = (c, p, s, o, r) => { const n = B(c, p, s, o); if (r) n.r = r; scene.add(n); return n; };
+scene.add(new Node('box', M('#d9d3c8', { c2: hex('#b9b2a6'), pat: 6, ps: 1.2 }), [0, -.05, 13.2], [160, .1, 2.2])); scene.add(new Node('box', M('#c9c2b5'), [0, -.02, 12.05], [160, .16, .25]));
+for (let k = 0; k < 9; k++) D('#e9e4d4', [12, -.005, 2.9 + k * 1.02], [2.6, .03, .5], { out: 0, noShadow: 1 });
+scene.add(new Node('cyl', M('#3a3842', { noShadow: 1 }), [-1.6, -.03, 6.3], [1.1, .04, 1.1])); scene.add(new Node('cyl', M('#5a5864', { noShadow: 1 }), [-1.6, -.03, 6.3], [.8, .046, .8])); D('#2a2932', [-3.2, -.01, 2.15], [.9, .03, .22], { out: 0, noShadow: 1 });
+for (const [x, c] of [[-10.5, '#d8483c'], [8.6, '#3f9c94'], [19, '#e2b23c']]) { const pc = car({ body: c }); pc.l1.visible = pc.l2.visible = false; pc.root.p = [x, 0, 10.9]; pc.root.r = [0, Math.PI / 2, 0]; scene.add(pc.root); }
+for (const x of [-21, -7, 7, 21]) { D('#6b4a36', [x, 3.6, 15.5], [.22, 7.2, .22], { out: .01 }); D('#6b4a36', [x, 6.7, 15.5], [.14, .14, 1.7], { out: .02 }); }
+for (const z of [14.9, 16.1]) D('#2a2932', [0, 6.82, z], [120, .035, .035], { out: 0, noShadow: 1 });
+for (const [x, z] of [[1.4, 14.9], [1.9, 14.9], [4.4, 14.9], [-3.6, 16.1]]) { D('#23242c', [x, 6.95, z], [.26, .2, .16], { out: .03 }); D('#23242c', [x + .1, 7.1, z], [.14, .14, .13], { out: .03 }); D('#f0a43a', [x + .2, 7.1, z], [.08, .04, .05], { out: 0 }); }
+for (const [x, c] of [[7.4, '#4f8a5b'], [8.2, '#3f6fb5']]) { D(c, [x, .55, -1.95], [.6, 1.1, .6], { out: .012 }); D('#2f3238', [x, 1.14, -1.95], [.68, .1, .68], { out: .012 }); D('#1d1d22', [x - .22, .12, -1.6], [.1, .24, .24], { out: .03 }); D('#1d1d22', [x + .22, .12, -1.6], [.1, .24, .24], { out: .03 }); }
+D('#8a5a3a', [-9.2, .5, -1.9], [2, .1, .55], { out: .012 }); D('#8a5a3a', [-9.2, .95, -2.14], [2, .5, .08], { out: .012 }); for (const sx of [-.8, .8]) D('#3d3f4a', [-9.2 + sx, .24, -1.9], [.1, .48, .5], { out: .02 });
+D('#9a9ca6', [9.6, 1.3, 1.45], [.08, 2.6, .08], { out: .02 }); D('#d8483c', [9.6, 2.55, 1.45], [.8, .8, .07], { out: .02 }, [0, 0, .785]); D('#f4f4f0', [9.6, 2.55, 1.49], [.5, .14, .02], { out: 0 });
+D('#d8483c', [-5.6, .6, 1.3], [.58, .14, .14], { out: .03 }); D('#b8382e', [-5.6, 1.05, 1.3], [.1, .08, .1], { out: 0 }); D('#d8483c', [5.88, 1.12, -1.9], [.04, .3, .1], { out: 0 }); D('#23242c', [5.6, 1.05, -1.69], [.32, .05, .02], { out: 0 });
+D('#f1ece0', [3.8, .25, -2.62], [34, .08, .04], { out: 0 });
+for (let k = -4; k <= 4; k++) { const x = k * 8.2 + .9; D(k % 2 ? '#4f8f4c' : '#5fa257', [x, .4, -3.5], [1.7, .8, .9], { out: .01 }); D('#6fb463', [x + .3, .95, -3.5], [.9, .4, .6], { out: .012 }); for (let j = 0; j < 4; j++) D(['#f2d24a', '#f08aa8', '#ffffff', '#e8604c'][(k + j + 8) % 4], [x - .6 + j * .4, .5 + (j % 2) * .2, -3.04], [.12, .12, .04], { out: 0 }); }
+for (let k = 0; k < 80; k++) { const x = (hsh(k, 31) - .5) * 56, z = -3.1 - hsh(k, 32) * 3.4, hg = .14 + hsh(k, 33) * .16; D('#79a955', [x, hg / 2 - .06, z], [.16, hg, .05], { out: 0, noShadow: 1 }, [0, hsh(k, 34) * 3, 0]); if (k % 3 === 0) { D('#5c8f48', [x + .2, .1, z + .1], [.03, .32, .03], { out: 0, noShadow: 1 }); D(['#f2d24a', '#f08aa8', '#ffffff', '#b58af0'][k % 4], [x + .2, .3, z + .1], [.13, .13, .13], { out: .03, noShadow: 1 }); } }
+[[1.3, 1.3], [2.7, -1.7], [-6.9, .5], [4.7, .9], [-7.6, -1.4], [6.5, -.7], [.9, -2.2], [3.9, -.4], [-8.4, 1.2]].forEach(([x, z], k) => D(['#d98a3a', '#c9642c', '#e0b23c'][k % 3], [x, .012, z], [.16, .02, .1], { out: 0, noShadow: 1 }, [0, k * 1.3, 0]));
+for (let k = -5; k <= 5; k += 2) { const x = k * 8.2 + 4.3, z = -5 - (k % 2) * 1.2 + 1.17; for (const [dx, y] of [[-.6, 3.6], [.5, 2.8], [.1, 4.0], [-.3, 2.5]]) D('#d8483c', [x + dx, y, z], [.17, .17, .06], { out: .03 }); }
+// sky: gradient dome, block clouds, stars, sun, moon
+const dome = new Node('cyl', { c: [1, 1, 1], c2: [1, 1, 1], pat: 8, em: 1, out: 0, spec: 0, rim: 0, noShadow: 1, noRecv: 1 }, [0, -10, 0], [300, 130, 300]); scene.add(dome);
+const SKM = (c, o) => Object.assign({ c, em: 1, out: 0, spec: 0, rim: 0, noShadow: 1, noRecv: 1 }, o || {});
+const clouds = []; for (let k = 0; k < 26; k++) { const a = k / 26 * 6.283 * 2 + hsh(k, 51) * .5, rd = 52 + hsh(k, 52) * 50, sc = .7 + hsh(k, 53) * .8, g = new Node(); const x = Math.cos(a) * rd, z = Math.sin(a) * rd, y = k % 2 ? 46 + hsh(k, 54) * 40 : 18 + hsh(k, 54) * 20;
+  g.add(new Node('box', SKM([1, 1, 1], { em: .8 }), [0, 0, 0], [13 * sc, 3 * sc, 5 * sc])); g.add(new Node('box', SKM([1, 1, 1], { em: .8 }), [-1.5 * sc, 2.4 * sc, 0], [7 * sc, 2.6 * sc, 4.4 * sc])); g.add(new Node('box', SKM([1, 1, 1], { em: .8 }), [3.6 * sc, 1.8 * sc, .3], [4.6 * sc, 2 * sc, 4 * sc])); g.r = [0, Math.atan2(x, z), 0]; scene.add(g); clouds.push({ g, x, y, z }); }
+const stars = []; for (let k = 0; k < 150; k++) { const az = hsh(k, 61) * 6.283, el = .08 + hsh(k, 62) * .9, r = 132, q = .4 + hsh(k, 63) * hsh(k, 64) * 1.1; const n = new Node('box', SKM([1, 1, 1]), [Math.cos(az) * Math.cos(el) * r, Math.sin(el) * r - 5, Math.sin(az) * Math.cos(el) * r], [q, q, q], [hsh(k, 65) * 3, hsh(k, 66) * 3, .78]); n.visible = false; scene.add(n); stars.push(n); }
+const sunN = new Node(); sunN.r = [0, Math.atan2(99, 52), 0]; const sunB = new Node('box', SKM([1, .95, .7]), [0, 0, 0], [13, 13, 1], [0, 0, .2]), sunH = new Node('box', SKM([1, .95, .7], { a: .22 }), [0, 0, 1.5], [21, 21, .5], [0, 0, .2]); sunN.add(sunB, sunH); scene.add(sunN);
+const moonN = new Node(); moonN.r = [0, Math.atan2(-62, -72), 0]; moonN.add(new Node('box', SKM([.96, .95, .82]), [0, 0, 0], [9, 9, 1])); for (const [x, y, q] of [[-1.8, 1.6, 2], [1.6, -.6, 1.4], [-.6, -2.4, 1], [2.4, 2.6, .8]]) moonN.add(new Node('box', SKM([.8, .79, .7]), [x, y, -.55], [q, q, .1])); scene.add(moonN);
+const pool = new Node('box', { c: [1, .88, .5], c2: [2.25, 0, 1.4], a: 0, pat: 3, ps: 3.2, out: 0, noShadow: 1, noRecv: 1 }, [2.25, .035, 1.4], [6.6, .01, 6.6]); pool.visible = false; scene.add(pool);
+function skyUpdate(t, L) { const k = L.k, m = L.morning; const c3 = (a, b, c) => k < .5 ? lerp3(a, b, k * 2) : lerp3(b, c, k * 2 - 1);
+  const bot = m ? [.8, .91, 1] : c3([1, .84, .66], [.95, .5, .42], [.13, .14, .3]), top = m ? [.34, .6, .95] : c3([.55, .68, .9], [.3, .28, .5], [.03, .04, .11]); dome.mat.c = bot; dome.mat.c2 = top; L.bg = top;
+  const cc = m ? [1, 1, 1] : c3([1, .94, .86], [.98, .62, .55], [.2, .22, .4]); clouds.forEach((c, j) => { c.g.p = [c.x + t * .3 * (j % 2 ? 1 : .6), c.y, c.z]; c.g.children.forEach(n => n.mat.c = cc); });
+  const sv = m ? 0 : clamp((k - .45) / .4); stars.forEach((s, j) => { s.visible = sv > 0; const tw = .65 + .35 * Math.sin(t * (2 + hsh(j, 3) * 4) + j); s.mat.c = lerp3(top, [1, 1, .9], sv * tw); });
+  sunN.visible = m || k < .9; sunN.p = [99, m ? 34 : lerp(42, -24, k), 52]; sunB.mat.c = sunH.mat.c = m ? [1, .98, .86] : lerp3([1, .95, .7], [1, .5, .28], Math.min(1, k * 1.6));
+  moonN.visible = !m && k > .25; moonN.p = [-62, lerp(-14, 40, eout(k)), -72];
+  WINS.forEach((w, j) => { const on = !m && k > .55 && hsh(j, 4) > .25; w.mat.em = on ? .95 : 0; w.mat.c = on ? [1, .84, .42] : [.74, .85, .9]; });
+  pool.visible = !m && k > .5; pool.mat.a = clamp((k - .5) * 2) * .42; }
+//@@MAIN

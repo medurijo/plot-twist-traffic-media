@@ -1,0 +1,21 @@
+// ---------- 2D overlay ----------
+function comic(t, t0, dur, txt, x, y, col, rot = -.08, sz = 120) { const d = t - t0; if (d < 0 || d > dur) return; const s = eback(clamp(d / .12)) * (1 - clamp((d - dur + .15) / .15)); g2.save(); g2.translate(x, y); g2.rotate(rot + Math.sin(d * 30) * .03); g2.scale(s, s);
+  g2.font = `900 ${sz}px "Inter Display"`; g2.textAlign = 'center'; g2.textBaseline = 'middle'; g2.lineJoin = 'round'; g2.lineWidth = sz * .22; g2.strokeStyle = '#1b1b20'; g2.strokeText(txt, 0, 0); g2.fillStyle = col; g2.fillText(txt, 0, 0); g2.restore(); }
+function badge(t, label, n, col = '#fff') { g2.save(); g2.translate(790, 300); g2.rotate(.05); g2.fillStyle = '#1b2a44'; g2.fillRect(-230, -95, 460, 190); g2.strokeStyle = '#ffd23a'; g2.lineWidth = 10; g2.strokeRect(-230, -95, 460, 190);
+  g2.fillStyle = '#ffd23a'; g2.textAlign = 'center'; g2.textBaseline = 'middle'; g2.font = '800 40px "Inter Display"'; g2.fillText(label, 0, -48); g2.font = '900 104px "Inter Display"'; g2.fillStyle = col; g2.fillText(String(n), 0, 30); g2.restore(); }
+const bigShake = t => signShake(t) + (() => { for (const t0 of [T_YELL, T_ECHO1, T_ECHO2, T_ECHO3, WD.rock]) { const d = t - t0; if (d >= 0 && d < .25) return (1 - d / .25) * 20; } return 0; })();
+function post(t, L, cam) { const v = g2.createRadialGradient(540, 900, 500, 540, 960, 1250); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, `rgba(20,20,40,${.28 + L.k * .25})`); g2.fillStyle = v; g2.fillRect(0, 0, W, H);
+  g2.save(); g2.globalCompositeOperation = 'soft-light'; const gr = g2.createLinearGradient(0, 0, 0, H); gr.addColorStop(0, 'rgba(255,150,110,.22)'); gr.addColorStop(1, 'rgba(90,80,160,.2)'); g2.fillStyle = gr; g2.fillRect(0, 0, W, H); g2.restore();
+  const d = t - cam.st; if (d < .07 && cam.shot > 0) { g2.fillStyle = `rgba(255,255,255,${(1 - d / .07) * .16})`; g2.fillRect(0, 0, W, H); } }
+function fx2d(t) { comic(t, T_YELL, .7, 'HELLO!', 540, 520, '#fff', -.06, 150); comic(t, T_ECHO1, .9, 'HELLO!!', 540, 520, '#ffd23a', .06, 190); comic(t, T_ECHO1 + .45, .7, 'hello...', 760, 760, '#fff', .1, 70); comic(t, T_ECHO1 + .85, .6, 'hello...', 320, 820, '#fff', -.1, 55);
+  comic(t, T_ECHO2 + .05, 1.0, 'YOU F•CKING ROCK!', 540, 600, '#ff5a4a', -.05, 92); comic(t, T_ECHO3 + .05, .8, 'UNDER ARREST!!', 540, 560, '#ffd23a', .05, 110); comic(t, P[10] + .65, .5, 'CLICK.', 600, 760, '#fff', .08, 100);
+  comic(t, P[12] + .3, 1.2, '*crickets*', 540, 520, '#fff', -.05, 70); comic(t, at(12, .55), .9, 'mmmph!', 540, 1050, '#fff', .07, 90); }
+function renderAt(tr) { const t = Math.floor(tr * 30 + .001) / 30; if (t >= NEND) { drawFrame(t - T_END); return; } drawFrame(t); }
+function drawFrame(t) { const L = stage(t); const cam = camAt(t); R.render(scene, { eye: cam.eye, target: cam.target, up: cam.up, fov: cam.fov, bg: L.bg }, { dir: L.dir, center: L.center, size: L.size, sun: L.sun, amb: L.amb, fogC: L.fogC, fogD: L.fogD });
+  g2.setTransform(1, 0, 0, 1, 0, 0); g2.globalAlpha = 1; g2.globalCompositeOperation = 'source-over'; g2.imageSmoothingQuality = 'high'; const sh = SHOTS[cam.shot]; const shk = bigShake(t) + sh.shk * 10 * (1 + Math.sin(t * 3));
+  g2.drawImage(glc, -30 + n1(t * 60) * shk, -54 + n1(t * 60 + 9) * shk, W + 60, H + 108); grade(t, L); post(t, L, cam); fx2d(t); sign(t); caption(t); }
+window.SEGS = [P[3], P[6], P[9], P[12]]; window.T_INTRO = P[3]; window.T_OUT = NEND; window.T_END = T_END;
+window.SFX = [...SHOTS.slice(1).map(s => ['cut', s.t]), ['wind', 0], ['whoosh', T_YELL + .1], ['echoseg', P[1] + (WD.hello2 - P[1]) - .02, pend(1) - .05], ['echoseg', P[5] - .02, pend(5) - .05], ['echoseg', P[9] - .02, pend(9) - .05], ['rumble', T_ECHO1], ['rumble', T_ECHO2], ['rumble', T_ECHO3],
+  ['whoosh', T_ECHO1 + .1], ['whoosh', T_ECHO2 + .1], ['thud', T_ECHO2 + .55], ['dizzy', P[6] + .1], ...SIGNS.map(([li, f]) => ['sign', at(li, f) + .12]), ['dial', P[7] + .1], ['blabla', P[7] + .4], ['siren', at(7, .45)], ['skid', at(7, .45) + .2], ['cuff', P[10] + .65],
+  ['hammer', P[11] + .15], ['clank', P[11] + .4], ['fanfare', at(11, .4)], ['crickets', P[12], 1.6], ['calm', P[12]], ['step', P[13] + .3], ['step', P[13] + .9], ['step', P[13] + 1.5], ['crickets', P[13], T_END - P[13]]];
+window.renderAt = renderAt; window.ready = true;

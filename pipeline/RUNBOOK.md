@@ -243,3 +243,4 @@ episodes – copy the structure of the closest one.
 - Crowd lines along a road: the camera must look ALONG the line from beyond the subject (crowd at the frame sides), not from inside the crowd.
 - sheet.sh fails with a single timestamp (hstack=1) – read the still file directly.
 
+- Waiting for renders: identical tool commands can return a cached result (no real sleep) – vary the command text each time. `sleep` sometimes returned instantly; `python3 -c "import time; time.sleep(240)"` works. A wait of ~300 s got killed (exit 137) together with the runners and the watchdog: keep waits <= 240 s, then check done.txt and requeue the parts that were running.

@@ -1,0 +1,7 @@
+LINES = ["The parking meter said... expired.", "So he fed it a coin.", "It wanted more.", "So he fed it his FUCKING wallet!", "Then his shoes.", "A cop came to write him a ticket.", "So he fed the meter... the cop.",
+ "The cop's partner came running.", "He fed the partner too.", "Then the whole FUCKING police car!", "Now he had parking until twenty ninety.", "He was so FUCKING proud!", "Then the meter burped.", "And it said..."]
+KEYS = [('meter', 0, 'meter'), ('expired', 0, 'expired'), ('fed', 1, 'fed'), ('coin', 1, 'coin'), ('more', 2, 'more'), ('fucking1', 3, 'fucking'), ('wallet', 3, 'wallet'), ('shoes', 4, 'shoes'),
+ ('cop', 5, 'cop'), ('ticket', 5, 'ticket'), ('fed2', 6, 'fed'), ('cop2', 6, 'cop'), ('partner', 7, 'partner'), ('running', 7, 'running'), ('fed3', 8, 'fed'), ('too', 8, 'too'), ('whole', 9, 'whole'), ('fucking2', 9, 'fucking'), ('car', 9, 'car'),
+ ('parking', 10, 'parking'), ('ninety', 10, 'ninety'), ('fucking3', 11, 'fucking'), ('proud', 11, 'proud'), ('burped', 12, 'burped'), ('said', 13, 'said')]
+CAPS = ['The parking meter said... *EXPIRED.*', 'So he *fed it a coin.*', 'It *wanted more.*', 'So he fed it *his F•CKING wallet!*', 'Then *his shoes.*', 'A cop came *to write him a ticket.*', 'So he fed the meter... *the cop.*',
+ 'The cop’s partner *came running.*', 'He fed *the partner too.*', 'Then the whole *F•CKING police car!*', 'Now he had parking *until 2090.*', 'He was *so F•CKING proud!*', 'Then the meter *burped.*', 'And it said...']

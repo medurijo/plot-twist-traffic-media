@@ -1,0 +1,6 @@
+file 'sc/s00.mp4'
+file 'sc/s01.mp4'
+file 'sc/s02.mp4'
+file 'sc/s03.mp4'
+file 'sc/s04.mp4'
+file 'sc/s05.mp4'

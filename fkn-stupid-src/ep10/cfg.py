@@ -1,0 +1,7 @@
+LINES = ["The light was red.", "So he waited.", "A snail crossed the street.", "On red! The FUCKING criminal!", "He kept waiting.", "A bird built a nest on his hat.", "Then winter came.",
+ "His beard grew down to his FUCKING shoes!", "The city built a bus stop around him.", "A cop sprinted across. On red.", "Then... the light turned green!", "He was so FUCKING happy!", "He took one step.", "And it turned red."]
+KEYS = [('light', 0, 'light'), ('red0', 0, 'red'), ('waited', 1, 'waited'), ('snail', 2, 'snail'), ('crossed', 2, 'crossed'), ('onred', 3, 'red'), ('fucking1', 3, 'fucking'), ('criminal', 3, 'criminal'),
+ ('kept', 4, 'kept'), ('bird', 5, 'bird'), ('nest', 5, 'nest'), ('hat', 5, 'hat'), ('winter', 6, 'winter'), ('beard', 7, 'beard'), ('fucking2', 7, 'fucking'), ('shoes', 7, 'shoes'), ('city', 8, 'city'), ('bus', 8, 'bus'),
+ ('cop', 9, 'cop'), ('sprinted', 9, 'sprinted'), ('onred2', 9, 'red'), ('green', 10, 'green'), ('fucking3', 11, 'fucking'), ('happy', 11, 'happy'), ('step', 12, 'step'), ('red3', 13, 'red')]
+CAPS = ['The light *was red.*', 'So he *waited.*', 'A snail *crossed the street.*', 'On red! *The F•CKING criminal!*', 'He *kept waiting.*', 'A bird built a nest *on his hat.*', 'Then *winter came.*',
+ 'His beard grew down *to his F•CKING shoes!*', 'The city built *a bus stop around him.*', 'A cop sprinted across. *On red.*', 'Then... *the light turned green!*', 'He was *so F•CKING happy!*', 'He took *one step.*', 'And it *turned red.*']

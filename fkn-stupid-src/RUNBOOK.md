@@ -23,7 +23,7 @@ Produce **2 new episodes per day**, scheduled in Metricool for **15:00 and 21:00
 ## Pipeline (all under /home/claude)
 Setup in a fresh container: `cd /home/claude && (git -C plot-twist-traffic-media pull -q || git clone https://github.com/medurijo/plot-twist-traffic-media) && bash plot-twist-traffic-media/fkn-stupid-src/setup.sh`
 
-1. **New episode dir**: copy the closest reference (`ep8` = street/lawn, `ep9` = street/fire, `ep6` = canyon at CY=[0,0,-500], `ep7` = bedroom interior at BR=[100,0,100], `ep5` = lobby/stairwell interior). Copy all shared files, rename `audio_epX.py` → `audio_epN.py`, `sed s/epX/epN/` in build.py, sheet.sh, index.html.
+1. **New episode dir**: copy the closest reference (`ep8` = street/lawn, `ep9` = street/fire, `ep10` = crosswalk x=12 + ped light + traffic + bus stop, `ep11` = parking meter at x=6.7 (meter that eats things), `ep6` = canyon at CY=[0,0,-500], `ep7` = bedroom interior at BR=[100,0,100], `ep5` = lobby/stairwell interior). Copy all shared files, rename `audio_epX.py` → `audio_epN.py`, `sed s/epX/epN/` in build.py, sheet.sh, index.html.
 2. **Script** → `cfg.py`: LINES (exact spoken words, one per caption line, tags removed), KEYS (key, line, word[, occurrence]) for word timestamps used in code (WD.key), CAPS (caption with `*highlight*`).
 3. **TTS**: `creative_create_flow`, then `creative_generate_speech` (Declan, eleven_v4, generations_count 1, whole script with tags in one prompt). ~520 credits per episode. Then `creative_transcribe_audio` with connect_from = speech node (free). Poll `creative_get_flow_run_status` once both done; download `content.mp3` → `narr.mp3` and `words_download_url` → `words.json` with curl.
 4. **Align**: `python3 /home/claude/tools/align.py words.json cfg.py timing.js` (rewrites TIM, WD, CAPS). Fix any MISS/KEYMISS.
@@ -50,3 +50,9 @@ Setup in a fresh container: `cd /home/claude && (git -C plot-twist-traffic-media
 - Hide scene objects that block a recurring camera (e.g. ep8 hides the tree at x=-3.9).
 - Metricool sometimes 502s — retry once after a minute.
 - ElevenLabs: never repeat a generation call to "retry" (charges again); check credits with account_get_usage (Starter plan, 30k/month, ~1.1k per 2 episodes).
+- Render actually takes ~11–13 min per episode (3 parallel chromium workers), not 25–40.
+- Scaling a box built with B(): its size IS node.s — never reset s to [1,1,1]; store s0 and multiply (ep10 bus-stop bug).
+- Parked/stopped cars near the camera: check every shot's eye position against car boxes (car = 1.9 × 4.3 m); hide near-lane traffic in shots whose camera sits above the road (ep10).
+- Keep parked props (hero car) out of the main camera axis; place the main prop (meter) beside the hero facing the camera so it never covers him (ep11).
+- Comic texts during a CRIME sign: put them low (y≈1080) so they don't overlap the stamp.
+- ElevenLabs: the 'ElevenLabs-c7dcf097' connector may lack account permissions → use the 'ElevenLabs' connector tools (same voice works).

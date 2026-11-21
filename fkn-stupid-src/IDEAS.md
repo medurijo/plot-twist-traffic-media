@@ -8,12 +8,13 @@ Each idea: a stupid premise that escalates by stupid logic, 2–4 loud FUCKING b
 - **Self-checkout**: "unexpected item in the bagging area" → he is the unexpected item → store bags him → … → loop.
 - **WiFi password**: he forgets it → asks the router → router demands ID → … → loop.
 - **Haircut**: barber cuts one hair too short → he glues it back → escalates to wig shop chase → loop.
-- **Traffic light**: red for too long → he waits 40 years (beard grows, house built around him) → green → it turns red as he steps → loop.
 - **Pigeon**: pigeon steals one fry → he files a lawsuit → pigeon lawyer → … → loop.
 - **Alarm clock**: snooze → snooze button breaks → he snoozes the whole city → loop.
-- **Umbrella** already used (ep1); **lawn** (ep8); **sheep** (ep7); **elevator** (ep5).
+- **Snow day**: one snowflake lands on his car → he shovels the whole town → … → loop.
+- **Umbrella** already used (ep1); **traffic light** (ep10); **lawn** (ep8); **sheep** (ep7); **elevator** (ep5).
 
 ## Law
+- ~~Parking meter~~ used (ep11: he fed the meter everything).
 - **Parking ticket**: 1 minute over → he moves the parking spot instead of the car → steals the street → loop.
 - **Library book**: 1 day late → library police SWAT → … → loop: returns the book, borrows it again.
 - **Speed bump**: he thinks it's illegal → arrests the bump → the bump escapes → loop.

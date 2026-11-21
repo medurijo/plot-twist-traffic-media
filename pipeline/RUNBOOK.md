@@ -244,3 +244,15 @@ episodes – copy the structure of the closest one.
 - sheet.sh fails with a single timestamp (hstack=1) – read the still file directly.
 
 - Waiting for renders: identical tool commands can return a cached result (no real sleep) – vary the command text each time. `sleep` sometimes returned instantly; `python3 -c "import time; time.sleep(240)"` works. A wait of ~300 s got killed (exit 137) together with the runners and the watchdog: keep waits <= 240 s, then check done.txt and requeue the parts that were running.
+
+## 20. Lessons (Nov 21 run, ep68/ep69)
+- Real hole in the ground (ep68 sinkhole): STENCIL. `composer.reset(new WebGLRenderTarget(W,H,{type:HalfFloat,samples:4,stencilBuffer:true}))`; opening disc (colorWrite false, stencil Replace, renderOrder 1) -> interior walls + bottom (stencil Equal, depthTest false, depthWrite true, renderOrder 2) -> everything that can be inside the hole renderOrder 3. Objects below ground outside the opening stay hidden by the ground. Mark the stencil meshes noAO. Grow it by scaling the group in x/z (jagged unit outline).
+- Separate far-away sets in the same scene work well for "teleport" gags: an underground shaft at x=900 (BackSide MeshBasic tube, strata -> lava texture, camera inside), Australia at x=2600 (own desert plane beyond the landscape, own sky colour per frame).
+- Traffic light as a character: horizontal lamp housing on a mast arm reads like a face (red+yellow lamps = eyes): angry eyebrows / sunglasses on the lamps.
+- Long curved motorway (ep69): ribbon mesh along roundedPath (DoubleSide, else culled), lateral offset frame(s,d) with right = (cos h, -sin h); landscape avoid = distance to path samples.
+- Night/eclipse lighting: darken sun + hemi by E, background lerp to navy, a big soft PointLight above the hero (range 70, ~380) so the road reads; additive sprites for car lamps; a dark green strip appears where a small fill light hits the grass – keep fills wide.
+- Sky objects "at infinity": position them relative to the hero (not the camera) so fall/landing animations stay deterministic. Telephoto fov 14 for a 4.7 deg moon.
+- Moon face: closed eyes need a visible lid arc (torus) – a squashed eye alone is invisible.
+- mix_ep.py cues take an optional 6th element = word index for repeated words (["wrong2","Red","crack",0.25,0,1]).
+- Stills render ~2 s/frame without renders running; ep68/ep69 render ~3.5-4.5 s/frame with 2 runners.
+

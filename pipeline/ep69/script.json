@@ -1,0 +1,244 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 64,
+  "next": [
+   "A ROCKET LAUNCH",
+   "NEXT TO THE JAM"
+  ],
+  "gfx": true,
+  "gfxopt": {
+   "sunDir": [
+    0,
+    110,
+    -350
+   ],
+   "sunCol": "#fff0d8",
+   "hemi": 0.85,
+   "vignette": 0.22,
+   "contrast": 1.1
+  }
+ },
+ "segments": [
+  {
+   "id": "hook1",
+   "text": "Motorway. Twelve o'clock. Not a cloud in the sky. Then something takes a bite out of the sun.",
+   "gap": 0.4
+  },
+  {
+   "id": "hook2",
+   "text": "It's a total eclipse. In ten seconds, it's pitch dark. And you're doing a hundred and twenty. What do you do?",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong1",
+   "text": "Most drivers think: full beam! Light up the sky!",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong2",
+   "text": "Big mistake. You dazzle the moon. It blinks. And it loses its grip.",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong3",
+   "text": "It drops onto the motorway, bounces, and rolls right after you. Squash. Your car is now a crater on the moon.",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong4",
+   "text": "Exam failed.",
+   "gap": 1.15
+  },
+  {
+   "id": "right1",
+   "text": "Here's how you do it properly.",
+   "gap": 0.3
+  },
+  {
+   "id": "right2",
+   "text": "Slow down. Dipped headlights on. And keep your distance.",
+   "gap": 0.4
+  },
+  {
+   "id": "right3",
+   "text": "Everyone does the same. And from above, the motorway turns into a string of fairy lights.",
+   "gap": 0.4
+  },
+  {
+   "id": "right4",
+   "text": "The moon looks down. It has never seen anything so beautiful.",
+   "gap": 0.4
+  },
+  {
+   "id": "right5",
+   "text": "It blushes. And slowly slides away. The sun is back.",
+   "gap": 0.4
+  },
+  {
+   "id": "right6",
+   "text": "And the moon gives you a little wink. See you tonight.",
+   "gap": 0.6
+  },
+  {
+   "id": "right7",
+   "text": "Exam passed.",
+   "gap": 1.3
+  },
+  {
+   "id": "outro",
+   "text": "Next exam question: a rocket launch, right next to the traffic jam. Follow, so you don't miss it.",
+   "gap": 1.2
+  }
+ ],
+ "cues": [
+  [
+   "hook1",
+   "bite",
+   "chomp",
+   0.25
+  ],
+  [
+   "hook2",
+   "total",
+   "boom",
+   0.12
+  ],
+  [
+   "hook2",
+   "pitch",
+   "whoosh",
+   0.12
+  ],
+  [
+   "wrong1",
+   "full",
+   "laser",
+   0.12
+  ],
+  [
+   "wrong1",
+   "Light",
+   "rev",
+   0.18
+  ],
+  [
+   "wrong2",
+   "dazzle",
+   "chime",
+   0.12
+  ],
+  [
+   "wrong2",
+   "blinks",
+   "boing",
+   0.15
+  ],
+  [
+   "wrong2",
+   "loses",
+   "whoosh",
+   0.2
+  ],
+  [
+   "wrong3",
+   "drops",
+   "boom",
+   0.22
+  ],
+  [
+   "wrong3",
+   "bounces",
+   "thud",
+   0.3
+  ],
+  [
+   "wrong3",
+   "rolls",
+   "thud",
+   0.2
+  ],
+  [
+   "wrong3",
+   "Squash",
+   "splat",
+   0.3
+  ],
+  [
+   "wrong3",
+   "crater",
+   "pop",
+   0.2
+  ],
+  [
+   "right2",
+   "Dipped",
+   "pop",
+   0.15
+  ],
+  [
+   "right3",
+   "fairy",
+   "chime",
+   0.15
+  ],
+  [
+   "right4",
+   "beautiful",
+   "notes",
+   0.15
+  ],
+  [
+   "right5",
+   "blushes",
+   "boing",
+   0.12
+  ],
+  [
+   "right5",
+   "sun",
+   "chime",
+   0.15
+  ],
+  [
+   "right6",
+   "wink",
+   "plink",
+   0.2
+  ],
+  [
+   "right7",
+   "Exam",
+   "fanfare",
+   0.15
+  ]
+ ],
+ "beds": [
+  [
+   "engine",
+   0.0,
+   5.0,
+   0.03
+  ],
+  [
+   "wind",
+   [
+    "hook2"
+   ],
+   [
+    "hook2"
+   ],
+   0.04
+  ],
+  [
+   "lava",
+   [
+    "wrong3"
+   ],
+   [
+    "wrong3"
+   ],
+   0.05
+  ]
+ ]
+}

@@ -401,7 +401,7 @@ LIB["snip"] = snip_sfx; LIB["bleat"] = bleat_sfx
 SC = json.load(open(os.path.join(EP, "script.json")))
 for cue in SC.get("cues", []):
     seg, word, name, g = cue[:4]; off = cue[4] if len(cue) > 4 else 0
-    add(sfx, WT(seg, word) + off, LIB[name](), g)
+    add(sfx, WT(seg, word, cue[5] if len(cue) > 5 else 0) + off, LIB[name](), g)
 for bed in SC.get("beds", []):
     kind, a_, b_, g = bed
     ta = TL["segs"][a_[0]]["start"] if isinstance(a_, list) else a_; tb = TL["segs"][b_[0]]["end"] if isinstance(b_, list) else b_

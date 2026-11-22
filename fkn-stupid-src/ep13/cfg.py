@@ -1,0 +1,7 @@
+LINES = ["His neighbor's clock was ticking... too loud.", "So he called the cops.", "They came with sirens.", "The sirens were even FUCKING louder!", "So he called the cops... on the cops.", "More FUCKING cops came.", "Even louder.",
+ "So he stole all their sirens...", "and hid them in his trash can.", "The trash can was FUCKING screaming!", "So the cops arrested the trash can.", "Finally... silence.", "Then he heard it.", "Tick."]
+KEYS = [('clock', 0, 'clock'), ('ticking', 0, 'ticking'), ('loud', 0, 'loud'), ('called', 1, 'called'), ('came', 2, 'came'), ('sirens', 2, 'sirens'), ('fucking1', 3, 'fucking'), ('louder', 3, 'louder'), ('called2', 4, 'called'), ('on', 4, 'on'), ('cops2', 4, 'cops', 2),
+ ('fucking2', 5, 'fucking'), ('came2', 5, 'came'), ('louder2', 6, 'louder'), ('stole', 7, 'stole'), ('sirens2', 7, 'sirens'), ('hid', 8, 'hid'), ('can', 8, 'can'), ('fucking3', 9, 'fucking'), ('screaming', 9, 'screaming'), ('arrested', 10, 'arrested'), ('can2', 10, 'can'),
+ ('silence', 11, 'silence'), ('heard', 12, 'heard'), ('tick', 13, 'tick')]
+CAPS = ['His neighbor’s clock was ticking... *too loud.*', 'So he *called the cops.*', 'They came *with sirens.*', 'The sirens were even *F•CKING louder!*', 'So he called the cops... *on the cops.*', 'More *F•CKING cops* came.', 'Even *louder.*',
+ 'So he *stole all their sirens...*', 'and hid them *in his trash can.*', 'The trash can was *F•CKING screaming!*', 'So the cops *arrested the trash can.*', 'Finally... *silence.*', 'Then he *heard it.*', '*Tick.*']

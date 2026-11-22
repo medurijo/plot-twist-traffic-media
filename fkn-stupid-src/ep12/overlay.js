@@ -1,0 +1,25 @@
+// ---------- 2D overlay ----------
+function comic(t, t0, dur, txt, x, y, col, rot = -.08, sz = 120) { const d = t - t0; if (d < 0 || d > dur) return; const s = eback(clamp(d / .12)) * (1 - clamp((d - dur + .15) / .15)); g2.save(); g2.translate(x, y); g2.rotate(rot + Math.sin(d * 30) * .03); g2.scale(s, s);
+  g2.font = `900 ${sz}px "Inter Display"`; g2.textAlign = 'center'; g2.textBaseline = 'middle'; g2.lineJoin = 'round'; g2.lineWidth = sz * .22; g2.strokeStyle = '#1b1b20'; g2.strokeText(txt, 0, 0); g2.fillStyle = col; g2.fillText(txt, 0, 0); g2.restore(); }
+function badge(t, label, n, col = '#fff') { g2.save(); g2.translate(790, 300); g2.rotate(.05); g2.fillStyle = '#1b2a44'; g2.fillRect(-230, -95, 460, 190); g2.strokeStyle = '#ffd23a'; g2.lineWidth = 10; g2.strokeRect(-230, -95, 460, 190);
+  g2.fillStyle = '#ffd23a'; g2.textAlign = 'center'; g2.textBaseline = 'middle'; g2.font = '800 40px "Inter Display"'; g2.fillText(label, 0, -48); g2.font = '900 104px "Inter Display"'; g2.fillStyle = col; g2.fillText(String(n), 0, 30); g2.restore(); }
+const bigShake = t => signShake(t) + (() => { for (const t0 of [T_KNOCK, T_BANG + .1, T_IMP, T_OUT, T_EMP]) { const d = t - t0; if (d >= 0 && d < .3) return (1 - d / .3) * 22; } return 0; })();
+function post(t, L, cam) { const v = g2.createRadialGradient(540, 900, 500, 540, 960, 1250); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, `rgba(20,20,40,${.28 + L.k * .25})`); g2.fillStyle = v; g2.fillRect(0, 0, W, H);
+  g2.save(); g2.globalCompositeOperation = 'soft-light'; const gr = g2.createLinearGradient(0, 0, 0, H); gr.addColorStop(0, 'rgba(255,150,110,.22)'); gr.addColorStop(1, 'rgba(90,80,160,.2)'); g2.fillStyle = gr; g2.fillRect(0, 0, W, H); g2.restore();
+  const d = t - cam.st; if (d < .07 && cam.shot > 0) { g2.fillStyle = `rgba(255,255,255,${(1 - d / .07) * .16})`; g2.fillRect(0, 0, W, H); } }
+function fx2d(t) { comic(t, T_COIN - .05, .8, 'CLINK', 600, 600, '#ffd23a', -.05, 100); comic(t, T_BTN, .7, 'BEEP', 560, 560, '#7cf08a', .06, 110); comic(t, T_TIP + .1, 1.0, '...STUCK.', 540, 560, '#ff4a3a', -.05, 120);
+  comic(t, T_KNOCK + .05, .9, 'BONK!', 540, 540, '#fff', .05, 160); comic(t, T_BANG + .1, 1.1, 'BANG BANG BANG', 540, 560, '#ffb03a', -.05, 100); comic(t, T_SHK + .1, 1.1, 'SHAKE SHAKE', 540, 560, '#fff', .05, 120);
+  comic(t, WD.inside - .1, .9, 'SQUEEEZE', 540, 560, '#ffd23a', -.05, 120); comic(t, WD.he, 1.4, 'help.', 760, 380, '#fff', .06, 110); comic(t, T_RUN + .1, .7, 'ZOOOOM!', 540, 540, '#ffb03a', .06, 150);
+  comic(t, T_GRAB + .3, 1.0, 'RATTLE RATTLE', 540, 560, '#fff', -.05, 100); comic(t, T_IMP, 1.1, 'SPLAT!', 540, 560, '#ff4a3a', .06, 190); comic(t, T_OUT + .05, 1.2, 'KA-BLAM!', 540, 540, '#ffd23a', -.06, 150);
+  comic(t, WD.chips2 - .1, 1.1, 'MINE.', 560, 580, '#7cf08a', .05, 140); comic(t, T_OPEN, .8, 'POP', 540, 580, '#fff', -.05, 120); comic(t, T_EMP + .05, 1.0, '100% AIR', 540, 560, '#ff4a3a', .05, 140); }
+function renderAt(tr) { const t = Math.floor(tr * 30 + .001) / 30; if (t >= NEND) { drawFrame(t - T_END); return; } drawFrame(t); }
+function drawFrame(t) { const L = stage(t); const cam = camAt(t); R.render(scene, { eye: cam.eye, target: cam.target, up: cam.up, fov: cam.fov, bg: L.bg }, { dir: L.dir, center: L.center, size: L.size, sun: L.sun, amb: L.amb, fogC: L.fogC, fogD: L.fogD });
+  g2.setTransform(1, 0, 0, 1, 0, 0); g2.globalAlpha = 1; g2.globalCompositeOperation = 'source-over'; g2.imageSmoothingQuality = 'high'; const sh = SHOTS[cam.shot]; const shk = bigShake(t) + sh.shk * 10 * (1 + Math.sin(t * 3));
+  g2.drawImage(glc, -30 + n1(t * 60) * shk, -54 + n1(t * 60 + 9) * shk, W + 60, H + 108); grade(t, L); post(t, L, cam); fx2d(t); sign(t); caption(t); }
+window.SEGS = [P[3], P[6], P[9], P[12]]; window.T_INTRO = P[3]; window.T_OUT = NEND; window.T_END = T_END;
+window.SFX = [...SHOTS.slice(1).map(s => ['cut', s.t]), ['clank', T_COIN], ['ding', T_BTN], ['ding', T_BTN + .12], ['jar', T_BTN + .25], ['thud', T_TIP + .15], ['clank', T_B + .25], ['jar', T_B + .45], ['bonk', T_KNOCK + .05], ['boing', T_KNOCK + .1],
+  ['punch', T_BANG + .1], ['punch', T_BANG + .3], ['punch', T_BANG + .5], ['punch', T_BANG + .75], ['scream', T_BANG + .2], ['rumble', T_SHK], ['clank', T_SHK + .2], ['clank', T_SHK + .55], ['clank', T_SHK + .9], ['wind', P[5]], ['crickets', P[5] + .1, 1.2],
+  ['creak', T_DIVE], ['stretch', T_DIVE + .3], ['squish', T_DIVE + .6], ['squish', T_DIVE + .9], ['yelp', WD.he], ['run', T_RUN], ['skid', T_RUN + .42], ['rumble', T_GRAB + .2], ['clank', T_GRAB + .4], ['clank', T_GRAB + .7], ['clank', T_GRAB + 1.0], ['scream', T_FALL],
+  ['whoosh', T_FALL + .1], ['crash', T_IMP], ['splat', T_IMP], ['boom', T_OUT], ['pop', T_OUT + .05], ['launch', T_OUT + .05], ['scream', T_OUT + .1], ['thud', T_OUT + .55], ['thud', T_OUT + .7], ['thud', T_OUT + .85], ['thud', T_OUT + .9], ['pop', P[12] + .1], ['fanfare', P[12] + .1],
+  ['groan', T_LIFT], ['thud', T_LIFT + .8], ['pop', T_OPEN], ['scream', T_EMP], ['whoosh', T_END - .9], ['calm', 1e9], ['doorbell', 1e9]];
+window.renderAt = renderAt; window.ready = true;

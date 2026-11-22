@@ -1,0 +1,285 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 65,
+  "next": [
+   "GRAVITY SWITCHES OFF",
+   "ON THE BRIDGE"
+  ],
+  "gfx": true,
+  "gfxopt": {
+   "sunDir": [
+    120,
+    90,
+    60
+   ],
+   "sunCol": "#ffe2b8",
+   "hemi": 0.85,
+   "vignette": 0.2,
+   "contrast": 1.1
+  }
+ },
+ "segments": [
+  {
+   "id": "hook1",
+   "text": "Traffic jam. Nothing has moved for an hour. Then, from the field next to you, a voice starts counting.",
+   "gap": 0.4
+  },
+  {
+   "id": "hook2",
+   "text": "Ten. Nine. Eight. Right next to the motorway, a rocket is about to launch. What do you do?",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong1",
+   "text": "Most drivers think: front-row seats! Off the motorway, through the fence, right up to the rocket.",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong2",
+   "text": "Big mistake. You park right underneath it. Three. Two. One.",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong3",
+   "text": "Lift-off! Your car is stuck to the rocket, like chewing gum. Next stop: space. Your car is now a satellite.",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong4",
+   "text": "Exam failed.",
+   "gap": 1.15
+  },
+  {
+   "id": "right1",
+   "text": "Here's how you do it properly.",
+   "gap": 0.3
+  },
+  {
+   "id": "right2",
+   "text": "Stay in your lane. Engine off. Windows up. And enjoy the show.",
+   "gap": 0.4
+  },
+  {
+   "id": "right3",
+   "text": "Three. Two. One. Lift-off! And the whole traffic jam cheers.",
+   "gap": 0.4
+  },
+  {
+   "id": "right4",
+   "text": "Up in the sky, the astronaut sees all of you, waiting so nicely.",
+   "gap": 0.4
+  },
+  {
+   "id": "right5",
+   "text": "So the rocket draws a giant heart in the sky. Just for you.",
+   "gap": 0.4
+  },
+  {
+   "id": "right6",
+   "text": "And a tiny parachute lands on your roof. A thank-you present: space ice cream.",
+   "gap": 0.6
+  },
+  {
+   "id": "right7",
+   "text": "Exam passed.",
+   "gap": 1.3
+  },
+  {
+   "id": "outro",
+   "text": "Next exam question: on the bridge, gravity switches off. Follow, so you don't miss it.",
+   "gap": 1.2
+  }
+ ],
+ "cues": [
+  [
+   "hook1",
+   "voice",
+   "static",
+   0.12
+  ],
+  [
+   "hook2",
+   "Ten",
+   "beep",
+   0.1
+  ],
+  [
+   "hook2",
+   "Nine",
+   "beep",
+   0.1
+  ],
+  [
+   "hook2",
+   "Eight",
+   "beep",
+   0.1
+  ],
+  [
+   "hook2",
+   "rocket",
+   "whoosh",
+   0.12
+  ],
+  [
+   "wrong1",
+   "front",
+   "rev",
+   0.2
+  ],
+  [
+   "wrong1",
+   "fence",
+   "clang",
+   0.3
+  ],
+  [
+   "wrong1",
+   "fence",
+   "thud",
+   0.25
+  ],
+  [
+   "wrong2",
+   "Three",
+   "beep",
+   0.12
+  ],
+  [
+   "wrong2",
+   "Two",
+   "beep",
+   0.12
+  ],
+  [
+   "wrong2",
+   "One",
+   "beep",
+   0.12
+  ],
+  [
+   "wrong3",
+   "Lift",
+   "jet",
+   0.4
+  ],
+  [
+   "wrong3",
+   "Lift",
+   "boom",
+   0.3
+  ],
+  [
+   "wrong3",
+   "stuck",
+   "splat",
+   0.2
+  ],
+  [
+   "wrong3",
+   "gum",
+   "boing",
+   0.15
+  ],
+  [
+   "wrong3",
+   "satellite",
+   "beep",
+   0.25,
+   0.6
+  ],
+  [
+   "right2",
+   "Engine",
+   "pop",
+   0.12
+  ],
+  [
+   "right2",
+   "Windows",
+   "servo",
+   0.12
+  ],
+  [
+   "right3",
+   "Three",
+   "beep",
+   0.12
+  ],
+  [
+   "right3",
+   "Two",
+   "beep",
+   0.12
+  ],
+  [
+   "right3",
+   "One",
+   "beep",
+   0.12
+  ],
+  [
+   "right3",
+   "Lift",
+   "jet",
+   0.35
+  ],
+  [
+   "right3",
+   "Lift",
+   "boom",
+   0.2
+  ],
+  [
+   "right3",
+   "cheers",
+   "crowd",
+   0.3
+  ],
+  [
+   "right4",
+   "astronaut",
+   "chime",
+   0.15
+  ],
+  [
+   "right5",
+   "heart",
+   "notes",
+   0.15
+  ],
+  [
+   "right6",
+   "parachute",
+   "whoosh",
+   0.12
+  ],
+  [
+   "right6",
+   "roof",
+   "pop",
+   0.2
+  ],
+  [
+   "right6",
+   "space",
+   "chime",
+   0.15
+  ],
+  [
+   "right7",
+   "Exam",
+   "fanfare",
+   0.15
+  ]
+ ],
+ "beds": [
+  [
+   "engine",
+   0.0,
+   12.5,
+   0.02
+  ]
+ ]
+}

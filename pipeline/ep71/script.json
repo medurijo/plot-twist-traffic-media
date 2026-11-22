@@ -1,0 +1,255 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 66,
+  "next": [
+   "TURN LEFT...",
+   "ONTO A RUNWAY"
+  ],
+  "gfx": true,
+  "gfxopt": {
+   "sunDir": [
+    110,
+    70,
+    90
+   ],
+   "sunCol": "#ffdcae",
+   "hemi": 0.85,
+   "vignette": 0.2,
+   "contrast": 1.1
+  }
+ },
+ "segments": [
+  {
+   "id": "hook1",
+   "text": "Morning drive over the river. Coffee in the cup holder. Then your coffee floats out of the sunroof.",
+   "gap": 0.4
+  },
+  {
+   "id": "hook2",
+   "text": "Gravity just switched off. The whole bridge is floating. And so are you. What do you do?",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong1",
+   "text": "Most drivers think: full throttle! Get off this bridge!",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong2",
+   "text": "Big mistake. Your wheels spin in thin air. And your car does a backflip. And another one.",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong3",
+   "text": "You tumble higher and higher. Then gravity comes back. And you land on top of the bridge tower. Like a cat up a tree.",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong4",
+   "text": "Exam failed.",
+   "gap": 1.15
+  },
+  {
+   "id": "right1",
+   "text": "Here's how you do it properly.",
+   "gap": 0.3
+  },
+  {
+   "id": "right2",
+   "text": "Stay calm. Hazard lights on. Open the sunroof. And put up your umbrella.",
+   "gap": 0.4
+  },
+  {
+   "id": "right3",
+   "text": "A little breeze catches it, and carries you gently over the river. Like a balloon.",
+   "gap": 0.4
+  },
+  {
+   "id": "right4",
+   "text": "Two seagulls fly along with you. They have never seen a flying car.",
+   "gap": 0.4
+  },
+  {
+   "id": "right5",
+   "text": "At the other end, gravity comes back. And you land softly, right in your lane.",
+   "gap": 0.4
+  },
+  {
+   "id": "right6",
+   "text": "And your coffee drops back into the cup holder. Not a single drop spilled.",
+   "gap": 0.6
+  },
+  {
+   "id": "right7",
+   "text": "Exam passed.",
+   "gap": 1.3
+  },
+  {
+   "id": "outro",
+   "text": "Next exam question: your sat-nav says turn left. But left is a runway. Follow, so you don't miss it.",
+   "gap": 1.2
+  }
+ ],
+ "cues": [
+  [
+   "hook1",
+   "floats",
+   "bloop",
+   0.18
+  ],
+  [
+   "hook2",
+   "Gravity",
+   "whoosh",
+   0.12
+  ],
+  [
+   "hook2",
+   "floating",
+   "bloop",
+   0.15
+  ],
+  [
+   "hook2",
+   "so",
+   "boing",
+   0.1
+  ],
+  [
+   "wrong1",
+   "full",
+   "rev",
+   0.25
+  ],
+  [
+   "wrong2",
+   "wheels",
+   "rev",
+   0.2
+  ],
+  [
+   "wrong2",
+   "backflip",
+   "whoosh",
+   0.18
+  ],
+  [
+   "wrong2",
+   "another",
+   "whoosh",
+   0.18
+  ],
+  [
+   "wrong3",
+   "tumble",
+   "whoosh",
+   0.15
+  ],
+  [
+   "wrong3",
+   "land",
+   "clang",
+   0.3
+  ],
+  [
+   "wrong3",
+   "land",
+   "thud",
+   0.25
+  ],
+  [
+   "wrong3",
+   "cat",
+   "meow",
+   0.25,
+   0.4
+  ],
+  [
+   "right2",
+   "Hazard",
+   "blinkfx",
+   0.1
+  ],
+  [
+   "right2",
+   "Open",
+   "servo",
+   0.12
+  ],
+  [
+   "right2",
+   "umbrella",
+   "pop",
+   0.18
+  ],
+  [
+   "right4",
+   "seagulls",
+   "chirp",
+   0.15
+  ],
+  [
+   "right4",
+   "never",
+   "boing",
+   0.12
+  ],
+  [
+   "right5",
+   "land",
+   "thud",
+   0.15
+  ],
+  [
+   "right6",
+   "drops",
+   "whoosh",
+   0.08
+  ],
+  [
+   "right6",
+   "holder",
+   "pop",
+   0.2
+  ],
+  [
+   "right7",
+   "Exam",
+   "fanfare",
+   0.15
+  ]
+ ],
+ "beds": [
+  [
+   "engine",
+   0.0,
+   6.5,
+   0.02
+  ],
+  [
+   "wind",
+   [
+    "right3"
+   ],
+   [
+    "right4"
+   ],
+   0.04
+  ]
+ ],
+ "bloops": [
+  [
+   7.0,
+   23.0,
+   1.2,
+   0.06
+  ],
+  [
+   36.0,
+   51.5,
+   0.8,
+   0.05
+  ]
+ ]
+}

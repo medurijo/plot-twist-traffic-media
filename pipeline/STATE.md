@@ -1,12 +1,12 @@
 # Plot Twist Traffic – state
 
-Last published Q: **64** (Q61/Q62 posted 2026-11-21; Q63 posts 2026-11-22 15:30, Q64 posts 2026-11-22 18:00)
+Last published Q: **66** (Q63/Q64 posted 2026-11-22; Q65 posts 2026-11-23 15:30, Q66 posts 2026-11-23 18:00)
 Note: the 2026-11-16 18:00 slot stayed empty (previous run only finished Q52; Q53 sources were lost and rebuilt on Nov 16 evening).
-Next episode folder: ep70 = Q65
-Announced in last outro (must be next video): **A rocket launch, right next to the traffic jam** (IDEAS Nov-18 list item 8)
+Next episode folder: ep72 = Q67
+Announced in last outro (must be next video): **Your sat-nav says turn left – but left is a runway** (IDEAS Nov-18 list item 10)
 CONTENT (user 18 Nov): fewer animals, back to crazy semi-realistic events (see RUNBOOK §2 CONTENT SWITCH, IDEAS Nov-18 list).
 STYLE: from Q34 back to the OLD opening style (no driving-tip/rule intro), see RUNBOOK §2. Opening references: ep32, ep31.
-Then from IDEAS.md: the Nov-18 list, item 9 onwards (gravity flips on the bridge), never two of the same category in a row.
+Then from IDEAS.md: the Nov-18 list, item 11 onwards (crash barrier rubber band), never two of the same category in a row.
 
 Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day's two videos.
 
@@ -42,6 +42,8 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - 2026-11-20 (TikTok views): Q58 drawbridge 4.3k after 1 day (!) = best of the new event batch, on par with Q52 crab 4.1k; Q57 tornado 0.75k; Q56 owl 0.86k, Q55 snail 0.83k, Q54 penguins 0.90k, Q53 goat 0.84k; Q51 zebra 1.25k, Q49 troll 1.67k. Likes 31-145. Q59/Q60 posted today. -> semi-realistic EVENT where YOU are on/in the moving thing (bridge opens with you on it) + calm, charming right way works; made Q61 giant scrapyard magnet (sleepy crane driver bonks the button, car caught mid-air, crushed into a cube / grandma's fridge magnet north-vs-north, magnet sticks to its own crane) + Q62 road rolls up like a carpet (loop-the-loop inside the curl, sausage roll to the next town / let it come to your bumper, boop, nudge: it unrolls as a red carpet with paparazzi).
 
 - 2026-11-21 (TikTok views): Q58 drawbridge 4.75k, Q60 house on a lorry 3.8k after 1 day (!), Q52 crab 4.1k = the top tier now; Q59 disco light 0.84k, Q57 tornado 0.80k, Q56 owl 0.88k, Q55 snail 0.84k, Q54 penguins 0.92k, Q53 goat 0.86k; Q51 zebra 1.27k, Q49 troll 1.68k. Likes 35-146, comments 1-6 (house + drawbridge got 6 each). Q61/Q62 posted today, no data yet. -> big, semi-realistic EVENT that happens TO you / your car (bridge opens with you on it, a house lands on you) + calm charming right way keeps winning; abstract/sky things (disco, tornado) do worse. Made Q63 sinkhole at the traffic light (grows with every red; angry light, fall through the earth to Australia upside down / green sunglasses on the light, hole shrinks to a golf hole, hole in one) + Q64 total eclipse at noon on the motorway (full beam dazzles the moon, it falls, bounces over you and rolls after you: your car is a crater on the moon / dipped lights, fairy-light necklace from above, the moon blushes, slides away and winks).
+
+- 2026-11-22 (TikTok views): Q58 drawbridge 4.9k, Q52 crab 4.1k, Q60 house on a lorry 4.1k = top tier; Q59 disco 0.93k, Q57 tornado 0.83k; Q61 magnet 0.65k and Q62 road rolls up 0.41k after ~1 day (weak start); animals Q53-Q56 ~0.86-0.94k. Likes 15-146, comments 1-7 (drawbridge 7, house 6). Q63/Q64 posted today, no data yet. -> winners are a big, TANGIBLE real-world thing happening to YOU (bridge opens with you on it, a house lands on you, crab tow truck); abstract/sky (disco, tornado) and Q61/Q62 underperform. Made Q65 rocket launch next to the jam (front-row seats: car stuck under the rocket like chewing gum -> satellite with solar panels / stay in lane, whole jam cheers from sunroofs, astronaut sees you, rocket draws a heart in the sky, parachute with space ice cream) + Q66 gravity off on the bridge (coffee floats out of the sunroof; full throttle -> backflips -> landed on the bridge tower like a cat up a tree with two gulls / umbrella out of the sunroof carries you over the river like a balloon, two gulls with huge eyes, soft landing in lane, coffee drops back into the cup holder).
 
 ## History (folder | Q | hook)
 - ep2 | Q2 | There's just one problem. The other lane is full of tanks. And they're all looking at you. What do y
@@ -112,3 +114,5 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - ep67 | Q62 | It's rolling up. Like a carpet. A wall of asphalt, coming your way. What do you do?
 - ep68 | Q63 | It's a sinkhole. And every time the light turns red, it gets bigger. What do you do?
 - ep69 | Q64 | It's a total eclipse. In ten seconds, it's pitch dark. And you're doing a hundred and twenty. What do you do?
+- ep70 | Q65 | Ten. Nine. Eight. Right next to the motorway, a rocket is about to launch. What do you do?
+- ep71 | Q66 | Gravity just switched off. The whole bridge is floating. And so are you. What do you do?

@@ -256,3 +256,11 @@ episodes – copy the structure of the closest one.
 - mix_ep.py cues take an optional 6th element = word index for repeated words (["wrong2","Red","crack",0.25,0,1]).
 - Stills render ~2 s/frame without renders running; ep68/ep69 render ~3.5-4.5 s/frame with 2 runners.
 
+## 21. Lessons (Nov 22 run, ep70/ep71)
+- Kokoro crams a spoken countdown ("Three. Two. One.") into ~1 s. Fix: insert silence into audio/<seg>.wav at the word boundaries (20 ms envelope) and shift the word timings in audio/timings.json (small pad script: insert zeros at t, shift words with s >= t, dur += pad), then rerun timeline2 + mix.
+- A far-away set (space at x=6000: earth sphere, black dome, stars with fog:false) is visible from the main set when the camera looks that way (black curve in the sky): toggle those objects' visible only while the camera is there.
+- GFX 2D sky gradient turns the horizon brownish on a black background: for space use a BackSide MeshBasic black dome around the set.
+- Smoke sprites near the camera wash the frame white: fade sprites by distance to the camera position (use the cam(t) position, the camera is only placed at the end of update).
+- Contrail drawing: TubeGeometry along a sampled polyline (custom Curve with arc length) + setDrawRange(0, segments * radial * 6); a heart = 16sin^3 / 13cos-5cos2-2cos3-cos4 in a vertical plane facing the viewer.
+- Suspension bridge (ep71): towers + parabola main cables + instanced hangers; cameras outside x = +-7.6 see hangers in front of the subject -> keep cameras inside the cable planes or drop a few hangers near the action.
+- Gull side kick: from the front its flat wings read like aircraft wings through the car -> shoot 3/4 side so the head and eyes read; when eyes scale up, move the pupils outward with them.

@@ -1,0 +1,42 @@
+{
+ "voice": "bm_george",
+ "meta": {"q": 68, "next": ["A WALL OF FOG...", "FULL OF KNIGHTS"], "gfx": true,
+  "gfxopt": {"sunDir": [100, 75, 85], "sunCol": "#ffd9a8", "hemi": 0.85, "vignette": 0.18, "contrast": 1.1},
+  "concert": ["right4", "radio", "right6"]},
+ "segments": [
+  {"id": "hook1", "text": "Empty motorway. Just you and the crash barrier. Then the crash barrier starts to wobble.", "gap": 0.35},
+  {"id": "hook2", "text": "It jumps off its posts. And stretches right across the road. Like a giant rubber band. What do you do?", "gap": 0.9},
+  {"id": "wrong1", "text": "Most drivers think: full speed! Just break right through it!", "gap": 0.4},
+  {"id": "wrong2", "text": "But it doesn't break. It stretches. Further. And further. And further.", "gap": 0.4},
+  {"id": "wrong3", "text": "Then it snaps back. And you fly backwards, like a slingshot. Over two fields. Head first into a haystack.", "gap": 0.9},
+  {"id": "wrong4", "text": "Exam failed.", "gap": 1.15},
+  {"id": "right1", "text": "Here's how you do it properly.", "gap": 0.3},
+  {"id": "right2", "text": "Stop. Hazard lights on. And wait.", "gap": 0.4},
+  {"id": "right3", "text": "The barrier is just bored. Twenty years of standing still. It wants to play.", "gap": 0.4},
+  {"id": "right4", "text": "So, turn up the radio. And it starts to swing. Like a giant skipping rope.", "gap": 0.4},
+  {"id": "right5", "text": "Now hop over it. One car at a time. Hop. Hop. Hop.", "gap": 0.4},
+  {"id": "right6", "text": "Then it lies back down on its posts. Happy. And straighter than ever.", "gap": 0.6},
+  {"id": "right7", "text": "Exam passed.", "gap": 1.3},
+  {"id": "outro", "text": "Next exam question: a wall of fog. And out of it ride knights. Follow, so you don't miss it.", "gap": 1.2}
+ ],
+ "cues": [
+  ["hook1", "wobble", "boing", 0.18],
+  ["hook2", "jumps", "clang", 0.2],
+  ["hook2", "stretches", "squeak", 0.18],
+  ["wrong1", "full", "rev", 0.25],
+  ["wrong2", "stretches", "squeak", 0.18],
+  ["wrong2", "Further", "squeak", 0.15],
+  ["wrong3", "snaps", "boing", 0.3],
+  ["wrong3", "fly", "whoosh", 0.2],
+  ["wrong3", "haystack", "thud", 0.3],
+  ["right2", "Hazard", "blinkfx", 0.1],
+  ["right3", "bored", "snore", 0.12],
+  ["right3", "play", "boing", 0.12],
+  ["right5", "Hop", "boing", 0.14, 0, 0],
+  ["right5", "Hop", "boing", 0.14, 0, 1],
+  ["right5", "Hop", "boing", 0.14, 0, 2],
+  ["right6", "Happy", "chime", 0.12],
+  ["right7", "Exam", "fanfare", 0.15]
+ ],
+ "beds": [["engine", 0.0, 9.0, 0.02]]
+}

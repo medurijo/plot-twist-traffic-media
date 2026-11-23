@@ -1,0 +1,213 @@
+{
+ "voice": "elevenlabs:MlIxnl4hUPbFzWffsZ76 (Louis - Friendly Instructor, eleven_v4)",
+ "meta": {
+  "q": 67,
+  "next": [
+   "THE CRASH BARRIER",
+   "COMES ALIVE"
+  ],
+  "gfx": true,
+  "gfxopt": {
+   "sunDir": [
+    120,
+    80,
+    70
+   ],
+   "sunCol": "#fff0dc",
+   "hemi": 0.9,
+   "vignette": 0.14,
+   "contrast": 1.06,
+   "sat": 1.05
+  },
+  "musicSwap": [
+   "hook1",
+   "Lesson"
+  ]
+ },
+ "segments": [
+  {
+   "id": "hook1",
+   "text": "Lesson sixty-seven. Runway crossings. Your sat-nav says: turn left.",
+   "gap": 0.25
+  },
+  {
+   "id": "hook2",
+   "text": "On the left, there is a runway. And a plane is coming in to land. What is the correct procedure?",
+   "gap": 0.7
+  },
+  {
+   "id": "wrong1",
+   "text": "A common mistake: drivers trust the sat-nav, and turn onto the runway.",
+   "gap": 0.35
+  },
+  {
+   "id": "wrong2",
+   "text": "The plane is now directly behind you. Landing speed: two hundred and fifty kilometres per hour.",
+   "gap": 0.35
+  },
+  {
+   "id": "wrong3",
+   "text": "At this speed, air traffic control treats your car as an aircraft. You are cleared for take-off. Your car now has a flight number.",
+   "gap": 0.7
+  },
+  {
+   "id": "wrong4",
+   "text": "Exam failed.",
+   "gap": 1.1
+  },
+  {
+   "id": "right1",
+   "text": "Here's how you do it properly.",
+   "gap": 0.25
+  },
+  {
+   "id": "right2",
+   "text": "Stop at the yellow holding line. Wait for the plane to land.",
+   "gap": 0.3
+  },
+  {
+   "id": "right3",
+   "text": "Switch on your hazard lights, and wait for the follow-me car.",
+   "gap": 0.3
+  },
+  {
+   "id": "right4",
+   "text": "It will guide you safely across the runway. Stay close behind it.",
+   "gap": 0.3
+  },
+  {
+   "id": "right5",
+   "text": "And give the pilot a friendly wave. Pilots appreciate this.",
+   "gap": 0.3
+  },
+  {
+   "id": "right6",
+   "text": "The pilot flashes the landing lights. That means: thank you.",
+   "gap": 0.5
+  },
+  {
+   "id": "right7",
+   "text": "Exam passed.",
+   "gap": 1.2
+  },
+  {
+   "id": "outro",
+   "text": "Next lesson: the crash barrier comes alive. Follow, so you don't miss it.",
+   "gap": 1.0
+  }
+ ],
+ "cues": [
+  [
+   "hook1",
+   "Your",
+   "ding",
+   0.12
+  ],
+  [
+   "hook2",
+   "plane",
+   "jet",
+   0.18
+  ],
+  [
+   "wrong1",
+   "turn",
+   "whoosh",
+   0.08
+  ],
+  [
+   "wrong2",
+   "behind",
+   "jet",
+   0.3
+  ],
+  [
+   "wrong3",
+   "cleared",
+   "beep",
+   0.12
+  ],
+  [
+   "wrong3",
+   "take",
+   "whoosh",
+   0.2
+  ],
+  [
+   "wrong3",
+   "take",
+   "jet",
+   0.2,
+   0.2
+  ],
+  [
+   "right2",
+   "Stop",
+   "ding",
+   0.1
+  ],
+  [
+   "right2",
+   "land",
+   "jet",
+   0.3,
+   -0.6
+  ],
+  [
+   "right3",
+   "Switch",
+   "ding",
+   0.1
+  ],
+  [
+   "right3",
+   "hazard",
+   "blinkfx",
+   0.1
+  ],
+  [
+   "right3",
+   "follow",
+   "ding",
+   0.1
+  ],
+  [
+   "right4",
+   "Stay",
+   "ding",
+   0.1
+  ],
+  [
+   "right5",
+   "give",
+   "ding",
+   0.1
+  ],
+  [
+   "right6",
+   "flashes",
+   "plink",
+   0.15
+  ],
+  [
+   "right6",
+   "thank",
+   "chime",
+   0.12
+  ],
+  [
+   "right7",
+   "Exam",
+   "fanfare",
+   0.15
+  ]
+ ],
+ "beds": [
+  [
+   "engine",
+   0.0,
+   13.0,
+   0.015
+  ]
+ ]
+}

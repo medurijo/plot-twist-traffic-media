@@ -264,3 +264,11 @@ episodes – copy the structure of the closest one.
 - Contrail drawing: TubeGeometry along a sampled polyline (custom Curve with arc length) + setDrawRange(0, segments * radial * 6); a heart = 16sin^3 / 13cos-5cos2-2cos3-cos4 in a vertical plane facing the viewer.
 - Suspension bridge (ep71): towers + parabola main cables + instanced hangers; cameras outside x = +-7.6 see hangers in front of the subject -> keep cameras inside the cable planes or drop a few hangers near the action.
 - Gull side kick: from the front its flat wings read like aircraft wings through the car -> shoot 3/4 side so the head and eyes read; when eyes scale up, move the pupils outward with them.
+
+## 22. Lessons (Nov 23 run, ep72/ep73)
+- An explainer-style TEST of Q67 (ElevenLabs voice) was found in pipeline/ep72 – it was never adopted in this runbook, so the run made the standard version and moved the test to pipeline/ep72_test_explainer. Only switch style when RUNBOOK/STATE says so.
+- Jet (ep72, from the test): fuselage livery windows don't read; add flat window strips (PlaneGeometry 24x0.62 at local x=±2.13, y=0.55, MeshBasic) and swap the strip texture (faces / clapping hands, toggled at 7 Hz) for an applause gag. Text on a cylinder texture is mirrored on one side – leave it out.
+- Car riding on a moving vehicle: compute the roof point with the vehicle pose (Ry(h)·Rx(pitch) by hand, `pl2w`) and blend from the ground pose with a sin arc for the hop.
+- Living crash barrier (ep73): ribbon of 64 points rebuilt per frame (width axis = up projected off the tangent, DoubleSide); states: rest on posts / quadratic Bezier lift across the road / V to the car nose (stretch) / damped spring after the snap / skipping rope (offset R·(−cos φ, sin φ) in y-z, φ from mono keys so the rope is at the bottom exactly when each car is mid-hop). Googly eyes = group.lookAt(camera), hemisphere lid rotation.x (−1.3 open, 0 bored).
+- Spoken "Hop. Hop. Hop." came out 0.27 s apart; padded silence so they land on the 118 bpm beat (0.5 s) of the concert music.
+- 9:16 framing: when a shot must show the car AND something far away, put the camera on the line from the far object through the car (behind the car) and look at the far object.

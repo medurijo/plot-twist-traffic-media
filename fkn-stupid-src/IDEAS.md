@@ -17,12 +17,15 @@ Each idea: a stupid premise that escalates by stupid logic, 2–4 loud FUCKING b
 - ~~Parking meter~~ used (ep11: he fed the meter everything).
 - **Parking ticket**: 1 minute over → he moves the parking spot instead of the car → steals the street → loop.
 - **Library book**: 1 day late → library police SWAT → … → loop: returns the book, borrows it again.
-- **Speed bump**: he thinks it's illegal → arrests the bump → the bump escapes → loop.
+- ~~Speed bump~~ used (ep15).
 - **Jaywalking**: crosses on red → the crosswalk follows him home → loop.
 - ~~Noise complaint~~ used (ep13).
 - **Bank**: asks for "change" → teller changes into a different person → …
 
 ## New ideas
 - **Garden gnome** (law): neighbor's gnome stares at him → he files a restraining order → gnome moves closer every night → loop.
-- **Leaf blower** (everyday): one leaf on his lawn → blows it to the neighbor → neighbor blows it back → bigger blowers → jet engine → loop: one leaf lands.
+- ~~Leaf blower~~ used (ep14).
 - **Doorbell** (everyday): delivery guy rings while he's in the shower → he waits at the door all day → loop.
+- **Road roll prop exists (ep15)**: the road can be rolled up like a carpet — reuse for a 'he stole the sidewalk/driveway' episode.
+- **Snowman** (everyday): neighbor's snowman is one inch taller → bigger snowman → snow avalanche → loop.
+- **Shopping cart** (law): cart has a wobbly wheel → he arrests the wheel → cart escapes downhill → loop.

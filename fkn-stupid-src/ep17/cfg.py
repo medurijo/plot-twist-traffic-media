@@ -1,0 +1,8 @@
+LINES = ["A pigeon stole one FUCKING fry!", "That's theft.", "So he arrested the pigeon.", "It called its lawyer.", "So he arrested the FUCKING lawyer!", "Then all the pigeons came.", "He arrested every single one.",
+ "And stuffed them in his car.", "A cop pulled him over.", "He opened the door.", "Four hundred FUCKING pigeons!", "They took the cop.", "And the police car.", "Finally, peace.", "He sat down with his fries."]
+KEYS = [('pigeon0', 0, 'pigeon'), ('stole', 0, 'stole'), ('fucking1', 0, 'fucking'), ('fry', 0, 'fry'), ('theft', 1, 'theft'), ('arrested2', 2, 'arrested'), ('pigeon2', 2, 'pigeon'), ('called', 3, 'called'), ('lawyer3', 3, 'lawyer'),
+ ('arrested4', 4, 'arrested'), ('fucking2', 4, 'fucking'), ('lawyer4', 4, 'lawyer'), ('all', 5, 'all'), ('came', 5, 'came'), ('every', 6, 'every'), ('single', 6, 'single'), ('stuffed', 7, 'stuffed'), ('car7', 7, 'car'),
+ ('cop8', 8, 'cop'), ('pulled', 8, 'pulled'), ('over', 8, 'over'), ('opened', 9, 'opened'), ('door', 9, 'door'), ('four', 10, 'four'), ('fucking3', 10, 'fucking'), ('pigeons10', 10, 'pigeons'), ('took', 11, 'took'), ('cop11', 11, 'cop'),
+ ('police', 12, 'police'), ('car12', 12, 'car'), ('finally', 13, 'finally'), ('peace', 13, 'peace'), ('sat', 14, 'sat'), ('fries', 14, 'fries')]
+CAPS = ['A pigeon stole one *F•CKING fry!*', 'That’s *theft.*', 'So he *arrested the pigeon.*', 'It called *its lawyer.*', 'So he arrested the *F•CKING lawyer!*', 'Then *all the pigeons* came.', 'He arrested *every single one.*',
+ 'And stuffed them *in his car.*', 'A cop *pulled him over.*', 'He *opened the door.*', 'Four hundred *F•CKING pigeons!*', 'They *took the cop.*', 'And the *police car.*', '*Finally, peace.*', 'He sat down *with his fries.*']

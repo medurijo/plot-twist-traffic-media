@@ -8,7 +8,7 @@ Each idea: a stupid premise that escalates by stupid logic, 2–4 loud FUCKING b
 - **Self-checkout**: "unexpected item in the bagging area" → he is the unexpected item → store bags him → … → loop.
 - **WiFi password**: he forgets it → asks the router → router demands ID → … → loop.
 - **Haircut**: barber cuts one hair too short → he glues it back → escalates to wig shop chase → loop.
-- **Pigeon**: pigeon steals one fry → he files a lawsuit → pigeon lawyer → … → loop.
+- ~~Pigeon~~ used (ep17: arrested every pigeon).
 - **Alarm clock**: snooze → snooze button breaks → he snoozes the whole city → loop.
 - **Snow day**: one snowflake lands on his car → he shovels the whole town → … → loop.
 - **Umbrella** already used (ep1); **traffic light** (ep10); **lawn** (ep8); **sheep** (ep7); **elevator** (ep5).
@@ -29,3 +29,7 @@ Each idea: a stupid premise that escalates by stupid logic, 2–4 loud FUCKING b
 - **Road roll prop exists (ep15)**: the road can be rolled up like a carpet — reuse for a 'he stole the sidewalk/driveway' episode.
 - **Snowman** (everyday): neighbor's snowman is one inch taller → bigger snowman → snow avalanche → loop.
 - **Shopping cart** (law): cart has a wobbly wheel → he arrests the wheel → cart escapes downhill → loop.
+- ~~Ice cream truck~~ used (ep16: time-loop — he drives past himself).
+- **Ice cream truck prop exists (ep16)**: TRK/TB with serving hatch, roof cone, speakers, driver seat — reuse for a food-truck episode.
+- **Pigeon flock exists (ep17)**: mkPigeon/setPig, 40-bird flock that can land, tower, burst and carry things — reuse (e.g. 'pigeons steal his car', 'he feeds one pigeon').
+- **Parking ticket**, **Library book**, **Jaywalking**, **Garden gnome**, **Shopping cart** still open (law); **Microwave burrito**, **Doorbell**, **Snowman**, **Alarm clock**, **WiFi password** (everyday).

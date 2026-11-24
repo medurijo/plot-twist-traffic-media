@@ -1,0 +1,43 @@
+{
+ "voice": "bm_george",
+ "meta": {"q": 70, "next": ["A CAR TRANSPORTER", "WANTS TO LOAD YOU"], "gfx": true,
+  "gfxopt": {"sunDir": [100, 80, 70], "sunCol": "#ffe6c4", "hemi": 0.9, "vignette": 0.16, "contrast": 1.08}},
+ "segments": [
+  {"id": "hook1", "text": "Supermarket car park. You've just found a space. Then something bounces off the car next to you.", "gap": 0.35},
+  {"id": "hook2", "text": "It's a hailstone. The size of a football. And there are more coming. What do you do?", "gap": 0.9},
+  {"id": "wrong1", "text": "Most drivers think: quick, drive home! Faster than the hail!", "gap": 0.4},
+  {"id": "wrong2", "text": "But football hail loves a moving target. Bonk. Bonk. Bonk.", "gap": 0.4},
+  {"id": "wrong3", "text": "When you get home, your car has two hundred dimples. It looks like a giant golf ball. And your neighbour is already teeing off. Fore!", "gap": 0.9},
+  {"id": "wrong4", "text": "Exam failed.", "gap": 1.15},
+  {"id": "right1", "text": "Here's how you do it properly.", "gap": 0.3},
+  {"id": "right2", "text": "Stay parked. Wipers on. Full speed.", "gap": 0.4},
+  {"id": "right3", "text": "Now your wipers are goalkeepers. Save! Save! What a save!", "gap": 0.4},
+  {"id": "right4", "text": "Every save lands in a shopping trolley. Ten trolleys, full of ice.", "gap": 0.4},
+  {"id": "right5", "text": "Then the hail stops. The sun comes out. And the supermarket has an idea.", "gap": 0.4},
+  {"id": "right6", "text": "Free slushies for the whole car park. And a giant one, for the goalkeeper.", "gap": 0.6},
+  {"id": "right7", "text": "Exam passed.", "gap": 1.3},
+  {"id": "outro", "text": "Next exam question: a car transporter wants to load your car. Follow, so you don't miss it.", "gap": 1.2}
+ ],
+ "cues": [
+  ["hook1", "bounces", "boing", 0.2],
+  ["hook2", "football", "thud", 0.25],
+  ["wrong1", "drive", "rev", 0.25],
+  ["wrong2", "Bonk", "clang", 0.2, 0, 0],
+  ["wrong2", "Bonk", "clang", 0.2, 0, 1],
+  ["wrong2", "Bonk", "clang", 0.22, 0, 2],
+  ["wrong3", "dimples", "pop", 0.2],
+  ["wrong3", "neighbour", "whistle", 0.1],
+  ["wrong3", "Fore", "whoosh", 0.3],
+  ["right2", "Wipers", "squeak", 0.12],
+  ["right3", "Save", "thud", 0.25, 0, 0],
+  ["right3", "Save", "thud", 0.25, 0, 1],
+  ["right3", "save", "crowd", 0.14, 0, 2],
+  ["right4", "trolley", "clang", 0.14],
+  ["right4", "full", "pop", 0.15],
+  ["right5", "sun", "chime", 0.12],
+  ["right6", "Free", "ding", 0.14],
+  ["right6", "giant", "slurp", 0.16],
+  ["right7", "Exam", "fanfare", 0.15]
+ ],
+ "beds": [["wind", ["hook1"], ["wrong3"], 0.05]]
+}

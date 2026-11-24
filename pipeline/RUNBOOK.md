@@ -272,3 +272,14 @@ episodes – copy the structure of the closest one.
 - Living crash barrier (ep73): ribbon of 64 points rebuilt per frame (width axis = up projected off the tangent, DoubleSide); states: rest on posts / quadratic Bezier lift across the road / V to the car nose (stretch) / damped spring after the snap / skipping rope (offset R·(−cos φ, sin φ) in y-z, φ from mono keys so the rope is at the bottom exactly when each car is mid-hop). Googly eyes = group.lookAt(camera), hemisphere lid rotation.x (−1.3 open, 0 bored).
 - Spoken "Hop. Hop. Hop." came out 0.27 s apart; padded silence so they land on the 118 bpm beat (0.5 s) of the concert music.
 - 9:16 framing: when a shot must show the car AND something far away, put the camera on the line from the far object through the car (behind the car) and look at the far object.
+
+## 23. Lessons (Nov 24 run, ep74/ep75)
+- Renders were fast this run (~1.2 s/frame per runner, 13 parts of ~157 frames ≈ 3.5 min each) – stills ~1-2 s.
+- Fog wall (ep74): ~150 SpriteMaterial puffs (toneMapped false, colour graded grey at the bottom -> white at the top, renderOrder 2) in front of a soft-topped MeshBasic plane (depthWrite false) that hides whatever is behind it; things "emerge" by crossing the plane. A close-up of the fog is just a white frame – show the wall from behind the car instead. Fog "rolls away": fade opacity, scale up, push -z.
+- makeCar({antenna:true}) puts a 1.4 m aerial with a red ball right in the middle of every chase shot – build a thin 1 m aerial yourself.
+- Flat ShapeGeometry wings mirrored with scale(-1) render black (inverted normals): mirror by rotating the mesh rotation.y = PI instead. Wings must lie in the plane facing the camera (XY) to read from the front.
+- Arm aiming helper (ep74 aimArm): shoulder world pos -> direction -> into the parent's local frame -> quaternion.setFromUnitVectors(down, d); sword as a child of the arm at the hand.
+- Golf-ball car (ep75): clone body/roof geometry and set box-projected UVs (pick the projection by the dominant normal axis), MeshStandard with a dimple canvas as map + bumpMap (bumpScale 6), lerp colour red -> white.
+- Wipers on the hero windscreen: base group with basis (x, up-the-glass, glass normal (0,0.645,-0.764)) at (x, 1.0, -1.13) + 0.09 along the normal; arm along local +x, sweep = rotation.z 0.06..1.5. Gloves on the tips read great.
+- Falling instanced objects (hail): per-instance cycle (period P, phase from hash) re-randomised per cycle via hash(i, n); field centre follows the action; hide instances near the hero and handle hits with separate "special" meshes.
+- Banner/plane text wider than the 9:16 frame gets cut: keep signs <= ~10 m at 25 m distance.

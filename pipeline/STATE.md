@@ -1,13 +1,13 @@
 # Plot Twist Traffic – state
 
-Last published Q: **68** (Q65/Q66 posted 2026-11-23; Q67 posts 2026-11-24 15:30, Q68 posts 2026-11-24 18:00)
+Last published Q: **70** (Q67/Q68 posted 2026-11-24; Q69 posts 2026-11-25 15:30, Q70 posts 2026-11-25 18:00)
 Note: the 2026-11-16 18:00 slot stayed empty (previous run only finished Q52; Q53 sources were lost and rebuilt on Nov 16 evening).
-Next episode folder: ep74 = Q69
-Announced in last outro (must be next video): **A wall of fog on the motorway – and out of it ride knights** (IDEAS Nov-18 list item 12)
+Next episode folder: ep76 = Q71
+Announced in last outro (must be next video): **A car transporter wants to load your car** (IDEAS Nov-24 list item 1)
 Note: pipeline/ep72_test_explainer = a Q67 TEST in a serious explainer style with an ElevenLabs voice (made 23 Nov by another session, never scheduled). The published Q67 follows the RUNBOOK (old twist style, Kokoro bm_george).
 CONTENT (user 18 Nov): fewer animals, back to crazy semi-realistic events (see RUNBOOK §2 CONTENT SWITCH, IDEAS Nov-18 list).
 STYLE: from Q34 back to the OLD opening style (no driving-tip/rule intro), see RUNBOOK §2. Opening references: ep32, ep31.
-Then from IDEAS.md: the Nov-18 list, item 13 (football hail in the car park), then new ideas (list is running out), never two of the same category in a row.
+Then from IDEAS.md: the Nov-24 list (tangible vehicles/structures doing something TO you), in order, never two of the same category in a row.
 
 Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day's two videos.
 
@@ -47,6 +47,8 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - 2026-11-22 (TikTok views): Q58 drawbridge 4.9k, Q52 crab 4.1k, Q60 house on a lorry 4.1k = top tier; Q59 disco 0.93k, Q57 tornado 0.83k; Q61 magnet 0.65k and Q62 road rolls up 0.41k after ~1 day (weak start); animals Q53-Q56 ~0.86-0.94k. Likes 15-146, comments 1-7 (drawbridge 7, house 6). Q63/Q64 posted today, no data yet. -> winners are a big, TANGIBLE real-world thing happening to YOU (bridge opens with you on it, a house lands on you, crab tow truck); abstract/sky (disco, tornado) and Q61/Q62 underperform. Made Q65 rocket launch next to the jam (front-row seats: car stuck under the rocket like chewing gum -> satellite with solar panels / stay in lane, whole jam cheers from sunroofs, astronaut sees you, rocket draws a heart in the sky, parachute with space ice cream) + Q66 gravity off on the bridge (coffee floats out of the sunroof; full throttle -> backflips -> landed on the bridge tower like a cat up a tree with two gulls / umbrella out of the sunroof carries you over the river like a balloon, two gulls with huge eyes, soft landing in lane, coffee drops back into the cup holder).
 
 - 2026-11-23 (TikTok views): Q58 drawbridge 5.0k, Q52 crab 4.1k, Q60 house on a lorry 4.1k = top tier; Q51 zebra 1.3k, Q49 troll 1.7k; the newest event batch is flat: Q61 magnet 0.66k, Q62 road rolls up 0.68k, Q63 sinkhole 0.69k, Q64 eclipse 0.59k (likes 17-30). Q65/Q66 posted today, no data yet. -> the winners all have a BIG, TANGIBLE VEHICLE/STRUCTURE doing something to YOU (bridge, house on a lorry, crab tow truck); abstract things (sky, light, holes) stay ~0.6-0.9k. Made Q67 runway (a passenger jet behind you: boing onto its roof, take-off, sat-nav recalculating / baguettes as marshalling wands, nose-to-nose parking, peanuts on a parachute, 200 passengers applaud) + Q68 crash barrier comes alive (googly eyes, rubber band -> slingshot backwards head first into a haystack / it's bored, radio on: giant skipping rope, cars hop over one at a time, lies back down happy).
+
+- 2026-11-24 (TikTok views): Q58 drawbridge 5.1k, Q60 house on a lorry 4.2k, Q52 crab 4.1k = top tier; Q49 troll 1.7k, Q51 zebra 1.3k; the last event batch stays flat: Q61 magnet 0.67k, Q62 road rolls up 0.69k, Q63 sinkhole 0.71k, Q64 eclipse 0.68k, Q65 rocket 0.76k, Q66 gravity 0.69k (likes 18-35, comments 1-3). Q67/Q68 posted today, no data yet. -> still: big TANGIBLE vehicle/structure doing something to YOU wins; made Q69 fog wall knights (honk/flash/rev = to a knight you're a DRAGON, knight-vision wings + horns, 20 knights charge, year 1347 in a cage / bow, even your car bows, the king taps your roof: "Arise, Sir Car-a-lot!", royal flag on the aerial) + Q70 football hail in the supermarket car park (drive home -> bonk bonk bonk, 200 dimples, white golf ball on a tee, tartan neighbour: FORE! / wipers full speed = goalkeepers with gloves, every save lands in a trolley, free slushies + giant cup for the goalie). Next: Nov-24 list (car transporter, crane at the building site, combine harvester…).
 
 ## History (folder | Q | hook)
 - ep2 | Q2 | There's just one problem. The other lane is full of tanks. And they're all looking at you. What do y
@@ -121,3 +123,5 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - ep71 | Q66 | Gravity just switched off. The whole bridge is floating. And so are you. What do you do?
 - ep72 | Q67 | But on the left, there's a runway. And a jet is coming in to land. What do you do?
 - ep73 | Q68 | It jumps off its posts. And stretches right across the road. Like a giant rubber band. What do you do?
+- ep74 | Q69 | Hooves. Trumpets. And out of the fog ride knights. What do you do?
+- ep75 | Q70 | It's a hailstone. The size of a football. And there are more coming. What do you do?

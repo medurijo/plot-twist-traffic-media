@@ -1,0 +1,42 @@
+{
+ "voice": "bm_george",
+ "meta": {"q": 72, "next": ["A CRANE LIFTS YOUR CAR", "BY MISTAKE"], "gfx": true,
+  "gfxopt": {"sunDir": [100, 55, 60], "sunCol": "#ffd49a", "hemi": 0.9, "vignette": 0.16, "contrast": 1.1}},
+ "segments": [
+  {"id": "hook1", "text": "Narrow country road. Harvest time. Then something huge comes over the hill.", "gap": 0.35},
+  {"id": "hook2", "text": "It's a combine harvester. As wide as the whole road. And it's coming straight at you. What do you do?", "gap": 0.9},
+  {"id": "wrong1", "text": "Most drivers think: squeeze past! There's room on the verge.", "gap": 0.4},
+  {"id": "wrong2", "text": "There isn't. The reel grabs you. And the combine harvests you. Like wheat.", "gap": 0.4},
+  {"id": "wrong3", "text": "Out the back pops a hay bale. With wheels. It rolls down the hill, into the barn. Where the cows are already hungry.", "gap": 0.9},
+  {"id": "wrong4", "text": "Exam failed.", "gap": 1.15},
+  {"id": "right1", "text": "Here's how you do it properly.", "gap": 0.3},
+  {"id": "right2", "text": "Pull into the field gate. Stop. And flash your lights once: thank you.", "gap": 0.4},
+  {"id": "right3", "text": "The farmer waves back. And he has an idea.", "gap": 0.4},
+  {"id": "right4", "text": "He harvests you a brand-new road. Straight through the wheat.", "gap": 0.4},
+  {"id": "right5", "text": "You follow him, through a golden corridor. Wheat on the left. Wheat on the right.", "gap": 0.4},
+  {"id": "right6", "text": "At the other end, he gives your car a straw hat. It suits you.", "gap": 0.6},
+  {"id": "right7", "text": "Exam passed.", "gap": 1.3},
+  {"id": "outro", "text": "Next exam question: a crane at the building site lifts your car by mistake. Follow, so you don't miss it.", "gap": 1.2}
+ ],
+ "cues": [
+  ["hook1", "huge", "rev", 0.14],
+  ["hook2", "combine", "honk", 0.07, 0.2],
+  ["wrong1", "squeeze", "rev", 0.2],
+  ["wrong2", "grabs", "whoosh", 0.2],
+  ["wrong2", "harvests", "chomp", 0.22],
+  ["wrong3", "pops", "pop", 0.22],
+  ["wrong3", "rolls", "whoosh", 0.14],
+  ["wrong3", "barn", "thud", 0.2],
+  ["wrong3", "hungry", "moo", 0.2],
+  ["right2", "flash", "blinkfx", 0.14],
+  ["right3", "waves", "whistle", 0.1],
+  ["right3", "idea", "ding", 0.14],
+  ["right4", "harvests", "chomp", 0.12],
+  ["right4", "Straight", "whoosh", 0.12],
+  ["right5", "golden", "chime", 0.12],
+  ["right6", "hat", "pop", 0.18],
+  ["right6", "suits", "plink", 0.16],
+  ["right7", "Exam", "fanfare", 0.15]
+ ],
+ "beds": [["engine", 0.0, 7.0, 0.03], ["engine", ["wrong1"], ["wrong2"], 0.03], ["engine", ["right4"], ["right5"], 0.025]]
+}

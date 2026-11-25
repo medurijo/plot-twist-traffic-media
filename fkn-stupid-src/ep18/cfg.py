@@ -1,0 +1,9 @@
+LINES = ["He waited three days for one FUCKING package!", "He blinked once.", "We missed you.", "So he stopped blinking.", "A pigeon landed on his head. Nothing.", "A cop chased a thief through his yard. Nothing.", "Then he sneezed.",
+ "We missed you. FUCKING again!", "So he mailed himself to the depot.", "The delivery guy picked him up.", "Drove him around the FUCKING block!", "And threw him at his own front door.", "We missed you.", "So he ordered another package."]
+KEYS = [('waited', 0, 'waited'), ('fucking1', 0, 'fucking'), ('package0', 0, 'package'), ('blinked', 1, 'blinked'), ('once', 1, 'once'), ('missed2', 2, 'missed'), ('stopped', 3, 'stopped'), ('blinking', 3, 'blinking'),
+ ('pigeon', 4, 'pigeon'), ('landed', 4, 'landed'), ('head', 4, 'head'), ('nothing4', 4, 'nothing'), ('cop', 5, 'cop'), ('chased', 5, 'chased'), ('thief', 5, 'thief'), ('yard', 5, 'yard'), ('nothing5', 5, 'nothing'),
+ ('sneezed', 6, 'sneezed'), ('missed7', 7, 'missed'), ('fucking2', 7, 'fucking'), ('again', 7, 'again'), ('mailed', 8, 'mailed'), ('himself', 8, 'himself'), ('depot', 8, 'depot'),
+ ('delivery', 9, 'delivery'), ('picked', 9, 'picked'), ('up', 9, 'up'), ('drove', 10, 'drove'), ('around', 10, 'around'), ('fucking3', 10, 'fucking'), ('block', 10, 'block'),
+ ('threw', 11, 'threw'), ('own', 11, 'own'), ('door', 11, 'door'), ('missed12', 12, 'missed'), ('ordered', 13, 'ordered'), ('another', 13, 'another'), ('package13', 13, 'package')]
+CAPS = ['He waited three days for one *F•CKING package!*', 'He *blinked once.*', '*“We missed you.”*', 'So he *stopped blinking.*', 'A pigeon *landed on his head.* Nothing.', 'A cop *chased a thief* through his yard. Nothing.', 'Then he *sneezed.*',
+ '“We missed you.” *F•CKING again!*', 'So he *mailed himself* to the depot.', 'The delivery guy *picked him up.*', 'Drove him around the *F•CKING block!*', 'And *threw him* at his own front door.', '*“We missed you.”*', 'So he *ordered another package.*']

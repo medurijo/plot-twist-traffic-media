@@ -1,8 +1,8 @@
 # FKN STUPID — state
 
-Next episode number: **ep18**
+Next episode number: **ep20**
 Slots: 15:00 and 21:00 Europe/Berlin (2 per day, from 2026-11-20). Metricool blogId 7460367, tiktok + youtube.
-Next episode type: **absurd everyday** (ep17 was a law episode).
+Next episode type: **absurd everyday** (ep19 was a law episode).
 
 ## Published / scheduled
 | ep | slug | story | type | date/slot |
@@ -23,6 +23,8 @@ Next episode type: **absurd everyday** (ep17 was a law episode).
 | ep15 | speedbump | drove over the (living) speed bump → bump bucks car into a backflip → 'that's assault' → rodeo citizen's arrest → digs it out (CRIME #1) → handcuffs it (CRIME #2) → cop dives out of police car window → bump says nothing → cop lets it go → it escapes, cop sprints → it sneaks back into its hole → he rolls up the whole road (CRIME #3) → car boinks off the road roll → log-rolls it back out → gets in his car | law | 2026-11-23 21:00 |
 | ep16 | icecream | ice cream truck didn't stop → chases it (wheel legs), truck wheelies away, hat falls off and hops after him, cop joins the chase for no reason (eating donut), stop sign: knocks, vendor 'sold out' licking last cone → buys the whole truck (vendor launched out of window), hat hops back onto his head, cop runs past again, plays the jingle → someone waves: it's him (time loop) → he does not stop | everyday | 2026-11-24 15:00 |
 | ep17 | pigeon | pigeon steals one fry → 'theft' (badge) → dives, arrests pigeon (CRIME #1 FALSE ARREST) → pigeon calls its lawyer (tie, briefcase, lands on his hat) → arrests lawyer (CRIME #2) → 40 pigeons land → zips around cuffing all into a 12 m pigeon tower (CRIME #3 KIDNAPPING 400 BIRDS) → stuffs them in convertible → cop pulls him over → door BONKs cop → pigeon explosion → they carry away the cop and the police car → peace → sits down with fries | law | 2026-11-24 21:00 |
+| ep18 | package | waited 3 days for a package → blinked once → delivery guy slaps 'WE MISSED YOU' sticker on his face → stops blinking (pigeon on head, cop chases thief through yard twice, cop trips) → sneezes → 2nd sticker → mails himself (jumps into box, tape, TO: DEPOT) → delivery guy carries him to van → drives around the block (1 sec, 360° drift) → throws box at his own front door → sticker on box → he orders another package | everyday | 2026-11-25 15:00 |
+| ep19 | gnome | neighbor's gnome stares → restraining order → 50 ft tape measure → next morning in front of his door (coffee spit) → hammer-throws it through neighbor's window, neighbor tumbles out (CRIME #1) → next morning on his porch (jump scare) → buries it, R.I.P. stone (CRIME #2) → next morning in his car's driver seat → calls cops → cop sees the empty grave → arrests HIM for gnome kidnapping (CRIME #3) → gnome drives the police car (cop cap) → 6 months later dropped off → gnome back in its yard | law | 2026-11-25 21:00 |
 
 ## Notes
 - Wider camera framing requested 2026-11-20 (fov 1.1–1.2, more of the scene visible).

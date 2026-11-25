@@ -1,9 +1,9 @@
 # Plot Twist Traffic – state
 
-Last published Q: **70** (Q67/Q68 posted 2026-11-24; Q69 posts 2026-11-25 15:30, Q70 posts 2026-11-25 18:00)
+Last published Q: **72** (Q69/Q70 posted 2026-11-25; Q71 posts 2026-11-26 15:30, Q72 posts 2026-11-26 18:00)
 Note: the 2026-11-16 18:00 slot stayed empty (previous run only finished Q52; Q53 sources were lost and rebuilt on Nov 16 evening).
-Next episode folder: ep76 = Q71
-Announced in last outro (must be next video): **A car transporter wants to load your car** (IDEAS Nov-24 list item 1)
+Next episode folder: ep78 = Q73
+Announced in last outro (must be next video): **A crane at the building site lifts your car by mistake** (IDEAS Nov-24 list item 2)
 Note: pipeline/ep72_test_explainer = a Q67 TEST in a serious explainer style with an ElevenLabs voice (made 23 Nov by another session, never scheduled). The published Q67 follows the RUNBOOK (old twist style, Kokoro bm_george).
 CONTENT (user 18 Nov): fewer animals, back to crazy semi-realistic events (see RUNBOOK §2 CONTENT SWITCH, IDEAS Nov-18 list).
 STYLE: from Q34 back to the OLD opening style (no driving-tip/rule intro), see RUNBOOK §2. Opening references: ep32, ep31.
@@ -49,6 +49,8 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - 2026-11-23 (TikTok views): Q58 drawbridge 5.0k, Q52 crab 4.1k, Q60 house on a lorry 4.1k = top tier; Q51 zebra 1.3k, Q49 troll 1.7k; the newest event batch is flat: Q61 magnet 0.66k, Q62 road rolls up 0.68k, Q63 sinkhole 0.69k, Q64 eclipse 0.59k (likes 17-30). Q65/Q66 posted today, no data yet. -> the winners all have a BIG, TANGIBLE VEHICLE/STRUCTURE doing something to YOU (bridge, house on a lorry, crab tow truck); abstract things (sky, light, holes) stay ~0.6-0.9k. Made Q67 runway (a passenger jet behind you: boing onto its roof, take-off, sat-nav recalculating / baguettes as marshalling wands, nose-to-nose parking, peanuts on a parachute, 200 passengers applaud) + Q68 crash barrier comes alive (googly eyes, rubber band -> slingshot backwards head first into a haystack / it's bored, radio on: giant skipping rope, cars hop over one at a time, lies back down happy).
 
 - 2026-11-24 (TikTok views): Q58 drawbridge 5.1k, Q60 house on a lorry 4.2k, Q52 crab 4.1k = top tier; Q49 troll 1.7k, Q51 zebra 1.3k; the last event batch stays flat: Q61 magnet 0.67k, Q62 road rolls up 0.69k, Q63 sinkhole 0.71k, Q64 eclipse 0.68k, Q65 rocket 0.76k, Q66 gravity 0.69k (likes 18-35, comments 1-3). Q67/Q68 posted today, no data yet. -> still: big TANGIBLE vehicle/structure doing something to YOU wins; made Q69 fog wall knights (honk/flash/rev = to a knight you're a DRAGON, knight-vision wings + horns, 20 knights charge, year 1347 in a cage / bow, even your car bows, the king taps your roof: "Arise, Sir Car-a-lot!", royal flag on the aerial) + Q70 football hail in the supermarket car park (drive home -> bonk bonk bonk, 200 dimples, white golf ball on a tee, tartan neighbour: FORE! / wipers full speed = goalkeepers with gloves, every save lands in a trolley, free slushies + giant cup for the goalie). Next: Nov-24 list (car transporter, crane at the building site, combine harvester…).
+
+- 2026-11-25 (TikTok views): Q58 drawbridge 5.2k, Q60 house on a lorry 4.2k, Q52 crab 4.1k = top tier; Q67 runway 1.7k after 1 day (= best start since Q60: big real VEHICLE (jet) doing something to you), Q68 crash barrier 0.55k (weak); Q61-Q66 stay ~0.68-0.78k. Likes 19-150, comments 1-8. Q69/Q70 posted today, no data yet. -> big tangible VEHICLE/STRUCTURE (bridge, house lorry, crab tow truck, jet) keeps winning; made Q71 car transporter (7 red cars exactly like yours, ramp comes down: overtake -> it swerves in, up to the top deck -> showroom turntable, giant red bow, SALE -50% / stay behind, window down, show it's not new: old crisps, a sock, a sandwich from... nobody knows -> the smell reaches the driver, ramp up very fast -> he sprays you with NEW CAR SMELL from the delivery, car sparkles like on day one) + Q72 combine harvester as wide as the road over the hill (squeeze past on the verge -> the reel grabs you, harvested like wheat -> a hay bale with wheels pops out, rolls down the hill into the barn, hungry cows / pull into the field gate, flash once: thank you -> farmer waves, has an idea -> harvests you a brand-new road straight through the wheat, golden corridor -> throws your car a straw hat). Crane (item 2) moved after the combine so two "something lifts your car" gags are not back to back.
 
 ## History (folder | Q | hook)
 - ep2 | Q2 | There's just one problem. The other lane is full of tanks. And they're all looking at you. What do y
@@ -125,3 +127,5 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - ep73 | Q68 | It jumps off its posts. And stretches right across the road. Like a giant rubber band. What do you do?
 - ep74 | Q69 | Hooves. Trumpets. And out of the fog ride knights. What do you do?
 - ep75 | Q70 | It's a hailstone. The size of a football. And there are more coming. What do you do?
+- ep76 | Q71 | Then its ramp comes down. Right in front of your bumper. And the driver waves you on. What do you do?
+- ep77 | Q72 | It's a combine harvester. As wide as the whole road. And it's coming straight at you. What do you do?

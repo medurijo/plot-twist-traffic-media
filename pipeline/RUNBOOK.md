@@ -283,3 +283,13 @@ episodes – copy the structure of the closest one.
 - Wipers on the hero windscreen: base group with basis (x, up-the-glass, glass normal (0,0.645,-0.764)) at (x, 1.0, -1.13) + 0.09 along the normal; arm along local +x, sweep = rotation.z 0.06..1.5. Gloves on the tips read great.
 - Falling instanced objects (hail): per-instance cycle (period P, phase from hash) re-randomised per cycle via hash(i, n); field centre follows the action; hide instances near the hero and handle hits with separate "special" meshes.
 - Banner/plane text wider than the 9:16 frame gets cut: keep signs <= ~10 m at 25 m distance.
+
+## 24. Lessons (Nov 25 run, ep76/ep77)
+- Fresh container: the checkout was a detached HEAD again and `git pull` failed -> `git fetch && git checkout main && git pull` before setup.sh.
+- Convoy frame (ep76): everything that drives together is placed relative to CZ(t) = Z0 - V*t; cameras `Cv` (convoy), `Ct` (transporter), `Ch` (hero). Keeps keyframing simple at 18 m/s; keep |z| < 750 (makeLandscape extent).
+- Telescopic ramp (ep76): hinge group with rotation.x = theta (Rx maps +z to (0,-sin,cos)), 3 plates offset k*(L-plate)/2, L = 2.58/sin(theta) so the tip slides along the road like a tongue.
+- Hollow cab + open side window: driver with an arm cylinder from shoulder to a hand target (wave, pinch nose, hold a spray can). Cab mirrors in front of the cab block the driver's face from front-left cameras -> drop that mirror.
+- Text on a cylinder (spray can): use a 1024-wide canvas and keep the text in the middle ~40 % so it faces the camera; rotate the can (Ry(a) maps -z to (-sin a, 0, -cos a)).
+- Heightfield world (ep77): one HG(x,z) function for terrain, road ribbon, canopy, vehicles (pitch from slopePitch). Wheat field = canopy mesh at HG+1.05 (2 m grid, holes for road/strip/barn) + a fine strip mesh (0.35 m) whose vertices drop to stubble behind the combine header -> a corridor cut in real time; skirt walls along the road edges.
+- Objects rolling through the canopy sink into it: lift them over the wheat (bounce).
+- Barn with cows: the lintel above the door hides the inside from high cameras -> tall door opening, camera ~3.4 m above the floor.

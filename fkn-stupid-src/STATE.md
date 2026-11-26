@@ -1,8 +1,8 @@
 # FKN STUPID — state
 
-Next episode number: **ep20**
+Next episode number: **ep22**
 Slots: 15:00 and 21:00 Europe/Berlin (2 per day, from 2026-11-20). Metricool blogId 7460367, tiktok + youtube.
-Next episode type: **absurd everyday** (ep19 was a law episode).
+Next episode type: **absurd everyday** (ep21 was a law episode).
 
 ## Published / scheduled
 | ep | slug | story | type | date/slot |
@@ -25,6 +25,8 @@ Next episode type: **absurd everyday** (ep19 was a law episode).
 | ep17 | pigeon | pigeon steals one fry → 'theft' (badge) → dives, arrests pigeon (CRIME #1 FALSE ARREST) → pigeon calls its lawyer (tie, briefcase, lands on his hat) → arrests lawyer (CRIME #2) → 40 pigeons land → zips around cuffing all into a 12 m pigeon tower (CRIME #3 KIDNAPPING 400 BIRDS) → stuffs them in convertible → cop pulls him over → door BONKs cop → pigeon explosion → they carry away the cop and the police car → peace → sits down with fries | law | 2026-11-24 21:00 |
 | ep18 | package | waited 3 days for a package → blinked once → delivery guy slaps 'WE MISSED YOU' sticker on his face → stops blinking (pigeon on head, cop chases thief through yard twice, cop trips) → sneezes → 2nd sticker → mails himself (jumps into box, tape, TO: DEPOT) → delivery guy carries him to van → drives around the block (1 sec, 360° drift) → throws box at his own front door → sticker on box → he orders another package | everyday | 2026-11-25 15:00 |
 | ep19 | gnome | neighbor's gnome stares → restraining order → 50 ft tape measure → next morning in front of his door (coffee spit) → hammer-throws it through neighbor's window, neighbor tumbles out (CRIME #1) → next morning on his porch (jump scare) → buries it, R.I.P. stone (CRIME #2) → next morning in his car's driver seat → calls cops → cop sees the empty grave → arrests HIM for gnome kidnapping (CRIME #3) → gnome drives the police car (cop cap) → 6 months later dropped off → gnome back in its yard | law | 2026-11-25 21:00 |
+| ep20 | garbage | missed the garbage truck by 1 second → chases it (wheel legs) → throws bag: hits cop eating donut (banana peel) → throws neighbor's bin: lands over the cop's head (cop walks blind) → cannonballs into the hopper (legs sticking out) → collector pulls lever, CRUNCH, hat pops out → collector lifts out a perfect cube (his face + hat) like a trophy, tosses it back → NEXT WEEK truck brings him back, flings cube + bag onto sidewalk → still a cube (blinks) → pigeon with suitcase moves in, builds nest → POP he unfolds → takes out the trash → truck leaves | everyday | 2026-11-26 15:00 |
+| ep21 | street | parking ticket ('NO PARKING' sign) → rolls up the whole street like a carpet (car hops over the roll, CRIME #1 GRAND THEFT STREET) → 'no street, no rule' → 2nd ticket 'parking in the dirt' → yanks street out under the cop and rolls him up (CRIME #2 ASSAULT WITH A STREET) → 2 police cars, cops jump out → rolls them up too (CRIME #3 KIDNAPPING 5 COPS) → roll gets HUGE → rolls away, comes back, flattens him, unrolls → all cops pop out of the road and zoom off, one stays with a pen → ticket | law | 2026-11-26 21:00 |
 
 ## Notes
 - Wider camera framing requested 2026-11-20 (fov 1.1–1.2, more of the scene visible).

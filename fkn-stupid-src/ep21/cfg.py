@@ -1,0 +1,8 @@
+LINES = ["He got a parking ticket.", "No parking on this FUCKING street!", "So he removed the street.", "No street. No rule.", "The cop wrote another ticket.", "For parking in the dirt.", "So he rolled the cop up in the street.",
+ "More cops came.", "He rolled them up too.", "The roll got FUCKING huge!", "And it rolled away.", "Right back at FUCKING him!", "It flattened him.", "And unrolled.", "Every cop popped out.", "And one had a pen."]
+KEYS = [('got', 0, 'got'), ('ticket0', 0, 'ticket'), ('no1', 1, 'no'), ('fucking1', 1, 'fucking'), ('street1', 1, 'street'), ('removed', 2, 'removed'), ('street2', 2, 'street'), ('street3', 3, 'street'), ('rule', 3, 'rule'),
+ ('wrote', 4, 'wrote'), ('ticket4', 4, 'ticket'), ('dirt', 5, 'dirt'), ('rolled6', 6, 'rolled'), ('cop6', 6, 'cop'), ('street6', 6, 'street'), ('more', 7, 'more'), ('came', 7, 'came'), ('rolled8', 8, 'rolled'), ('too', 8, 'too'),
+ ('fucking2', 9, 'fucking'), ('huge', 9, 'huge'), ('rolled10', 10, 'rolled'), ('away', 10, 'away'), ('back11', 11, 'back'), ('fucking3', 11, 'fucking'), ('him11', 11, 'him'), ('flattened', 12, 'flattened'),
+ ('unrolled', 13, 'unrolled'), ('every', 14, 'every'), ('popped', 14, 'popped'), ('one', 15, 'one'), ('pen', 15, 'pen')]
+CAPS = ['He got a *parking ticket.*', 'No parking on this *F•CKING street!*', 'So he *removed the street.*', 'No street. *No rule.*', 'The cop wrote *another ticket.*', 'For parking *in the dirt.*', 'So he rolled the cop *up in the street.*',
+ '*More cops* came.', 'He rolled them *up too.*', 'The roll got *F•CKING huge!*', 'And it *rolled away.*', 'Right back at *F•CKING him!*', 'It *flattened him.*', 'And *unrolled.*', 'Every cop *popped out.*', 'And one *had a pen.*']

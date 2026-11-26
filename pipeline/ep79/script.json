@@ -1,0 +1,221 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 74,
+  "next": [
+   "A CAR WASH",
+   "THE SIZE OF A STADIUM"
+  ],
+  "gfx": true,
+  "gfxopt": {
+   "sunDir": [
+    90,
+    60,
+    70
+   ],
+   "sunCol": "#ffd8a0",
+   "hemi": 0.9,
+   "vignette": 0.15,
+   "contrast": 1.08
+  }
+ },
+ "segments": [
+  {
+   "id": "hook1",
+   "text": "Harbour. Last car onto the ferry. You roll up the ramp. Then the engines start.",
+   "gap": 0.35
+  },
+  {
+   "id": "hook2",
+   "text": "The ramp is closing. And you're still on it. What do you do?",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong1",
+   "text": "Most drivers think: reverse! Back to dry land!",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong2",
+   "text": "But the ramp is already too steep. It turns into a ski jump. And you fly. Backwards.",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong3",
+   "text": "Right over the harbour. Into the fish market. On the ice, between the salmon. Price per kilo: very reasonable.",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong4",
+   "text": "Exam failed.",
+   "gap": 1.15
+  },
+  {
+   "id": "right1",
+   "text": "Here's how you do it properly.",
+   "gap": 0.3
+  },
+  {
+   "id": "right2",
+   "text": "Stay calm. Handbrake on. And honk twice, like a ship: I'm still here!",
+   "gap": 1.3
+  },
+  {
+   "id": "right3",
+   "text": "The captain answers with the ship's horn. And the ramp comes back down.",
+   "gap": 0.4
+  },
+  {
+   "id": "right4",
+   "text": "You roll on board. Slowly. The last car.",
+   "gap": 0.4
+  },
+  {
+   "id": "right5",
+   "text": "And for the nice honking, he gives you the best seat on the ship: the ramp, open like a balcony. Sea view.",
+   "gap": 0.4
+  },
+  {
+   "id": "right6",
+   "text": "Then the dolphins come to say hello. Right over your bonnet.",
+   "gap": 0.6
+  },
+  {
+   "id": "right7",
+   "text": "Exam passed.",
+   "gap": 1.3
+  },
+  {
+   "id": "outro",
+   "text": "Next exam question: a car wash the size of a stadium. Follow, so you don't miss it.",
+   "gap": 1.2
+  }
+ ],
+ "cues": [
+  [
+   "hook1",
+   "engines",
+   "shiphorn",
+   0.07
+  ],
+  [
+   "hook2",
+   "closing",
+   "servo",
+   0.14
+  ],
+  [
+   "wrong1",
+   "reverse",
+   "rev",
+   0.2
+  ],
+  [
+   "wrong2",
+   "ski",
+   "whoosh",
+   0.14
+  ],
+  [
+   "wrong2",
+   "fly",
+   "whoosh",
+   0.2
+  ],
+  [
+   "wrong3",
+   "fish",
+   "splash",
+   0.12
+  ],
+  [
+   "wrong3",
+   "ice",
+   "thud",
+   0.2
+  ],
+  [
+   "wrong3",
+   "Price",
+   "ding",
+   0.14
+  ],
+  [
+   "right3",
+   "horn",
+   "shiphorn",
+   0.1,
+   0.3
+  ],
+  [
+   "right3",
+   "down",
+   "servo",
+   0.1
+  ],
+  [
+   "right4",
+   "board",
+   "thud",
+   0.1
+  ],
+  [
+   "right5",
+   "balcony",
+   "chime",
+   0.12
+  ],
+  [
+   "right6",
+   "dolphins",
+   "splash",
+   0.12
+  ],
+  [
+   "right6",
+   "bonnet",
+   "squeak",
+   0.1
+  ],
+  [
+   "right7",
+   "Exam",
+   "fanfare",
+   0.15
+  ],
+  [
+   "hook1",
+   "Harbour",
+   "waves",
+   0.06
+  ],
+  [
+   "right5",
+   "best",
+   "waves",
+   0.07
+  ],
+  [
+   "right2",
+   "here",
+   "honk",
+   0.14,
+   0.55
+  ],
+  [
+   "right2",
+   "here",
+   "honk",
+   0.14,
+   0.95
+  ]
+ ],
+ "beds": [
+  [
+   "engine",
+   0.0,
+   4.0,
+   0.02
+  ]
+ ]
+}

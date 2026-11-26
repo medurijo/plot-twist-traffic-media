@@ -293,3 +293,14 @@ episodes – copy the structure of the closest one.
 - Heightfield world (ep77): one HG(x,z) function for terrain, road ribbon, canopy, vehicles (pitch from slopePitch). Wheat field = canopy mesh at HG+1.05 (2 m grid, holes for road/strip/barn) + a fine strip mesh (0.35 m) whose vertices drop to stubble behind the combine header -> a corridor cut in real time; skirt walls along the road edges.
 - Objects rolling through the canopy sink into it: lift them over the wheat (bounce).
 - Barn with cows: the lintel above the door hides the inside from high cameras -> tall door opening, camera ~3.4 m above the floor.
+
+## 25. Lessons (Nov 26 run, ep78/ep79)
+- Fresh container again: detached HEAD + missing fahrschule -> `git checkout main && git pull` then setup.sh (works).
+- Crane carrying the car (ep78): crane state (slew a, trolley r, attach height) from mono keys; pendulum swing angle from the numerical slew rate (craneState(t±0.05)), car up-axis aligned with the cable; hook block group = car-local (follows the car while attached). For a straight carry over a queue: lerp a world point and convert to (angOf, radOf).
+- Wide crane cameras above jib height see the lattice jib right through the frame: keep the camera below the jib (y < JY) or slew the jib away after the drop.
+- Binocular POV: telephoto camera from just in front of the cab glass (fov ~4.5) + HUD mask (black rect with two circle holes, fill 'evenodd').
+- Text on a canvas sign: pass maxWidth to fillText so long lines never get clipped.
+- A traffic light seen from behind needs lamps on both faces (and the halo sprite on the camera side).
+- Ferry (ep79): ferry group origin = stern centre at deck level, ramp = hinge group (rotation.x = -theta raises the +z tip); car placed with setFromParent(obj, parentGroup, x, y, z, h) (parent.matrixWorld * local). Turning ferry: integrate a heading table (PSI) along distance D so it sails along its bow; dolphins/splash as ferry children so "across the ramp" stays local.
+- A table under an awning: the landing car would pass through the awning – keep the landing zone open from above.
+- Renders this run: ~1.5 s/frame/runner while stills ran in parallel.

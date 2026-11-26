@@ -303,4 +303,4 @@ episodes – copy the structure of the closest one.
 - A traffic light seen from behind needs lamps on both faces (and the halo sprite on the camera side).
 - Ferry (ep79): ferry group origin = stern centre at deck level, ramp = hinge group (rotation.x = -theta raises the +z tip); car placed with setFromParent(obj, parentGroup, x, y, z, h) (parent.matrixWorld * local). Turning ferry: integrate a heading table (PSI) along distance D so it sails along its bow; dolphins/splash as ferry children so "across the ramp" stays local.
 - A table under an awning: the landing car would pass through the awning – keep the landing zone open from above.
-- Renders this run: ~1.5 s/frame/runner while stills ran in parallel.
+- Renders this run: ~35 min per episode (13 parts, 2 runners, ~2 s/frame/runner); Q73 was scheduled as soon as it was finished.

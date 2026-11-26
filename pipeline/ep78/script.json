@@ -1,0 +1,247 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 73,
+  "next": [
+   "THE FERRY RAMP CLOSES",
+   "WITH YOU ON IT"
+  ],
+  "gfx": true,
+  "gfxopt": {
+   "sunDir": [
+    -80,
+    70,
+    70
+   ],
+   "sunCol": "#ffe0b0",
+   "hemi": 0.9,
+   "vignette": 0.15,
+   "contrast": 1.08
+  }
+ },
+ "segments": [
+  {
+   "id": "hook1",
+   "text": "Roadworks. Red light. You're waiting next to the building site. Then: clunk. Something lands on your roof.",
+   "gap": 0.35
+  },
+  {
+   "id": "hook2",
+   "text": "It's the crane hook. And the crane driver thinks you're the bricks. What do you do?",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong1",
+   "text": "Most drivers think: floor it! Get out from under there!",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong2",
+   "text": "But your wheels are already in the air. The crane swings round. Faster and faster. You're a fairground ride.",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong3",
+   "text": "He puts you on the top floor. And the builders keep building. Walls. Windows. A roof. Your car now lives on the tenth floor.",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong4",
+   "text": "Exam failed.",
+   "gap": 1.15
+  },
+  {
+   "id": "right1",
+   "text": "Here's how you do it properly.",
+   "gap": 0.3
+  },
+  {
+   "id": "right2",
+   "text": "Stay calm. Engine off. Hazard lights on.",
+   "gap": 0.4
+  },
+  {
+   "id": "right3",
+   "text": "Then hold a sign out of the sunroof: I am not the bricks.",
+   "gap": 0.4
+  },
+  {
+   "id": "right4",
+   "text": "The crane driver grabs his binoculars. Reads it. Oops.",
+   "gap": 0.4
+  },
+  {
+   "id": "right5",
+   "text": "To say sorry, he gives you a lift. Gently. Over the whole queue.",
+   "gap": 0.4
+  },
+  {
+   "id": "right6",
+   "text": "And puts you down at the front, just as the light turns green. Express lane.",
+   "gap": 0.6
+  },
+  {
+   "id": "right7",
+   "text": "Exam passed.",
+   "gap": 1.3
+  },
+  {
+   "id": "outro",
+   "text": "Next exam question: the ferry ramp closes, with you on it. Follow, so you don't miss it.",
+   "gap": 1.2
+  }
+ ],
+ "cues": [
+  [
+   "hook1",
+   "Something",
+   "clang",
+   0.2,
+   -0.33
+  ],
+  [
+   "hook2",
+   "crane",
+   "servo",
+   0.12
+  ],
+  [
+   "wrong1",
+   "floor",
+   "rev",
+   0.2
+  ],
+  [
+   "wrong2",
+   "air",
+   "whoosh",
+   0.14
+  ],
+  [
+   "wrong2",
+   "swings",
+   "whoosh",
+   0.18
+  ],
+  [
+   "wrong2",
+   "fairground",
+   "jingle",
+   0.12
+  ],
+  [
+   "wrong3",
+   "puts",
+   "thud",
+   0.2
+  ],
+  [
+   "wrong3",
+   "Walls",
+   "pop",
+   0.18
+  ],
+  [
+   "wrong3",
+   "Windows",
+   "pop",
+   0.18
+  ],
+  [
+   "wrong3",
+   "roof",
+   "thud",
+   0.2
+  ],
+  [
+   "wrong3",
+   "floor",
+   "honk",
+   0.08,
+   0.55,
+   1
+  ],
+  [
+   "right2",
+   "Hazard",
+   "blinkfx",
+   0.14
+  ],
+  [
+   "right3",
+   "sign",
+   "pop",
+   0.16
+  ],
+  [
+   "right4",
+   "binoculars",
+   "plink",
+   0.14
+  ],
+  [
+   "right4",
+   "Oops",
+   "squeak",
+   0.12
+  ],
+  [
+   "right5",
+   "lift",
+   "servo",
+   0.1
+  ],
+  [
+   "right5",
+   "Gently",
+   "chime",
+   0.1
+  ],
+  [
+   "right6",
+   "green",
+   "ding",
+   0.14
+  ],
+  [
+   "right6",
+   "Express",
+   "whoosh",
+   0.14
+  ],
+  [
+   "right7",
+   "Exam",
+   "fanfare",
+   0.15
+  ]
+ ],
+ "beds": [
+  [
+   "engine",
+   0.0,
+   5.0,
+   0.025
+  ],
+  [
+   "wind",
+   [
+    "wrong2"
+   ],
+   [
+    "wrong2"
+   ],
+   0.05
+  ],
+  [
+   "wind",
+   [
+    "right5"
+   ],
+   [
+    "right5"
+   ],
+   0.03
+  ]
+ ]
+}

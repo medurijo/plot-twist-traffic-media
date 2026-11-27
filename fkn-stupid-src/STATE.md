@@ -1,8 +1,8 @@
 # FKN STUPID — state
 
-Next episode number: **ep22**
+Next episode number: **ep24**
 Slots: 15:00 and 21:00 Europe/Berlin (2 per day, from 2026-11-20). Metricool blogId 7460367, tiktok + youtube.
-Next episode type: **absurd everyday** (ep21 was a law episode).
+Next episode type: **absurd everyday** (ep23 was a law episode).
 
 ## Published / scheduled
 | ep | slug | story | type | date/slot |
@@ -27,6 +27,8 @@ Next episode type: **absurd everyday** (ep21 was a law episode).
 | ep19 | gnome | neighbor's gnome stares → restraining order → 50 ft tape measure → next morning in front of his door (coffee spit) → hammer-throws it through neighbor's window, neighbor tumbles out (CRIME #1) → next morning on his porch (jump scare) → buries it, R.I.P. stone (CRIME #2) → next morning in his car's driver seat → calls cops → cop sees the empty grave → arrests HIM for gnome kidnapping (CRIME #3) → gnome drives the police car (cop cap) → 6 months later dropped off → gnome back in its yard | law | 2026-11-25 21:00 |
 | ep20 | garbage | missed the garbage truck by 1 second → chases it (wheel legs) → throws bag: hits cop eating donut (banana peel) → throws neighbor's bin: lands over the cop's head (cop walks blind) → cannonballs into the hopper (legs sticking out) → collector pulls lever, CRUNCH, hat pops out → collector lifts out a perfect cube (his face + hat) like a trophy, tosses it back → NEXT WEEK truck brings him back, flings cube + bag onto sidewalk → still a cube (blinks) → pigeon with suitcase moves in, builds nest → POP he unfolds → takes out the trash → truck leaves | everyday | 2026-11-26 15:00 |
 | ep21 | street | parking ticket ('NO PARKING' sign) → rolls up the whole street like a carpet (car hops over the roll, CRIME #1 GRAND THEFT STREET) → 'no street, no rule' → 2nd ticket 'parking in the dirt' → yanks street out under the cop and rolls him up (CRIME #2 ASSAULT WITH A STREET) → 2 police cars, cops jump out → rolls them up too (CRIME #3 KIDNAPPING 5 COPS) → roll gets HUGE → rolls away, comes back, flattens him, unrolls → all cops pop out of the road and zoom off, one stays with a pen → ticket | law | 2026-11-26 21:00 |
+| ep22 | hole | dug a hole → where does the dirt go? (worm pops out of the pile) → digs hole 2, carries pile 1 over his head into it → pile 2 BOINGs bigger → holes 3, 4, 5 at turbo speed (clod knocks the neighbor off his phone) → cop sprints in to complain, falls into 'hole #6' (cap flies) → cop's head plugs the hole, hero pats it → pile is a mountain (snow cap, flag, bird) → he drills one giant hole (dirt fountain makes the mountain bigger) → pushes the mountain in (it slides over the cop's head) → flat yard, bird on cop's head → cop pops out and zooms off, leaving one tiny pile → grabs his shovel | everyday | 2026-11-27 15:00 |
+| ep23 | speedcamera | speed camera flashed him (31 in a 30, CRIME #1 SPEEDING) → thinks it's a photo shoot → backs up, drives past again and poses → photo card: he blinked → past again eyes wide open → backwards (kneeling, peace sign) → on two wheels (CRIME #2 RECKLESS POSING) → without the car on wheel legs (CRIME #3 SPEEDING ON FOOT) → cop with donut sprints way too fast → camera flashes the cop (97), he flies into the bins → ticket slaps onto the cop, photo card of the cop → both drive past every day posing (open-top police car) → and smile (loop: car approaching) | law | 2026-11-27 21:00 |
 
 ## Notes
 - Wider camera framing requested 2026-11-20 (fov 1.1–1.2, more of the scene visible).

@@ -1,0 +1,9 @@
+LINES = ["A speed camera flashed him.", "One mile over the limit.", "He thought it was a photo shoot.", "So he drove past again... and posed.", "In the photo, he FUCKING blinked!", "So he drove past again.", "Backwards.",
+ "On two FUCKING wheels!", "Then without the car.", "A cop came to arrest him.", "Way too fast.", "The camera flashed the FUCKING cop!", "He got a ticket too.", "Now they both drive past every day.", "And smile."]
+KEYS = [('speed', 0, 'speed'), ('flashed0', 0, 'flashed'), ('him0', 0, 'him'), ('one1', 1, 'one'), ('limit', 1, 'limit'), ('thought', 2, 'thought'), ('photo2', 2, 'photo'), ('shoot', 2, 'shoot'),
+ ('drove3', 3, 'drove'), ('again3', 3, 'again'), ('posed', 3, 'posed'), ('photo4', 4, 'photo'), ('fucking1', 4, 'fucking'), ('blinked', 4, 'blinked'), ('drove5', 5, 'drove'), ('again5', 5, 'again'),
+ ('backwards', 6, 'backwards'), ('two', 7, 'two'), ('fucking2', 7, 'fucking'), ('wheels', 7, 'wheels'), ('without', 8, 'without'), ('car8', 8, 'car'), ('cop9', 9, 'cop'), ('arrest', 9, 'arrest'),
+ ('way', 10, 'way'), ('fast', 10, 'fast'), ('camera11', 11, 'camera'), ('flashed11', 11, 'flashed'), ('fucking3', 11, 'fucking'), ('cop11', 11, 'cop'), ('ticket', 12, 'ticket'), ('too12', 12, 'too'),
+ ('both', 13, 'both'), ('drive13', 13, 'drive'), ('every', 13, 'every'), ('day', 13, 'day'), ('smile', 14, 'smile')]
+CAPS = ['A speed camera *flashed him.*', 'One mile *over the limit.*', 'He thought it was a *photo shoot.*', 'So he drove past again... *and posed.*', 'In the photo, he *F•CKING blinked!*', 'So he *drove past again.*', '*Backwards.*',
+ 'On two *F•CKING wheels!*', 'Then *without the car.*', 'A cop came *to arrest him.*', '*Way too fast.*', 'The camera flashed the *F•CKING cop!*', 'He got *a ticket too.*', 'Now they both drive past *every day.*', 'And *smile.*']

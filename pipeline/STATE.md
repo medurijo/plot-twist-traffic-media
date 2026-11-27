@@ -1,9 +1,9 @@
 # Plot Twist Traffic – state
 
-Last published Q: **74** (Q71/Q72 posted 2026-11-26; Q73 posts 2026-11-27 15:30, Q74 posts 2026-11-27 18:00)
+Last published Q: **76** (Q73/Q74 posted 2026-11-27; Q75 posts 2026-11-28 15:30, Q76 posts 2026-11-28 18:00)
 Note: the 2026-11-16 18:00 slot stayed empty (previous run only finished Q52; Q53 sources were lost and rebuilt on Nov 16 evening).
-Next episode folder: ep80 = Q75
-Announced in last outro (must be next video): **A car wash the size of a stadium** (IDEAS Nov-24 list item 5)
+Next episode folder: ep82 = Q77
+Announced in last outro (must be next video): **A train made of shopping trolleys, at the level crossing** (IDEAS Nov-24 list item 7)
 Note: pipeline/ep72_test_explainer = a Q67 TEST in a serious explainer style with an ElevenLabs voice (made 23 Nov by another session, never scheduled). The published Q67 follows the RUNBOOK (old twist style, Kokoro bm_george).
 CONTENT (user 18 Nov): fewer animals, back to crazy semi-realistic events (see RUNBOOK §2 CONTENT SWITCH, IDEAS Nov-18 list).
 STYLE: from Q34 back to the OLD opening style (no driving-tip/rule intro), see RUNBOOK §2. Opening references: ep32, ep31.
@@ -54,6 +54,7 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 
 - 2026-11-26 (TikTok views): Q67 runway 3.4k (!) = joins the top tier (drawbridge 5.3k, house on a lorry 4.3k, crab tow truck 4.1k); Q69 knights 0.77k, Q70 football hail 0.56k, Q68 crash barrier 0.62k; Q61-Q66 ~0.68-0.78k. Likes 17-154, comments 1-8. Q71/Q72 posted today, no data yet. -> a big real VEHICLE/STRUCTURE doing something to YOU keeps winning (jet, bridge, house lorry, crab tow truck); made Q73 crane at the roadworks (hook lands on your roof, driver thinks you're the bricks: floor it -> wheels in the air, fairground ride round the crane, put on the top floor, builders build walls/windows/roof around you -> your car lives on the 10th floor / hazards + sign out of the sunroof "I AM NOT THE BRICKS", driver reads it with binoculars: oops -> gentle lift over the whole queue, set down at the front as the light turns green: express lane) + Q74 ferry ramp closes with you on it (reverse -> ramp too steep = ski jump, backflip over the harbour onto the fish-market ice between the salmon, chalkboard "1 CAR €0.99/kg" / handbrake + honk twice like a ship -> captain answers with the ship's horn, ramp comes back down, last car on board -> ramp opened like a balcony, sea view, dolphins jump over your bonnet).
 
+- 2026-11-27 (TikTok views): Q67 runway 3.5k, Q58 drawbridge 5.3k, Q60 house lorry 4.4k = top tier; Q71 car transporter 1.2k after 1 day (best of the newest batch), Q69 knights 0.81k, Q66 gravity 0.73k, Q68 0.63k, Q70 hail 0.59k, Q72 combine 0.48k (weak). Likes 11-155, comments 1-8. Q73/Q74 posted today, no data yet. -> big real VEHICLE doing something to YOU still the bet (transporter > combine); made Q75 stadium-sized car wash (giant brushes, crowd, Mexican wave, gold car on podium) + Q76 double-decker wedged in the tunnel (classic let-the-air-out trick, passengers blow the tyres back up).
 ## History (folder | Q | hook)
 - ep2 | Q2 | There's just one problem. The other lane is full of tanks. And they're all looking at you. What do y
 - ep3 | Q3 | Ten thousand rubber ducks, raining down on the road. And one very, very big one. What do you do?
@@ -133,3 +134,5 @@ Schedule: every day 15:30 + 18:00 Europe/Berlin. Daily run produces the NEXT day
 - ep77 | Q72 | It's a combine harvester. As wide as the whole road. And it's coming straight at you. What do you do?
 - ep78 | Q73 | It's the crane hook. And the crane driver thinks you're the bricks. What do you do?
 - ep79 | Q74 | The ramp is closing. And you're still on it. What do you do?
+- ep80 | Q75 | It's a car wash the size of a stadium. Brushes as tall as houses. And forty thousand fans. What do you do?
+- ep81 | Q76 | It's stuck. The roof is wedged under the ceiling. And fifty passengers are staring at you. What do you do?

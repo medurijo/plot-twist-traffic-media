@@ -304,3 +304,14 @@ episodes – copy the structure of the closest one.
 - Ferry (ep79): ferry group origin = stern centre at deck level, ramp = hinge group (rotation.x = -theta raises the +z tip); car placed with setFromParent(obj, parentGroup, x, y, z, h) (parent.matrixWorld * local). Turning ferry: integrate a heading table (PSI) along distance D so it sails along its bow; dolphins/splash as ferry children so "across the ramp" stays local.
 - A table under an awning: the landing car would pass through the awning – keep the landing zone open from above.
 - Renders this run: ~35 min per episode (13 parts, 2 runners, ~2 s/frame/runner); Q73 was scheduled as soon as it was finished.
+
+## 26. Lessons (Nov 27 run, ep80/ep81)
+- Fresh container again (detached HEAD): `git fetch && git checkout -q main && git pull` then setup.sh.
+- `Math.exp(-(x) ** 2)` is a JS syntax error (unary minus before **) – the page dies and sheet.sh waits 2 min: write `-((x) ** 2)`.
+- Stadium (ep80): stepped bowl = LatheGeometry profile (rows) scaled to an ellipse (mesh.scale RX,1,RZ), coloured seat stripes as thin lathes, outer wall = open cylinder scaled the same. Bowl/spectators castShadow false so the pitch stays lit. 2.8k instanced spectators (body/head/2 arms) with a Mexican wave = gaussian in (theta - phase), arms up; readable only in a CLOSE stand shot (wide shots show nothing).
+- Roof canopy rings / stand rims hide things placed just above them (scoreboard bottom was cut): keep props clear above the rim, and check cameras near the bowl top are inside the roof opening (a camera under the roof = white frame).
+- Small additive/white sprites (water fireworks, 0.7 m) are invisible on a bright crowd at 50 m: make particles 1.5-2 m and coloured.
+- Car in a pivot group (heroP, hero.position.y = -0.8) makes flips/rolls about the car centre easy.
+- Tunnel (ep81): mountain = Shape with a rectangular notch extruded along z (no holes needed); tiled wall planes + emissive wall lamps + 3 PointLights following the action. Camera just inside the exit portal with fov 58 gives a great close front shot of a wedged bus. Following traffic must be placed relative to the hero, not at fixed z (hero drove through them).
+- Faces in bus windows = canvas texture with cartoon faces (cheap, reads well). Text on a plane lying on the windscreen: `lookAt(P + glassNormal)` keeps it readable from the front.
+- Renders: ~1.1 s/frame per runner without stills (~3.4 min per 163-frame part).

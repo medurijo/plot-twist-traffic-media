@@ -1,0 +1,231 @@
+{
+ "voice": "bm_george",
+ "meta": {
+  "q": 76,
+  "next": [
+   "A TRAIN OF SHOPPING TROLLEYS",
+   "AT THE LEVEL CROSSING"
+  ],
+  "gfx": true,
+  "gfxopt": {
+   "sunDir": [
+    90,
+    60,
+    -80
+   ],
+   "sunCol": "#ffd8a0",
+   "hemi": 0.95,
+   "vignette": 0.14,
+   "contrast": 1.08
+  }
+ },
+ "segments": [
+  {
+   "id": "hook1",
+   "text": "Rush hour. You're in the tunnel. In front of you, a double-decker bus. Then it stops.",
+   "gap": 0.35
+  },
+  {
+   "id": "hook2",
+   "text": "It's stuck. The roof is wedged under the ceiling. And fifty passengers are staring at you. What do you do?",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong1",
+   "text": "Most drivers think: push it! Bumper on bumper. Full throttle!",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong2",
+   "text": "The bus pops out of the tunnel like a cork from a bottle. And you fly right after it.",
+   "gap": 0.4
+  },
+  {
+   "id": "wrong3",
+   "text": "You land on its roof. And the bus just drives on. Congratulations: you're the top deck now. Next stop: everywhere.",
+   "gap": 0.9
+  },
+  {
+   "id": "wrong4",
+   "text": "Exam failed.",
+   "gap": 1.15
+  },
+  {
+   "id": "right1",
+   "text": "Here's how you do it properly.",
+   "gap": 0.3
+  },
+  {
+   "id": "right2",
+   "text": "Engine off. Hazards on. Then knock on the driver's window, and whisper one word: tyres.",
+   "gap": 0.5
+  },
+  {
+   "id": "right3",
+   "text": "Pssssst. A little air out of every tyre. The bus sinks. Just five centimetres.",
+   "gap": 0.5
+  },
+  {
+   "id": "right4",
+   "text": "And it rolls free! Out of the tunnel, into the sunshine.",
+   "gap": 0.5
+  },
+  {
+   "id": "right5",
+   "text": "Then the passengers pump the tyres back up. Fifty people. One big breath each.",
+   "gap": 0.4
+  },
+  {
+   "id": "right6",
+   "text": "And for you, a golden ticket. Free rides. Forever.",
+   "gap": 0.6
+  },
+  {
+   "id": "right7",
+   "text": "Exam passed.",
+   "gap": 1.3
+  },
+  {
+   "id": "outro",
+   "text": "Next exam question: a train made of shopping trolleys, at the level crossing. Follow, so you don't miss it.",
+   "gap": 1.2
+  }
+ ],
+ "cues": [
+  [
+   "hook1",
+   "stops",
+   "squeak",
+   0.12
+  ],
+  [
+   "hook2",
+   "stuck",
+   "crack",
+   0.12
+  ],
+  [
+   "hook2",
+   "ceiling",
+   "clang",
+   0.1
+  ],
+  [
+   "wrong1",
+   "push",
+   "rev",
+   0.2
+  ],
+  [
+   "wrong1",
+   "Full",
+   "rev",
+   0.2
+  ],
+  [
+   "wrong2",
+   "pops",
+   "pop",
+   0.3
+  ],
+  [
+   "wrong2",
+   "fly",
+   "whoosh",
+   0.18
+  ],
+  [
+   "wrong3",
+   "land",
+   "thud",
+   0.2
+  ],
+  [
+   "wrong3",
+   "everywhere",
+   "ding",
+   0.12
+  ],
+  [
+   "right2",
+   "Engine",
+   "servo",
+   0.06
+  ],
+  [
+   "right2",
+   "Hazards",
+   "blinkfx",
+   0.1
+  ],
+  [
+   "right2",
+   "knock",
+   "clack",
+   0.16
+  ],
+  [
+   "right2",
+   "knock",
+   "clack",
+   0.16,
+   0.18
+  ],
+  [
+   "right3",
+   "Pssssst",
+   "hiss",
+   0.14
+  ],
+  [
+   "right3",
+   "sinks",
+   "servo",
+   0.1
+  ],
+  [
+   "right4",
+   "free",
+   "crowd",
+   0.1
+  ],
+  [
+   "right4",
+   "sunshine",
+   "chime",
+   0.12
+  ],
+  [
+   "right5",
+   "breath",
+   "whoosh",
+   0.1
+  ],
+  [
+   "right6",
+   "golden",
+   "chime",
+   0.14
+  ],
+  [
+   "right6",
+   "Forever",
+   "ding",
+   0.12
+  ],
+  [
+   "right7",
+   "Exam",
+   "fanfare",
+   0.15
+  ]
+ ],
+ "beds": [
+  [
+   "engine",
+   0.0,
+   4.0,
+   0.02
+  ]
+ ]
+}

@@ -1,0 +1,13 @@
+const SIGNS = [[2, .12, 'STALKING', 1], [10, .3, 'MEDICAL EMERGENCY', 2], [17, .3, 'FAKED DEATH', 3]];
+const signShake = t => { for (const [li, f] of SIGNS) { const d = t - at(li, f) - .12; if (d >= 0 && d < .22) return (1 - d / .22) * 26; } return 0; };
+function sign(t) { for (const [li, f, txt, num] of SIGNS) { const t0 = at(li, f), t1 = pend(li); if (t < t0 || t > t1) continue; const d = t - t0; const out = clamp((t1 - t) / .12);
+    const bar = eout(clamp(d / .12)) * out * 150; g2.fillStyle = '#0d0c12'; g2.fillRect(0, 0, W, bar); g2.fillRect(0, H - bar, W, bar);
+    if (d < .12) { g2.fillStyle = `rgba(255,255,255,${(1 - d / .12) * .5})`; g2.fillRect(0, 0, W, H); }
+    const tg = eout(clamp(d / .2)) * out; g2.save(); g2.translate(lerp(-520, 0, tg), 250); g2.rotate(-.05); g2.fillStyle = '#ffd23a'; g2.fillRect(-40, -44, 520, 88); g2.fillStyle = '#1b1b20'; for (let k = 0; k < 14; k++) { g2.beginPath(); g2.moveTo(-40 + k * 40, 44); g2.lineTo(-20 + k * 40, 44); g2.lineTo(-8 + k * 40, 30); g2.lineTo(-28 + k * 40, 30); g2.closePath(); g2.fill(); }
+    g2.font = 'bold 54px "Courier 10 Pitch"'; g2.textAlign = 'left'; g2.textBaseline = 'middle'; g2.fillText('CRIME #' + num, 40, -8); g2.restore();
+    const sd = d - .12; if (sd < 0) continue; const sc = lerp(3.2, 1, eout(clamp(sd / .1))); const lines = txt.length > 12 ? txt.split(' ') : [txt]; g2.save(); g2.translate(540, 520); g2.rotate(-.11); g2.scale(sc * out, sc * out); g2.globalAlpha = clamp(sd / .05);
+    g2.font = '900 118px "Inter Display"'; const w = Math.max(...lines.map(l => g2.measureText(l).width)) + 110, h = lines.length * 124 + 60; const RED = '#e3263a'; const fit = Math.min(1, 880 / w); g2.scale(fit, fit);
+    g2.lineJoin = 'round'; g2.strokeStyle = '#fff'; g2.lineWidth = 34; g2.strokeRect(-w / 2, -h / 2, w, h); g2.strokeStyle = RED; g2.lineWidth = 16; g2.strokeRect(-w / 2, -h / 2, w, h); g2.lineWidth = 5; g2.strokeRect(-w / 2 + 20, -h / 2 + 20, w - 40, h - 40);
+    g2.textAlign = 'center'; g2.textBaseline = 'middle'; lines.forEach((l, k) => { const y = (k - (lines.length - 1) / 2) * 124 + 6; g2.lineWidth = 24; g2.strokeStyle = '#fff'; g2.strokeText(l, 0, y); g2.fillStyle = RED; g2.fillText(l, 0, y); });
+    g2.globalCompositeOperation = 'destination-out'; for (let k = 0; k < 90; k++) { g2.fillStyle = 'rgba(0,0,0,.55)'; g2.beginPath(); g2.arc((hsh(k, num) - .5) * w, (hsh(k, num + 7) - .5) * h, 2 + hsh(k, 3) * 5, 0, 6.283); g2.fill(); } g2.globalCompositeOperation = 'source-over';
+    for (let k = 0; k < 16; k++) { const a = hsh(k, num + 20) * 6.283, rr = (w / 2 + 40 + hsh(k, 5) * 160) * Math.min(1, sd * 9); g2.fillStyle = RED; g2.beginPath(); g2.arc(Math.cos(a) * rr, Math.sin(a) * rr * .6, 4 + hsh(k, 9) * 9, 0, 6.283); g2.fill(); } g2.restore(); } }

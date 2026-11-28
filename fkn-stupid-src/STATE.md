@@ -1,8 +1,8 @@
 # FKN STUPID — state
 
-Next episode number: **ep24**
+Next episode number: **ep26**
 Slots: 15:00 and 21:00 Europe/Berlin (2 per day, from 2026-11-20). Metricool blogId 7460367, tiktok + youtube.
-Next episode type: **absurd everyday** (ep23 was a law episode).
+Next episode type: **absurd everyday** (ep25 was a law episode).
 
 ## Published / scheduled
 | ep | slug | story | type | date/slot |
@@ -29,6 +29,8 @@ Next episode type: **absurd everyday** (ep23 was a law episode).
 | ep21 | street | parking ticket ('NO PARKING' sign) → rolls up the whole street like a carpet (car hops over the roll, CRIME #1 GRAND THEFT STREET) → 'no street, no rule' → 2nd ticket 'parking in the dirt' → yanks street out under the cop and rolls him up (CRIME #2 ASSAULT WITH A STREET) → 2 police cars, cops jump out → rolls them up too (CRIME #3 KIDNAPPING 5 COPS) → roll gets HUGE → rolls away, comes back, flattens him, unrolls → all cops pop out of the road and zoom off, one stays with a pen → ticket | law | 2026-11-26 21:00 |
 | ep22 | hole | dug a hole → where does the dirt go? (worm pops out of the pile) → digs hole 2, carries pile 1 over his head into it → pile 2 BOINGs bigger → holes 3, 4, 5 at turbo speed (clod knocks the neighbor off his phone) → cop sprints in to complain, falls into 'hole #6' (cap flies) → cop's head plugs the hole, hero pats it → pile is a mountain (snow cap, flag, bird) → he drills one giant hole (dirt fountain makes the mountain bigger) → pushes the mountain in (it slides over the cop's head) → flat yard, bird on cop's head → cop pops out and zooms off, leaving one tiny pile → grabs his shovel | everyday | 2026-11-27 15:00 |
 | ep23 | speedcamera | speed camera flashed him (31 in a 30, CRIME #1 SPEEDING) → thinks it's a photo shoot → backs up, drives past again and poses → photo card: he blinked → past again eyes wide open → backwards (kneeling, peace sign) → on two wheels (CRIME #2 RECKLESS POSING) → without the car on wheel legs (CRIME #3 SPEEDING ON FOOT) → cop with donut sprints way too fast → camera flashes the cop (97), he flies into the bins → ticket slaps onto the cop, photo card of the cop → both drive past every day posing (open-top police car) → and smile (loop: car approaching) | law | 2026-11-27 21:00 |
+| ep24 | birdpoop | bird poops on his car (one tiny drop) → zooms around the car washing it (foam, SHINY) → bird comes back, same spot → FUCKING pressure washer: car spins across the road, paint washed off (red puddle) → sprays the neighbor down the street (shirt washed white) → builds a carport over the car (BANG BANG) → bird lands on the roof, one tiny drop → whole roof collapses, car crushed → cop sprints in, bird lands on his cap → ticket slapped on his face 'for FUCKING littering' (bird poops on the cop) → buys a brand new car (drops from the sky onto the wreck, BOING) → parks it right under the bird (loop) | everyday | 2026-11-28 15:00 |
+| ep25 | wallet | finds a wallet on the sidewalk → 'keeping it? FUCKING theft!' → runs it to the cop (donut, open-top police car) → cop opens it: ID card, it's HIS wallet → turns himself in for taking it (CRIME #1 STEALING HIS OWN WALLET, cuffed) → phones the police on the cop → cop2 sprints in, frees him, cuffs cop1 (CRIME #2 ARRESTING THE VICTIM) → cop2 finds ten FUCKING dollars, pockets them (CRIME #3 ACTUAL THEFT) → cuffed cop1 cuffs cop2 → they drive each other to jail (zigzag, cuffed together) → wallet thrown back, BONK → back pocket with a FUCKING hole → walks off, wallet drops, turns around (loop) | law | 2026-11-28 21:00 |
 
 ## Notes
 - Wider camera framing requested 2026-11-20 (fov 1.1–1.2, more of the scene visible).
